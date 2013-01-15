@@ -1,0 +1,27 @@
+Quick notes:
+
+###VIM TIPS###
+1) <Ctrl>+l to switch off highlights in vim
+2) ds" - to remove "" around a word
+3) \\cc   - comment out
+3.5) \\cu - uncomment
+4) cs]} - surround with {}
+
+
+2) Start ghci with gloss, so that it does not hang:
+ghci -fno-ghci-sandbox 
+3) Update Portage:
+emerge --update --deep --with-bdeps=y --newuse world
+emerge --update --deep --newuse world
+#  delete unused dependencies:
+emerge --depclean 
+#  rebuild missing dependencies
+revdep-rebuild
+4) Find out your own IP:
+wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+5)check running services:
+rc-status
+6)make ghc keep intermediary files: it will create (won't delete technically) /tmp/ghc${pid} with intermediate files
+ghc -keep-tmp-files foo.hs
+
+
