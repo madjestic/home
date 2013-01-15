@@ -1,0 +1,58 @@
+app-admin/haskell-updater
+dev-haskell/alex
+dev-haskell/cabal
+dev-haskell/cabal-install
+dev-haskell/cgi
+dev-haskell/deepseq
+dev-haskell/fgl
+dev-haskell/gluraw
+dev-haskell/glut
+dev-haskell/haddock
+dev-haskell/happy
+dev-haskell/haskel-platform
+dev-haskell/haskel-src
+dev-haskell/hscolor
+dev-haskell/html
+dev-haskell/http
+dev-haskell/hunit
+dev-haskell/mtl
+dev-haskell/network
+dev-haskell/objectname
+dev-haskell/openglraw
+dev-haskell/opengl
+dev-haskell/parallel
+dev-haskell/parsec
+dev-haskell/quickcheck
+dev-haskell/random
+dev-haskell/regex-base
+dev-haskell/regex-compat
+dev-haskell/regex-posix
+dev-haskell/statevar
+dev-haskell/stm
+dev-haskell/syb
+dev-haskell/tensor
+dev-haskell/text
+dev-haskell/time
+dev-haskell/transformers
+dev-haskell/xhtml
+dev-haskell/zlib
+dev-lang/ghc
+#required by dev-haskell/cgi-3001.1.8.2, required by dev-haskell/haskell-platform-2012.2.0.0, required by haskell-platform (argument)
+=dev-haskell/monadcatchio-mtl-0.3.0.4 ~x86
+#required by haskell-platform (argument)
+=dev-haskell/haskell-platform-2012.4.0.0 ~x86
+#required by dev-haskell/haskell-platform-2012.4.0.0, required by haskell-platform (argument)
+=dev-haskell/haskell-src-1.0.1.5 ~x86
+#required by dev-haskell/haddock-2.10.0-r1, required by dev-haskell/haskell-platform-2012.2.0.0, required by haskell-platform (argument)
+=dev-haskell/ghc-paths-0.1.0.8 ~x86
+#required by dev-haskell/cgi-3001.1.8.3, required by dev-haskell/haskell-platform-2012.2.0.0, required by haskell-platform (argument)
+=dev-haskell/extensible-exceptions-0.1.1.4 ~x86
+#required by dev-haskell/haskell-platform-2012.4.0.0, required by haskell-platform (argument)
+=dev-haskell/vector-0.10.0.1 ~x86
+#required by dev-haskell/haskell-platform-2012.4.0.0, required by haskell-platform (argument)
+=dev-haskell/primitive-0.5.0.1 ~x86
+#required by dev-haskell/haskell-platform-2012.4.0.0, required by haskell-platform (argument)
+=dev-haskell/async-2.0.1.4 ~x86
+#required by dev-haskell/haskell-platform-2012.4.0.0, required by haskell-platform (argument)
+=dev-haskell/split-0.2.1.1 ~x86
+

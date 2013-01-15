@@ -1,0 +1,18 @@
+x11-base/xorg-server udev
+#required by dev-vcs/git-1.7.8.6[subversion,perl], required by app-portage/layman-1.4.2-r3[git], required by layman (argument)
+=dev-vcs/subversion-1.6.17-r7 -dso perl
+#required by www-client/chromium-22.0.1229.79, required by chromium (argument)
+>=dev-libs/libxml2-2.8.0-r2 icu
+x11-terms/rxvt-unicode truetype afterimage 256-color 
+x11-wm/fvwm stroke
+#w11-wm/dwm-6.0 savedconfig
+dev-db/mysql berkdb community perl ssl
+dev-haskell/cabal-install noprefs
+dev-haskell/quickcheck template_haskell -doc -hscolour -profile
+x11-misc/xmobar alsa unicode xft -mail -mpd -timezone
+dev-haskell/json generic parsec pretty
+dev-haskell/citeproc-hs bibutils network
+media-libs/gd fontconfig jpeg png truetype zlib
+media-gfx/graphviz cairo gtk nls
+dev-haskell/cairo svg
+sci-mathematics/agda stdlib
