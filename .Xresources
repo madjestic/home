@@ -1,0 +1,20 @@
+!URxvt*shading		: 50
+URxvt*depth		: 32 
+URxvt*tintColor		: Grey
+URxvt*saveLines		: 12000
+URxvt*foreground	: rgba:7777/cccc/7777/ffff
+URxvt*background	: rgba:0000/0000/0000/cccc
+URxvt*font		: xft:DejaVu Sans Mono:pixelsize=15:antialias=true:hinting=true
+URxvt*boldFont		: xft:DejaVu Sans Mono:bold:pixelsize=15:antialias=true:hinting=true
+URxvt*color4		: RoyalBlue 
+URxvt*color12		: RoyalBlue
+
+!color of the standard input
+URxvt*color10		: rgba:2222/5555/2222/ffff
+URxvt*color2		: rgba:4444/9999/4444/ffff
+
+URxvt*scrollBar		: true
+URxvt*scrollBar_right	: true
+URxvt*scrollstyle	: plain
+URxvt*scrollColor	: #335533
+URxvt*cursorBlink	: true

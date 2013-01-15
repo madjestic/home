@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <title>Diagrams - Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
+        <link rel="stylesheet" type="text/css" href="../css/syntax.css"></link>
+	<link rel="shortcut icon" href="../diagrams.ico"></link>
+
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+	<!--
+	<script type="text/javascript" src="/js/listCollapse.js"></script>
+	<script type="text/javascript">
+	window.onload = function () {
+	  compactMenu('toc',true,'&plusmn; ');
+	}
+        </script>
+	-->
+    </head>
+    <body>
+      <div id="wrap">
+        <div id="header">
+	  <img src="../images/Logo.png" height="50"></img> Haskell drawing framework
+	</div>
+
+        <div id="navigation">
+	  <ul>
+            <li><a href="../">About</a></li>
+	    <li><a href="../download.html">Installation</a></li>
+            <li><a href="../documentation.html">Documentation</a>
+	      <ul>
+		<li><a href="../tutorial/DiagramsTutorial.html">Tutorial</a></li>
+		<li><a href="../manual/diagrams-manual.html">User
+		manual</a></li>
+		<li><a href="../doc/index.html">API reference</a></li>
+		<li><a href="http://haskell.org/haskellwiki/Diagrams">Wiki</a></li>
+		<li><a href="http://www.haskell.org/haskellwiki/Diagrams/FAQ">FAQ</a></li>
+              </ul>
+	    </li>
+	    <li><a href="../gallery.html">Gallery</a></li>
+	    <li><a href="../community.html">Community</a>
+	      <ul>
+		<li><a href="http://webchat.freenode.net?channels=diagrams">IRC channel</a></li>
+		<li><a href="http://groups.google.com/group/diagrams-discuss">Mailing
+		list</a></li>
+		<li><a href="../community.html">Bug trackers</a></li>
+              </ul>
+	    </li>
+	    <li><a href="../releases.html">Releases</a></li>
+	  </ul>
+        </div>
+
+	<div id="content">
+	<h3>Tutorial</h3>
+	<hr></hr>
+        <h1 id="introduction">Introduction</h1>
+<p>This tutorial will walk you through the basics of using the diagrams DSL to create graphics in a powerful, modular, and declarative way. There’s enough here to get you started quickly; for more in-depth information, see the <a href="../manual/diagrams-manual.html">user manual</a>.</p>
+<p>This is not a Haskell tutorial (although a Haskell-tutorial-via-diagrams is a fun idea and may happen in the future). For now, we recommend <a href="http://learnyouahaskell.com/">Learn You a Haskell</a> for a nice introduction to Haskell; Chapters 1-6 should give you pretty much all you need for working with diagrams.</p>
+<p>This tutorial is available in several formats:</p>
+<ul>
+<li><a href="../tutorial/DiagramsTutorial.html">HTML</a></li>
+<li><a href="../tutorial/DiagramsTutorial.lhs">Literate Haskell</a></li>
+</ul>
+<p>Whatever you do, don’t just read it: download the <code>.lhs</code> version so you can play around with the content of the tutorial interactively!</p>
+<h1 id="resources">Resources</h1>
+<p>Some resources that may be helpful to you as you learn about diagrams:</p>
+<ul>
+<li>The <a href="../manual/diagrams-manual.html">user manual</a></li>
+<li>The <a href="../doc/index.html">API documentation</a></li>
+<li>The <a href="http://groups.google.com/group/diagrams-discuss">diagrams-discuss mailing list</a></li>
+<li>The <code>#diagrams</code> IRC channel on freenode.org</li>
+</ul>
+<h1 id="getting-started">Getting started</h1>
+<p>Before getting on with generating beautiful diagrams, you’ll need a few things:</p>
+<h2 id="ghcthe-haskell-platform">GHC/The Haskell Platform</h2>
+<p>You’ll need a recent version of the <a href="http://haskell.org/ghc">Glasgow Haskell Compiler</a> (7.0.2 or later), as well as some standard libraries and tools. There are several methods for obtaining these:</p>
+<ul>
+<li><p><a href="http://hackage.haskell.org/platform/">The Haskell Platform</a> has everything you need in one convenient package. If you are unsure, you should use this.</p></li>
+<li><p>If you already have GHC and/or know what you are doing and want to install things yourself, just make sure you have <a href="http://haskell.org/ghc">GHC</a> and a recent version of the <a href="http://hackage.haskell.org/trac/hackage/wiki/CabalInstall">cabal-install tool</a>.</p></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Once you have the prerequisites, installing the diagrams libraries themselves should be a snap:</p>
+<pre><code>cabal install diagrams</code></pre>
+<p><code>diagrams</code> is just a wrapper package which pulls in the following four packages:</p>
+<ul>
+<li><p><code>diagrams-core</code> contains the core data structures and definitions that form the abstract heart of the library.</p></li>
+<li><p><code>diagrams-lib</code> is a standard library of drawing primitives, attributes, and combinators built on top of the core library.</p></li>
+<li><p><code>diagrams-contrib</code> is a library of user-contributed extensions.</p></li>
+<li><p><code>diagrams-svg</code> is a backend which renders diagrams as SVG files.</p></li>
+</ul>
+<p>There are other backends as well; see the <a href="http://hackage.haskell.org/package/diagrams">diagrams package documentation</a> and the <a href="http://www.haskell.org/haskellwiki/Diagrams/Projects#Backends">diagrams wiki</a> for more information.</p>
+<h1 id="philosophy">Philosophy</h1>
+<p>Before diving in to create some diagrams, it’s worth taking a minute to explain some of the philosophy that drove many of the design decisions. (If you’re particularly impatient, feel free to skip this section for now—but you might want to come back and read it later!)</p>
+<ul>
+<li><p>Positioning and scaling are always <em>relative</em>. There is never any global coordinate system to think about; everything is done relative to diagrams’ <em>local</em> vector spaces. This is not only easier to think about, it also increases modularity and compositionality, since diagrams can always be designed without thought for the context in which they will eventually be used. Doing things this way is more work for the <em>library</em> and less work for the <em>user</em>, which is the way it should be.</p></li>
+<li><p>Almost everything is based around the concept of <em>monoids</em> (more on this later).</p></li>
+<li><p>The core library is as simple and elegant as possible – almost everything is built up from a very small set of primitive types and operations. One consequence is that diagrams is optimized for simplicity and flexibility rather than for speed; if you are looking to do <em>real-time</em> graphics generation you will probably be best served by looking elsewhere! (With that said, however, we certainly are interested in making diagrams as fast as possible without sacrificing other features.)</p></li>
+</ul>
+<h1 id="your-first-diagram">Your first diagram</h1>
+<p>Create a file called <code>DiagramsTutorial.lhs</code> with the following contents (or you can simply edit this file itself):</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> <span class="ot">{-# LANGUAGE NoMonomorphismRestriction #-}</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> <span class="kw">import</span> <span class="dt">Diagrams.Prelude</span>
+<span class="fu">&gt;</span> <span class="kw">import</span> <span class="dt">Diagrams.Backend.SVG.CmdLine</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> main <span class="fu">=</span> defaultMain (circle <span class="dv">1</span>)</code></pre>
+<p>Turning off the Dreaded Monomorphism Restriction is quite important: if you don’t, you will almost certainly run into it (and be very confused by the resulting error messages).</p>
+<p>The first <code>import</code> statement brings into scope the entire diagrams DSL and standard library. The second <code>import</code> is so that we can use the SVG backend for rendering diagrams. Among other things, it provides the function <code>defaultMain</code>, which takes a diagram as input (in this case, a circle of radius 1) and creates a command-line-driven application for rendering it.</p>
+<p>Let’s compile and run it:</p>
+<pre><code>$ ghc --make DiagramsTutorial.lhs
+[1 of 1] Compiling Main             ( DiagramsTutorial.lhs, DiagramsTutorial.o )
+Linking DiagramsTutorial ...
+$ ./DiagramsTutorial -o circle.svg -w 400</code></pre>
+<p>If you now view <code>circle.svg</code> in your favorite web browser, you should see an unfilled black circle on a white background (actually, it’s on a transparent background, but most browsers I know of use white).</p>
+<p>Be careful not to omit the <code>-w 400</code> argument! This specifies that the width of the output file should be 400 units, and the height should be determined automatically. You can also specify just a height (using <code>-h</code>), or both a width and a height if you know the exact dimensions of the output image you want (note that the diagram will not be stretched; extra padding will be added if the aspect ratios do not match). If you do not specify a width or a height, the absolute scale of the diagram itself will be used, which in this case would be rather tiny—only 2x2.</p>
+<p>There are several more options besides <code>-o</code>, <code>-w</code>, and <code>-h</code>; you can see what they are by typing <code>./DiagramsTutorial --help</code>.</p>
+<h1 id="attributes">Attributes</h1>
+<p>Suppose we want our circle to be blue, with a thick dashed purple outline (there’s no accounting for taste). We can apply attributes to the <code>circle</code> diagram with the <code>(#)</code> operator:</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circle1 <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> fc blue
+<span class="fu">&gt;</span>                    <span class="fu">#</span> lw <span class="fl">0.05</span>
+<span class="fu">&gt;</span>                    <span class="fu">#</span> lc purple
+<span class="fu">&gt;</span>                    <span class="fu">#</span> dashing [<span class="fl">0.2</span>,<span class="fl">0.05</span>] <span class="dv">0</span></code></pre>
+<p>(To render this new diagram, just replace <code>defaultMain (circle 1)</code> with <code>defaultMain circle1</code>.)</p>
+<p>Note that the dashed purple border is cut off a bit at the edges of the image. This is by design: diagrams’ bounds are computed based on their “abstract shapes”, without taking into account how they are actually drawn. Future versions of diagrams may give you the option of taking things such as thick borders into account when computing boundaries. For now, we can simply add a bit of “padding” to make the whole drawing visible. 10% should do nicely:</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> pCircle1 <span class="fu">=</span> circle1 <span class="fu">#</span> pad <span class="fl">1.1</span></code></pre>
+<p>There’s actually nothing special about the <code>(#)</code> operator: it’s just reverse function application, that is,</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">x <span class="fu">#</span> f <span class="fu">=</span> f x</code></pre>
+<p>Just to illustrate,</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> pCircle1' <span class="fu">=</span> pad <span class="fl">1.1</span> <span class="fu">.</span> dashing [<span class="fl">0.2</span>,<span class="fl">0.05</span>] <span class="dv">0</span> <span class="fu">.</span> lc purple <span class="fu">.</span> lw <span class="fl">0.05</span> <span class="fu">.</span> fc blue <span class="fu">$</span> circle <span class="dv">1</span></code></pre>
+<p>produces exactly the same diagram as <code>pCircle1</code>. So why bother with <code>(#)</code>? First, it’s often more natural to write (and easier to read) what a diagram <em>is</em> first, and what it is <em>like</em> second. Second, <code>(#)</code> has a high precedence (8), making it more convenient to combine diagrams with specified attributes. For example,</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">circle <span class="dv">1</span> <span class="fu">#</span> fc red <span class="fu">#</span> lw <span class="dv">0</span> <span class="fu">|||</span> circle <span class="dv">1</span> <span class="fu">#</span> fc green <span class="fu">#</span> lw <span class="dv">0</span></code></pre>
+<p>places a red circle with no border next to a green circle with no border (we’ll see more about the <code>(|||)</code> operator shortly). Without <code>(#)</code> we would have to write something with more parentheses, like</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">(fc red <span class="fu">.</span> lw <span class="dv">0</span> <span class="fu">$</span> circle <span class="dv">1</span>) <span class="fu">|||</span> (fc green <span class="fu">.</span> lw <span class="dv">0</span> <span class="fu">$</span> circle <span class="dv">1</span>)</code></pre>
+<p>For information on other standard attributes, see <a href="http://hackage.haskell.org/packages/archive/diagrams-lib/latest/doc/html/Diagrams-Attributes.html">Diagrams.Attributes</a>.</p>
+<h1 id="combining-diagrams">Combining diagrams</h1>
+<p>OK, so we can draw a single circle: boring! Much of the power of the diagrams framework, of course, comes from the ability to build up complex diagrams by <em>combining</em> simpler ones.</p>
+<p>Let’s start with the most basic way of combining two diagrams: superimposing one diagram on top of another. We can accomplish this with <code>atop</code>:</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleSq <span class="fu">=</span> square <span class="dv">1</span> <span class="fu">#</span> fc aqua <span class="ot">`atop`</span> pCircle1</code></pre>
+<p>(Incidentally, these colors are coming from <a href="http://hackage.haskell.org/packages/archive/colour/2.3.1/doc/html/Data-Colour-Names.html">Data.Colour.Names</a>.)</p>
+<p>“Putting one thing on top of another” sounds rather vague: how do we know exactly where the circle and square will end up relative to one another? To answer this question, we must introduce the fundamental notion of a <em>local origin</em>.</p>
+<h2 id="local-origins">Local origins</h2>
+<p>Every diagram has a distinguished point called its <em>local origin</em>. Many operations on diagrams – such as <code>atop</code> – work somehow with respect to the local origin. <code>atop</code> in particular works by superimposing two diagrams so that their local origins coincide (and this point becomes the local origin of the new, combined diagram).</p>
+<p>The <code>showOrigin</code> function is provided for conveniently visualizing the local origin of a diagram.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleWithO <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> showOrigin</code></pre>
+<p>Not surprisingly, the local origin of <code>circle</code> is at its center. So is the local origin of <code>square</code>. This is why <code>square 1 `atop` circle 1</code> produces a square centered on a circle.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleSqWithO <span class="fu">=</span> circleSq <span class="fu">#</span> showOrigin</code></pre>
+<h2 id="side-by-side">Side-by-side</h2>
+<p>Another fundamental way to combine two diagrams is by placing them <em>next to</em> each other. The <code>(|||)</code> and <code>(===)</code> operators let us conveniently put two diagrams next to each other in the horizontal or vertical directions, respectively. For example:</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleSqH <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">|||</span> square <span class="dv">2</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> circleSqV <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">===</span> square <span class="dv">2</span></code></pre>
+<p>The two diagrams are arranged next to each other so that their local origins are on the same horizontal or vertical line. As you can ascertain for yourself with <code>showOrigin</code>, the local origin of the new, combined diagram coincides with the local origin of the first diagram.</p>
+<p><code>(|||)</code> and <code>(===)</code> are actually just convenient specializations of the more general <code>beside</code> combinator. <code>beside</code> takes as arguments a <em>vector</em> and two diagrams, and places them next to each other “along the vector” — that is, in such a way that the vector points from the local origin of the first diagram to the local origin of the second.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleSqV1 <span class="fu">=</span> beside (r2 (<span class="dv">1</span>,<span class="dv">1</span>)) (circle <span class="dv">1</span>) (square <span class="dv">2</span>)
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> circleSqV2 <span class="fu">=</span> beside (r2 (<span class="dv">1</span>,<span class="fu">-</span><span class="dv">2</span>)) (circle <span class="dv">1</span>) (square <span class="dv">2</span>)</code></pre>
+<p>Notice how we use the <code>r2</code> function to create a 2D vector from a pair of coordinates.</p>
+<h2 id="envelopes">Envelopes</h2>
+<p>How does the diagrams library figure out how to place two diagrams “next to” each other? And what exactly does “next to” mean? There are many possible definitions of “next to” that one could imagine choosing, with varying degrees of flexibility, simplicity, and tractability. The definition of “next to” adopted by diagrams is as follows:</p>
+<p>To place two diagrams next to each other in the direction of a vector <em>v</em>, place them as close as possible so that there is a <em>separating line</em> perpendicular to <em>v</em>; that is, a line perpendicular to <em>v</em> such that the first diagram lies completely on one side of the line and the other diagram lies completely on the other side.</p>
+<p>There are certainly some tradeoffs in this choice. The biggest downside is that adjacent diagrams sometimes end up with undesired space in between them. For example, the two rotated ellipses in the diagram below have some space between them. (Try adding a vertical line between them with <code>vrule</code> and you will see why.)</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> e2 <span class="fu">=</span> ell <span class="fu">|||</span> ell
+<span class="fu">&gt;</span>   <span class="kw">where</span> ell <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> scaleX <span class="fl">0.5</span> <span class="fu">#</span> rotateBy (<span class="dv">1</span><span class="fu">/</span><span class="dv">6</span>)</code></pre>
+<p>If we want to position these ellipses next to each other horizontally so that they are tangent, it is not clear how to accomplish this. (However, it should be possible to create higher-level modules for automatically accomplishing this in certain cases.)</p>
+<p>However:</p>
+<ul>
+<li><p>This rule is very <em>simple</em>, in that it is easy to predict what will happen when placing two diagrams next to each other.</p></li>
+<li><p>It is also <em>tractable</em>. Every diagram carries along with it an “envelope”—a function which takes as input a vector <em>v</em>, and returns the minimum distance to a separating line from the local origin in the direction of <em>v</em>. When composing two diagrams with <code>atop</code> we take the pointwise maximum of their envelopes; to place two diagrams next to each other we use their envelopes to decide how to reposition their local origins before composing them with <code>atop</code>.</p></li>
+</ul>
+<h1 id="transforming-diagrams">Transforming diagrams</h1>
+<p>As you would expect, there is a range of standard functions available for transforming diagrams, such as:</p>
+<ul>
+<li><code>scale</code> (scale uniformly)</li>
+<li><code>scaleX</code> and <code>scaleY</code> (scale in the X or Y axis only)</li>
+<li><code>rotate</code> (rotate by an angle in radians)</li>
+<li><code>rotateBy</code> (rotate by a fraction of a circle)</li>
+<li><code>reflectX</code> and <code>reflectY</code> for reflecting along the X and Y axes</li>
+</ul>
+<p>For example:</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleRect  <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> scale <span class="fl">0.5</span> <span class="fu">|||</span> square <span class="dv">1</span> <span class="fu">#</span> scaleX <span class="fl">0.3</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> circleRect2 <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> scale <span class="fl">0.5</span> <span class="fu">|||</span> square <span class="dv">1</span> <span class="fu">#</span> scaleX <span class="fl">0.3</span> 
+<span class="fu">&gt;</span>                                                 <span class="fu">#</span> rotateBy (<span class="dv">1</span><span class="fu">/</span><span class="dv">6</span>) 
+<span class="fu">&gt;</span>                                                 <span class="fu">#</span> scaleX <span class="fl">0.5</span></code></pre>
+<p>(Of course, <code>circle 1 # scale 0.5</code> would be better written as just <code>circle 0.5</code>.)</p>
+<h2 id="freezing">Freezing</h2>
+<p>Note that the transformed circles and squares in the examples above were all drawn with the same uniform lines. This is because by default, transformations operate on the abstract geometric ideal of a diagram, and not on its attributes. Often this is what you want; but occasionally you want scaling a diagram to have an effect on the width of its lines, and so on. This can be accomplished with the <code>freeze</code> combinator: whereas transformations normally do not affect a diagram’s attributes, transformations <em>do</em> affect the attributes of a frozen diagram.</p>
+<p>Here is an example. On the left is an untransformed circle drawn with a line 0.1 units thick. The next circle is a scaled version of the first: notice how the line thickness is the same. The third circle was produced by first freezing, then scaling the first circle, resulting in a line twice as thick. The last two circles illustrate a non-uniform scale applied to an unfrozen circle (which is drawn with a uniform line) and to a frozen one (in which the line gets thicker and thinner according to the non-uniform scale).</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> c <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> lw <span class="fl">0.1</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span> circles <span class="fu">=</span> hcat' with {sep <span class="fu">=</span> <span class="fl">0.5</span>} 
+<span class="fu">&gt;</span>           [ c 
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span>           , c <span class="fu">#</span> scale <span class="dv">2</span>
+<span class="fu">&gt;</span>           , c <span class="fu">#</span> freeze <span class="fu">#</span> scale <span class="dv">2</span>
+<span class="fu">&gt;</span> 
+<span class="fu">&gt;</span>           , c <span class="fu">#</span> scaleX <span class="fl">0.2</span>
+<span class="fu">&gt;</span>           , c <span class="fu">#</span> freeze <span class="fu">#</span> scaleX <span class="fl">0.2</span>
+<span class="fu">&gt;</span>           ]
+<span class="fu">&gt;</span>           <span class="fu">#</span> centerXY
+<span class="fu">&gt;</span>           <span class="fu">#</span> pad <span class="fl">1.1</span></code></pre>
+<p>This example also illustrates the <code>hcat'</code> function, which takes a list of diagrams and lays them out horizontally, here with a separation of 0.5 units between each one. For more information on <code>hcat'</code> and similar combinators, see the <a href="http://hackage.haskell.org/packages/archive/diagrams-lib/latest/doc/html/Diagrams-TwoD-Combinators.html">Diagrams.TwoD.Combinators</a> documentation.</p>
+<h2 id="translation">Translation</h2>
+<p>Of course, there are also translation transformations like <code>translate</code>, <code>translateX</code>, and <code>translateY</code>. These operations translate a diagram within its <em>local vector space</em> — that is, relative to its local origin.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleT <span class="fu">=</span> circle <span class="dv">1</span> <span class="fu">#</span> translate (r2 (<span class="fl">0.5</span>, <span class="fl">0.3</span>)) <span class="fu">#</span> showOrigin</code></pre>
+<p>As <code>circleT</code> shows, translating a diagram by <code>(0.5, 0.3)</code> is the same as moving its local origin by <code>(-0.5, -0.3)</code>.</p>
+<p>Since diagrams are always composed with respect to their local origins, translation can affect the way diagrams are composed.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circleSqT   <span class="fu">=</span> square <span class="dv">1</span> <span class="ot">`atop`</span> circle <span class="dv">1</span> <span class="fu">#</span> translate (r2 (<span class="fl">0.5</span>, <span class="fl">0.3</span>))
+<span class="fu">&gt;</span> circleSqHT  <span class="fu">=</span> square <span class="dv">1</span> <span class="fu">|||</span> circle <span class="dv">1</span> <span class="fu">#</span> translate (r2 (<span class="fl">0.5</span>, <span class="fl">0.3</span>))
+<span class="fu">&gt;</span> circleSqHT2 <span class="fu">=</span> square <span class="dv">1</span> <span class="fu">|||</span> circle <span class="dv">1</span> <span class="fu">#</span> translate (r2 (<span class="fl">19.5</span>, <span class="fl">0.3</span>))</code></pre>
+<p>As <code>circleSqHT</code> and <code>circleSqHT2</code> demonstrate, when we place a translated circle next to a square, it doesn’t matter how much the circle was translated in the <em>horizontal</em> direction — the square and circle will always simply be placed next to each other. The vertical direction matters, though, since the local origins of the square and circle are placed on the same horizontal line.</p>
+<h2 id="aligning">Aligning</h2>
+<p>It’s quite common to want to <em>align</em> some diagrams in a certain way when placing them next to one another — for example, we might want a horizontal row of diagrams aligned along their top edges. The <em>alignment</em> of a diagram simply refers to its position relative to its local origin, and convenient alignment functions are provided for aligning a diagram with respect to its envelope. For example, <code>alignT</code> translates a diagram in a vertical direction so that its local origin ends up exactly on the edge of its envelope.</p>
+<pre class="sourceCode literate haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> circlesTop <span class="fu">=</span> hrule (<span class="dv">2</span> <span class="fu">*</span> <span class="fu">sum</span> sizes) <span class="fu">#</span> lw <span class="fl">0.1</span> <span class="fu">===</span> circles <span class="fu">#</span> centerX
+<span class="fu">&gt;</span>   <span class="kw">where</span> circles <span class="fu">=</span> hcat <span class="fu">.</span> <span class="fu">map</span> alignT <span class="fu">.</span> <span class="fu">zipWith</span> scale sizes 
+<span class="fu">&gt;</span>                 <span class="fu">$</span> <span class="fu">repeat</span> (circle <span class="dv">1</span> <span class="fu">#</span> lw <span class="fl">0.1</span>)
+<span class="fu">&gt;</span>         sizes   <span class="fu">=</span> [<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">1</span>,<span class="dv">3</span>]</code></pre>
+<p>See <a href="http://hackage.haskell.org/packages/archive/diagrams-lib/latest/doc/html/Diagrams-TwoD-Align.html">Diagrams.TwoD.Align</a> for other alignment combinators.</p>
+<h1 id="diagrams-as-a-monoid">Diagrams as a monoid</h1>
+<p>As you may have already suspected if you are familiar with monoids, diagrams form a monoid under <code>atop</code>. The diagrams standard library provides <code>(&lt;&gt;)</code> as a convenient synonym for <code>mappend</code>, so <code>(&lt;&gt;)</code> can also be used to superimpose diagrams. This also means that <code>mempty</code> is available to construct the “empty diagram”, which takes up no space and produces no output.</p>
+<p>Quite a few other things in the diagrams standard library are also monoids (transformations, trails, paths, styles, and colors).</p>
+<h1 id="next-steps">Next steps</h1>
+<p>This tutorial has really only scratched the surface of what is possible! Included among the many things <em>not</em> covered by this tutorial are paths, splines, text, traces, a wide array of predefined shapes, named subdiagrams, animation… Here are pointers to some resources for learning more:</p>
+<ul>
+<li><p>The diagrams <a href="../manual/diagrams-manual.html">user manual</a> goes into much more depth on all the topics covered in this tutorial, plus many others, and includes lots of illustrative examples. If there is anything in the manual that you find unclear, confusing, or omitted, please <a href="http://github.com/diagrams/diagrams-doc/issues">report it as a bug</a>!</p></li>
+<li><p>The diagrams-lib API is generally well-documented; start with the documentation for <a href="http://hackage.haskell.org/packages/archive/diagrams-lib/latest/doc/html/Diagrams-Prelude.html">Diagrams.Prelude</a>, and then drill down from there to learn about whatever you are interested in. If there is anything in the API documentation that you find unclear or confusing, please <a href="http://github.com/diagrams/diagrams-lib/issues">report it as a bug</a>!</p></li>
+<li><p>If you run into difficulty or have any questions, join the <code>#diagrams</code> IRC channel on freenode.org, or the <a href="http://groups.google.com/group/diagrams-discuss">diagrams-discuss mailing list</a>.</p></li>
+</ul>
+	</div>
+
+	<div id="footer">
+	  Site generated
+	  by <a href="http://jaspervdj.be/hakyll/">hakyll</a>.
+	</div>
+      </div>
+    </body>
+</html>

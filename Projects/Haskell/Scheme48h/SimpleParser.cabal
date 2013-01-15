@@ -1,0 +1,27 @@
+name: SimpleParser
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+maintainer: madjestic13@gmail.com
+stability: unstable
+bug-reports: madjestic13@gmail.com
+synopsis: A simple Scheme parser, written in Haskell
+description:  
+author: Vlad Lopatin
+data-dir: ""
+ 
+executable SimpleParser
+    build-depends: QuickCheck -any, base -any, parsec -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+ 
+test-suite test-Scheme48h
+    build-depends: QuickCheck -any, base -any, parsec -any
+    type: exitcode-stdio-1.0
+    main-is: Main.hs
+    buildable: True
+    cpp-options: -DMAIN_FUNCTION=testMain
+    hs-source-dirs: src

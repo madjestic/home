@@ -1,0 +1,18 @@
+Version of session file format:
+               1
+Time of storage:
+               "Tue Jan  1 14:09:28 CET 2013"
+Layout:        HorizontalP (TerminalP {paneGroups = fromList [("Browser",TerminalP {paneGroups = fromList [], paneTabs = Nothing, currentPage = 1, detachedId = Nothing, detachedSize = Nothing}),("Debug",HorizontalP (TerminalP {paneGroups = fromList [], paneTabs = Nothing, currentPage = 0, detachedId = Nothing, detachedSize = Nothing}) (TerminalP {paneGroups = fromList [], paneTabs = Just TopP, currentPage = 2, detachedId = Nothing, detachedSize = Nothing}) 482)], paneTabs = Just LeftP, currentPage = 6, detachedId = Nothing, detachedSize = Nothing}) (TerminalP {paneGroups = fromList [], paneTabs = Just TopP, currentPage = -1, detachedId = Nothing, detachedSize = Nothing}) 494
+Population:    [(Just (BreakpointsSt BreakpointsState),[SplitP TopP,GroupP "Debug",SplitP BottomP]),(Just (ErrorsSt ErrorsState),[SplitP TopP]),(Just (FilesSt FilesState),[SplitP TopP]),(Just (GrepSt GrepState),[SplitP TopP]),(Just (InfoSt (InfoState (Just (Real (RealDescr {dscName' = "filterM", dscMbTypeStr' = Just "filterM :: forall a (m::* -> *).\n           Monad m -> (a -> m Bool) -> [a] -> m [a]\n", dscMbModu' = Just (PM {pack = PackageIdentifier {pkgName = PackageName "base", pkgVersion = Version {versionBranch = [4,6,0,0], versionTags = []}}, modu = ModuleName ["Control","Monad"]}), dscMbLocation' = Nothing, dscMbComment' = Nothing, dscTypeHint' = VariableDescr, dscExported' = True}))))),[SplitP TopP,GroupP "Browser"]),(Just (LogSt LogState),[SplitP TopP]),(Just (BufferSt (BufferState "/home/madjestic/Projects/Haskell/Scheme48h/src/Main.hs" 1735)),[SplitP TopP]),(Just (ModulesSt (ModulesState 394 (SystemScope,False) (Just (ModuleName ["Control","Monad"]),Just "filterM") (ExpanderState {packageExp = ([],[]), packageExpNoBlack = ([],[]), packageDExp = ([],[]), packageDExpNoBlack = ([[5]],[]), workspaceExp = ([],[]), workspaceExpNoBlack = ([],[]), workspaceDExp = ([],[]), workspaceDExpNoBlack = ([],[]), systemExp = ([[16,8],[16]],[]), systemExpNoBlack = ([[87,8],[87]],[])}))),[SplitP TopP,GroupP "Browser"]),(Just (SearchSt (SearchState {searchString = "rem", searchScope = SystemScope, searchMode = Prefix {caseSense = False}})),[SplitP TopP]),(Just (TraceSt TraceState),[SplitP TopP,GroupP "Debug",SplitP BottomP]),(Just (VariablesSt VariablesState),[SplitP TopP,GroupP "Debug",SplitP BottomP]),(Just (WorkspaceSt WorkspaceState),[SplitP TopP]),(Just (BufferSt (BufferStateTrans "_Eval.hs" "\n" 0)),[SplitP TopP,GroupP "Debug",SplitP TopP])]
+Window size:   (1022,581)
+Completion size:
+               (750,400)
+Workspace:     Just "/home/madjestic/Projects/Haskell/Scheme48h/scheme48h.lkshw"
+Active pane:   Just "Main.hs"
+Toolbar visible:
+               True
+FindbarState:  (False,FindState {entryStr = "", entryHist = ["*circle*","*gloss","*A","Z","gloss","Circle","Blaze","b","z","1","\"Main\"","Na"], replaceStr = "", replaceHist = [], caseSensitive = False, entireWord = False, wrapAround = False, regex = False, lineNr = 1})
+Recently opened files:
+               ["/home/madjestic/Projects/Haskell/Scheme_in_48_hours/src/Main.hs","/home/madjestic/Projects/Haskell/gloss-examples-1.7.7.2/picture/Clock/Main.hs","/home/madjestic/Projects/Haskell/Entropy/prototypes/src/Main.hs","/home/madjestic/Projects/Haskell/Entropy/src/Main.hs","/home/madjestic/Projects/Haskell/Entropy/prototypes/circles.hs","/home/madjestic/.leksah-0.13/leksah-welcome/src/Main.hs"]
+Recently opened workspaces:
+               ["/home/madjestic/Projects/Haskell/Test/Test.lkshw","/home/madjestic/Projects/Haskell/Entropy/Entropy.lkshw","/home/madjestic/leksah.lkshw"]

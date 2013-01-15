@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>Old Software Sites - Complete.Org</title>
+<script type="text/javascript" src="/moin_static/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static/moniker/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static/moniker/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static/moniker/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static/moniker/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static/moniker/css/msie.css">
+<![endif]-->
+
+
+
+
+<script type="text/javascript" src="/moin_static/moniker/js/actionmenuoptions.js"></script>
+
+<link rel="Start" href="/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="/OldSoftwareSites?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/OldSoftwareSites?action=print">
+<link rel="Search" href="/FindPage">
+<link rel="Index" href="/TitleIndex">
+<link rel="Glossary" href="/WordIndex">
+<link rel="Help" href="/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+
+<div id="header"><div id="logo"><a href="/FrontPage"><font size="+3" color="#280099">Complete.Org</font></a></div></div>
+<div id="sidebar">
+<div class="sidepanel"><h1>Quick Links</h1>
+		<ul id="navibar">
+		<li class="wikilink"><a href="/FrontPage">Complete.Org Home</a></li><li class="wikilink"><a href="/JohnGoerzen">John Goerzen Home</a></li><li class="wikilink"><a href="/FindPage">Advanced Search</a></li>
+		</ul>
+</div>
+<div class="sidepanel"><h1>Search Site</h1>
+<form id="searchform" method="get" action="/OldSoftwareSites">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+
+<input id="searchinput" type="text" name="value" value="" 
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="this">
+    <div id="searchbuttons">
+    <input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</div>
+</form>
+<script type="text/javascript">
+// Initialize search form
+// var f = document.getElementById('searchform');
+// f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+e.value = "";
+searchChange(e);
+searchBlur(e);
+</script>
+</div>
+
+
+</div>
+
+
+<div id="page" lang="en" dir="ltr">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867">
+<h1 id="Software_Has_Moved">Software Has Moved</h1>
+<span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line874">What happened to: <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><ul><li>software.complete.org <span class="anchor" id="line-8"></span></li><li>git.complete.org <span class="anchor" id="line-9"></span></li><li>darcs.complete.org <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span></li></ul><p class="line867"><strong>This data has moved.</strong> <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><p class="line862">Most or all of it can now be found at <a class="http" href="http://github.com/jgoerzen">John Goerzen's github page</a>.  The above services were discontinued in April, 2010. <span class="anchor" id="line-14"></span><span class="anchor" id="bottom"></span></div>
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul id="credits">www.complete.org - served by Debian GNU/Linux<li>
+
+</div>
+</body>
+</html>
+

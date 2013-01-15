@@ -1,0 +1,9 @@
+# Files, realated to leksah key bindings:
+https://github.com/leksah/leksah/blob/master/src/IDE/TextEditor.hs
+https://github.com/leksah/leksah/blob/master/src/IDE/Pane/SourceBuffer.hs
+IDE/Command.hs
+/home/madjestic/.leksah-0.13/packageSources/leksah-0.12.1.3/data/keymap.lkshk
+
+# Instructions on how to build the latest leksah from GitHub
+https://github.com/leksah/leksah/blob/master/.travis.yml
+https://travis-ci.org/leksah/leksah

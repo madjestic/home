@@ -1,0 +1,21 @@
+name: Entropy
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: /home/madjestic/Projects/Haskell/Entropy/LICENSE
+maintainer: madjestic13@gmail.com
+stability: unstable
+bug-reports: madjestic13@gmail.com
+synopsis: Visualize Chromium browsing history
+description: Visualize Chromium browsing history as a network of nodes.
+author: Vlad Lopatin
+data-dir: ""
+ 
+executable Entropy
+    build-depends: HDBC -any, HDBC-sqlite3 -any, QuickCheck -any,
+                   base -any, gloss -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+ 

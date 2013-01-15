@@ -1,0 +1,20 @@
+
+BMP.hs,394
+module Codec.BMP45,46
+readBMP ::87,88
+readBMP fileName88,89
+hGetBMP ::93,94
+hGetBMP h94,95
+parseBMP ::101,102
+parseBMP buf102,103
+parseBMP2 buf111,112
+parseBMP3 fileHeader137,138
+parseBMP4 fileHeader176,177
+writeBMP ::188,189
+writeBMP fileName189,190
+hPutBMP ::197,198
+hPutBMP h198,199
+renderBMP ::203,204
+renderBMP bmp204,205
+bmpDimensions ::212,213
+bmpDimensions bmp213,214

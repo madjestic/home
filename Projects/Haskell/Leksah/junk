@@ -1,0 +1,39 @@
+13:19:14me 03:17 < hamishmack> We chose git becuase it currently has better tools (SmartGit and gi
+ 3 13:19:29me koroche im nravitsja GUI k Git
+ 4 13:19:48me nu i github, po kakim-to prichinam predpochtitelnee darcs hub
+ 5 13:20:11me ja lichno eshe v samom nachale testirovanija, ne znaju kak ono github VS darcshub
+ 6 13:20:14me nado potestit' 
+ 7 13:20:55me kak sootnositsja SmartGit s instrumentami darcs tozhe ne jasno
+ 8 
+ 9 Work out how to change the GtkSourceView bindings (this might be difficult)
+10 03:06 < hamishmack> or you could add to the TextEditor and SourceBuffer modules in Leksah the
+11                     commands you want to bind
+12 03:07 < hamishmack> (assuming they are not already there)
+13 03:09 < hamishmack> Those modules are this one… 
+14                     https://github.com/leksah/leksah/blob/master/src/IDE/TextEditor.hs (which trie
+15                     to abstract the differences between Yi and GtkSourceView)
+16 03:09 < hamishmack> And this one… 
+17                     https://github.com/leksah/leksah/blob/master/src/IDE/Pane/SourceBuffer.hs
+
+Here is how to build the latest Leksah from git… 
+                    https://github.com/leksah/leksah/blob/master/.travis.yml
+03:17 < hamishmack> We chose git becuase it currently has better tools (SmartGit and github)
+03:18 < hamishmack> Here is the output of travis for that build script…
+03:18 < hamishmack> https://travis-ci.org/leksah/leksah
+03:19 < hamishmack> you don't have to install travis or anything.  It is just handy for checking 
+                    that things build.
+
+03:21 < hamishmack> Once you have done the "cabal-meta install -fgtk3 --force-reinstalls" step (the 
+                    last one)
+03:22 < hamishmack> you should be able to run leksah and do Package -> Add to add the leksah.cabal
+03:23 < hamishmack> Then you can rebuild leksah in leksah
+
+04:09 < hamishmack> Oh there is one other module in the chain
+04:09 < hamishmack> IDE.Command
+04:11 < madjestic> ok, but is my logic correct, or is that totally wrong?
+04:11 < hamishmack> So in there it defined commands that can be in the keymap.lkshk file
+04:11 < madjestic> ah
+04:14 < madjestic> that makes sense
+04:19 < madjestic> I don't think I see a command in IDE/Command.hs, related to the end of line
+
+/home/madjestic/.leksah-0.13/packageSources/leksah-0.12.1.3/data/keymap.lkshk

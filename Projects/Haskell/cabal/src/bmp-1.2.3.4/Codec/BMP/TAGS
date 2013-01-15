@@ -1,0 +1,160 @@
+
+Base.hs,136
+module Codec.BMP.Base1,2
+data BMP13,14
+	= BMP14,15
+	{ bmpFileHeader		::15,16
+	, bmpBitmapInfo		::16,17
+	, bmpRawImageData	::17,18
+
+BitmapInfo.hs,213
+module Codec.BMP.BitmapInfo1,2
+data BitmapInfo14,15
+	= InfoV3 BitmapInfoV315,16
+	| InfoV4 BitmapInfoV416,17
+	| InfoV5 BitmapInfoV517,18
+instance Binary21,22
+getBitmapInfoV3 ::47,48
+getBitmapInfoV3 bi48,49
+
+BitmapInfoV3.hs,658
+module Codec.BMP.BitmapInfoV32,3
+data BitmapInfoV319,20
+	= BitmapInfoV3			20,21
+	{ -- | (+0) Size21,22
+	  dib3Size		::22,23
+	, dib3Width		::25,26
+	, dib3Height		::28,29
+        , dib3HeightFlipped     ::32,33
+	, dib3Planes		::35,36
+	, dib3BitCount		::38,39
+	, dib3Compression	::41,42
+	, dib3ImageSize		::49,50
+	, dib3PelsPerMeterX	::52,53
+	, dib3PelsPerMeterY	::55,56
+	, dib3ColorsUsed	::58,59
+	, dib3ColorsImportant	::61,62
+sizeOfBitmapInfoV3 ::67,68
+sizeOfBitmapInfoV3 =68,69
+instance Binary71,72
+checkBitmapInfoV3 ::124,125
+checkBitmapInfoV3 header125,126
+imageSizeFromBitmapInfoV3 ::173,174
+imageSizeFromBitmapInfoV3 header174,175
+
+BitmapInfoV4.hs,586
+module Codec.BMP.BitmapInfoV42,3
+data BitmapInfoV418,19
+	= BitmapInfoV419,20
+	{ -- | Size of20,21
+	  dib4InfoV3		::21,22
+	, dib4RedMask		::25,26
+	, dib4GreenMask		::26,27
+	, dib4BlueMask		::27,28
+	, dib4AlphaMask		::28,29
+	, dib4ColorSpaceType	::31,32
+	, dib4Endpoints		::36,37
+	, dib4GammaRed		::40,41
+	, dib4GammaGreen	::41,42
+	, dib4GammaBlue		::42,43
+sizeOfBitmapInfoV4 ::48,49
+sizeOfBitmapInfoV4 =49,50
+instance Binary52,53
+checkBitmapInfoV4 ::96,97
+checkBitmapInfoV4 headerV497,98
+imageSizeFromBitmapInfoV4 ::162,163
+imageSizeFromBitmapInfoV4 headerV4163,164
+
+BitmapInfoV5.hs,413
+module Codec.BMP.BitmapInfoV51,2
+data BitmapInfoV515,16
+	= BitmapInfoV516,17
+	{ dib5InfoV4		::17,18
+	, dib5Intent		::20,21
+	, dib5ProfileData	::24,25
+	, dib5ProfileSize	::27,28
+	, dib5Reserved		::30,31
+sizeOfBitmapInfoV5 ::35,36
+sizeOfBitmapInfoV5 =36,37
+instance Binary39,40
+checkBitmapInfoV5 ::65,66
+checkBitmapInfoV5 header66,67
+imageSizeFromBitmapInfoV5 ::71,72
+imageSizeFromBitmapInfoV5 72,73
+
+CIEXYZ.hs,92
+module Codec.BMP.CIEXYZ1,2
+data CIEXYZ 12,13
+	= CIEXYZ Word3213,14
+instance Binary17,18
+
+Compression.hs,315
+module Codec.BMP.Compression1,2
+data Compression11,12
+        = CompressionRGB12,13
+        | CompressionRLE813,14
+        | CompressionRLE414,15
+        | CompressionBitFields15,16
+        | CompressionJPEG16,17
+        | CompressionPNG17,18
+        | CompressionUnknown Word3218,19
+instance Binary22,23
+
+Error.hs,912
+module Codec.BMP.Error1,2
+data Error9,10
+        = ErrorBadMagic12,13
+        { errorMagic            ::13,14
+	| ErrorFileHeaderTruncated16,17
+	| ErrorImageHeaderTruncated19,20
+	| ErrorImageDataTruncated22,23
+        { errorBytesNeeded      ::23,24
+        , errorBytesAvailable   ::24,25
+	| ErrorReservedFieldNotZero27,28
+	| ErrorDodgyFileHeaderFieldOffset31,32
+        { errorFileHeaderOffset ::32,33
+	| ErrorUnhandledBitmapHeaderSize36,37
+        { errorBitmapHeaderSize ::37,38
+	| ErrorUnhandledPlanesCount40,41
+        { errorPlanesCount      ::41,42
+	| ErrorUnhandledColorDepth44,45
+        { errorColorDepth       ::45,46
+	| ErrorUnhandledCompressionMode48,49
+        { errorCompression      ::49,50
+        | ErrorImagePhysicalSizeMismatch 53,54
+        { errorImageSizeFromHeader  ::54,55
+        , errorImageSizeOfBuffer    ::55,56
+        | ErrorInternalErrorPleaseReport58,59
+
+FileHeader.hs,415
+module Codec.BMP.FileHeader1,2
+data FileHeader15,16
+	= FileHeader			16,17
+	{ -- | (+0) Magic17,18
+	  fileHeaderType	::18,19
+	, fileHeaderFileSize	::21,22
+	, fileHeaderReserved1	::24,25
+	, fileHeaderReserved2	::27,28
+	, fileHeaderOffset	::30,31
+sizeOfFileHeader ::36,37
+sizeOfFileHeader =37,38
+bmpMagic ::41,42
+bmpMagic =42,43
+instance Binary45,46
+checkFileHeader ::69,70
+checkFileHeader header70,71
+
+Pack.hs,119
+module Codec.BMP.Pack2,3
+packRGBA32ToBMP width36,37
+packRGBA32ToRGB24 width108,109
+packRGBA32ToRGB24' width128,129
+
+Unpack.hs,209
+module Codec.BMP.Unpack2,3
+unpackBMPToRGBA32 ::19,20
+unpackBMPToRGBA32 bmp20,21
+packRGB24ToRGBA32 width43,44
+packRGB24ToRGBA32' width64,65
+packRGB32ToRGBA32 width115,116
+packRGB32ToRGBA32' width129,130
