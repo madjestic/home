@@ -18,8 +18,8 @@ $
 
 # Command Line History (newest to oldest):
 :q
-:wqa
 :w
+:wqa
 :diffthis
 :vs ../src/Trees.hs
 :!ls
@@ -194,18 +194,24 @@ $
 	-
 
 # File marks:
-'0  1  0  /home/.keep
-'1  1  0  /usr/portage/profiles/releases/freebsd-9.1/packages
-'2  1  0  /usr/portage/profiles/releases/freebsd-9.1/package
-'3  50  0  /usr/portage/profiles/releases/freebsd-9.1/package.mask
-'4  25  2  /usr/portage/profiles/releases/freebsd-9.1/ChangeLog
-'5  1  0  /usr/portage/profiles/releases/make.defaults
-'6  1  0  /usr/portage/profiles/releases/13.0/package.mask
-'7  1  0  /usr/portage/profiles/releases/13.0/make.defaults
-'8  1  0  /usr/portage/profiles/releases/13.0/parent
-'9  1  0  /usr/portage/profiles/default/linux/x86/13.0/use.mask
+'0  29  0  ~/README
+'1  213  0  ~/.git/COMMIT_EDITMSG
+'2  209  0  ~/.git/COMMIT_EDITMSG
+'3  40  0  ~/.git/COMMIT_EDITMSG
+'4  1  0  /home/.keep
+'5  1  0  /usr/portage/profiles/releases/freebsd-9.1/packages
+'6  1  0  /usr/portage/profiles/releases/freebsd-9.1/package
+'7  50  0  /usr/portage/profiles/releases/freebsd-9.1/package.mask
+'8  25  2  /usr/portage/profiles/releases/freebsd-9.1/ChangeLog
+'9  1  0  /usr/portage/profiles/releases/make.defaults
 
 # Jumplist (newest first):
+-'  29  0  ~/README
+-'  1  0  ~/README
+-'  213  0  ~/.git/COMMIT_EDITMSG
+-'  209  0  ~/.git/COMMIT_EDITMSG
+-'  40  0  ~/.git/COMMIT_EDITMSG
+-'  1  0  ~/.git/COMMIT_EDITMSG
 -'  1  0  /home/.keep
 -'  1  0  /usr/portage/profiles/releases/freebsd-9.1/packages
 -'  1  0  /usr/portage/profiles/releases/freebsd-9.1/package
@@ -234,7 +240,6 @@ $
 -'  1  0  /usr/portage/profiles/use.desc
 -'  30  0  ~/README
 -'  16  0  ~/README
--'  1  0  ~/README
 -'  28  4  ~/Projects/Haskell/Entropy/prototypes/DTree.hs
 -'  1  0  ~/Projects/Haskell/Entropy/prototypes/.DTree.hs.swp
 -'  1  0  ~/Projects/Haskell/Entropy/prototypes/DTree.hs
@@ -299,13 +304,14 @@ $
 -'  2  6  ~/Projects/Haskell/Entropy/prototypes/random1.hs
 -'  1  0  ~/Projects/Haskell/Entropy/prototypes/random1.hs
 -'  4  0  ~/Projects/Haskell/Entropy/prototypes/random.hs
--'  13  4  ~/Projects/Haskell/Entropy/prototypes/random.hs
--'  1  0  ~/Projects/Haskell/Entropy/prototypes/random.hs
--'  1  0  ~/Projects/Haskell/Entropy/src/proto/update
--'  25  0  ~/Projects/Haskell/Entropy/src/proto/2
--'  1  0  ~/Projects/Haskell/Entropy/src/proto/2
 
 # History of marks within files (newest to oldest):
+
+> ~/README
+	"	29	0
+
+> ~/.git/COMMIT_EDITMSG
+	"	213	0
 
 > /home/.keep
 	"	1	0
@@ -360,9 +366,3 @@ $
 
 > /usr/portage/profiles/use.local.desc
 	"	865	0
-
-> /usr/portage/profiles/use.desc
-	"	392	0
-
-> ~/README
-	"	30	0
