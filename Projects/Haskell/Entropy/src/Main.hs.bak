@@ -9,40 +9,33 @@
 -- Stability   :  unstable
 -- Portability :
 --
--- |
+-- this is supposed to draw circles, matching the number of list entries
 --
 -----------------------------------------------------------------------------
 
 module Main (
-    main
+main
 ) where
 
-import Control.Monad (unless)
-import Data.List (stripPrefix)
-import System.Exit (exitFailure)
-import Test.QuickCheck.All (quickCheckAll)
-import Graphics.Gloss
 
--- Simple function to create a hello message.
-hello s = "Hello " ++ s
+import Circles
+import Query
+import Trees
 
--- Tell QuickCheck that if you strip "Hello " from the start of
--- hello s you will be left with s (for any s).
-prop_hello s = stripPrefix "Hello " (hello s) == Just s
+--treeToTriples :: [Tree [a]] -> [(b,b,b)]
+--
+--treeToTriples :: Tree [a] -> [(b,b,b)]
+--treeToTriple tree
+--              | leaf tree == True =
 
--- Hello World
+
+
 exeMain = do
-    putStrLn (hello "World")
+    draw_circles' $ rstorxys [50,70,60,10,80,30]
+    --draw_circles' [(50,70,60)]
 
--- Entry point for unit tests.
-testMain = do
-    allPass <- $quickCheckAll -- Run QuickCheck on all prop_ functions
-    unless allPass exitFailure
 
--- This is a clunky, but portable, way to use the same Main module file
--- for both an application and for unit tests.
--- MAIN_FUNCTION is preprocessor macro set to exeMain or testMain.
--- That way we can use the same file for both an application and for tests.
+
 #ifndef MAIN_FUNCTION
 #define MAIN_FUNCTION exeMain
 #endif

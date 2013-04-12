@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/madjestic/bmp-1.2.3.4/Codec/BMP'
 let g:netrw_dirhist_2='/home/madjestic/.vim'
 let g:netrw_dirhist_3='/home/madjestic/.irssi'
 let g:netrw_dirhist_4='/home/madjestic/git/Hello-World/.git'
+let g:netrw_dirhist_5='/home/madjestic/SpaceInvaders-0.4.2'
+let g:netrw_dirhist_6='/usr/portage/profiles/default/linux/x86/10.0/desktop'
+let g:netrw_dirhist_7='/home/madjestic/Projects/Haskell/gloss-examples-1.7.7.2/picture/Styrene'

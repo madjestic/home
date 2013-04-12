@@ -13,9 +13,10 @@ author: Vlad Lopatin
 data-dir: ""
  
 executable Entropy
-    build-depends: HDBC -any, HDBC-sqlite3 -any, QuickCheck -any,
-                   base -any, gloss -any
+    build-depends: AC-Angle -any, HDBC -any, HDBC-sqlite3 -any,
+                   QuickCheck -any, base -any, containers -any, gloss -any
     main-is: Main.hs
     buildable: True
     hs-source-dirs: src
+    other-modules: Query Circles Circles
  

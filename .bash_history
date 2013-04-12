@@ -5629,3 +5629,1521 @@ ls
 ./DiagramsTutorial 
 ls
 vim > {-# LANGUAGE NoMonomorphismRestriction #-}
+chromium
+irssi 
+su
+cd Downloads/
+ls
+acroread Haskell_road_to_maths.pdf 
+cabal unpack spaceinvaders
+ls
+vim SpaceInvaders-0.4.2/
+cd SpaceInvaders-0.4.2/
+ls
+cd src/
+ls
+cd ..
+ls
+vim SpaceInvaders.cabal 
+vim SpaceInvaders.cabal 
+cd ~
+cabal install netwire
+cabal update
+cabal install netwire
+python
+vim print.cpp
+gcc print.cpp 
+vim print.cpp
+gcc print.cpp 
+:q
+gcc print.cpp 
+vim print.cpp
+gcc print.cpp 
+vim print.cpp
+:q
+exit
+exit
+echo "GHC_RUNTIME_LINKER_FLAG=-lHSrts-ghc7.4.2.so" >> junk 
+chromium junk 
+su
+echo "OSError: /usr/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0-ghc7.6.1.so: undefined symbol: stg_forkOnzh" >> junk 
+chromium junk 
+cd //usr/lib/ghc-7.6.1/
+ls | grep -i ghc7.6.1
+exit
+ghc
+ghc -V
+exit
+cd Projects/Python/Junk/
+vim foo.py
+python iter.py 
+python iter.py 
+python iter.py 
+ls
+python iter.py 
+vim iter_.py 
+python iter.py 
+python iter.py 
+python
+ls
+python iter.py 
+python -m cProfile iter.py 
+python -m cProfile iter.py 
+cd ~
+source current 
+exit
+cd Projects/Python/Junk/
+ls
+cd ..
+mkdir SPH
+cp Junk/sph.py ./SPH/
+cd SPH/
+ls
+vim sph.py 
+vim README
+ls
+cd ../Junk/
+ls
+vim iter.py
+ls
+vim iter_.py
+python iter_.py 
+vim iter_.py
+ls
+vim iter.py 
+vim iter.py 
+cd ~
+source current 
+ls
+vim circles.hs
+ls
+vim query.hs
+vim query_.hs 
+ls
+vim quickSort.hs 
+vim logic.hs 
+ls
+ exit
+random
+random (mkStdGen 100)
+:m System.Random
+ghci
+exit
+cd Projects/Python/
+mkdir FFI
+ls
+cd FFI/
+ls
+mkdir tutorial
+ls
+cd tutorial/
+ls
+ls
+mkdir py
+mkdir hs
+ls
+cd py/
+ls
+mkdir ProjectName
+ls
+cd ../hs/
+mkdir ProjectName
+exit
+cd Projects/Python/FFI/
+ls
+cd basic/
+ls
+cd hs/
+ls
+cd basic/
+ls
+exit
+cd Projects/Python/FFI/
+ls
+cd basic/
+ls
+exit
+echo $PATH
+cd Projects/Python/FFI/basic/hs
+ls
+cd basic/
+ls
+ghc Basic.hs 
+ls
+ghc Basic.hs 
+ls
+cp Basic.hs Basic.hs.bak
+ghc Basic.hs
+ls
+ghci
+which ghc
+ghc V
+ghc V
+ghc -\]V
+ghc -V
+ls
+ls
+vim Basic.hs
+cd /usr/lib
+ls
+man ln
+cd /home/
+ls
+ln
+ln --help
+ls
+ln -s madjestic foo
+cd ~
+ls
+ln -s /home/madjestic foo
+ls
+cd foo/
+ls
+cd ~
+ls
+rm foo
+ls
+ls
+cd /usr/lib
+su
+cd ~
+ls
+cd Projects/Python/
+ls
+cd FFI/
+ls
+cd tutorial
+ls
+source makeenv 
+echo $H
+ls
+cd hs
+ls
+cd tutorial/
+ls
+ghc Basic.hs 
+cd ..
+cd ..
+ls
+ghc module.c 
+ls
+rm module.o
+ls
+ls
+mk
+cd Downloads/
+ls
+vim bootstrap.py 
+cp bootstrap.py ~/Projects/Python/FFI/
+ls
+cd ~/Projects/Python/FFI/
+ls
+python bootstrap.py 
+ls
+mv tutorial tutorial_
+ls
+python bootstrap.py tutorial
+ls
+cd tutorial
+ls
+vim makeenv 
+ls
+cd py/
+ls
+cd tutorial/
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd hs/tutorial/
+ls
+ghc Basic.hs 
+vim Basic.hs 
+ghc Basic.hs 
+vim Basic.hs 
+vim Basic.hs 
+cd ..
+ls
+cd ..
+ls
+ls
+ghc module.c 
+make
+ls
+cd ..
+ls
+rm -rf tutorial
+ls
+python bootstrap.py basic
+ls
+cd basic/
+ls
+ghc module.c 
+ls
+rm module.
+rm module.o
+ls
+cd hs
+ls
+cd basic/
+ls
+ghc Basic.hs 
+ls
+vim Basic.hs 
+vim Basic.hs 
+cd ..
+ls
+cd ..
+ls
+vim makeenv 
+vim makeenv 
+ls
+make module.c 
+ghc module.c 
+ls
+rm module.o
+ls
+ghc makeenv 
+ls
+cd ..
+ls
+rm -rf basic
+ls
+python bootstrap.py tutorial
+ls
+cd tutorial
+ls
+source makeenv 
+vim makeenv 
+source makeenv 
+vim makeenv 
+vim makeenv 
+ls
+mk
+cd Projects/Python/
+ls
+cd FFI/
+ls
+cd tutorial
+ls
+source makeenv 
+mk
+chromium
+su
+ls
+vim .bashrc 
+cd Projects/Python/FFI/tutorial
+ls
+source makeenv 
+mk
+exit
+source current 
+ls
+cd hs/tutorial
+ls
+vim Basic.hs 
+cd ../..
+ls
+vim module.c 
+cd ..
+ls
+rm -rf tutorial
+ls
+ls
+python bootstrap.py NucleoProf
+ls
+cd NucleoProf/
+ls
+source makeenv 
+vim makeenv 
+source makeenv 
+ls
+vim makeenv 
+source makeenv 
+mk
+ls
+mkdir build
+ls
+mk
+cd build/
+ls
+mkdir NucleoProf
+ls
+cd ..
+source makeenv 
+mk
+ls
+cd py/
+ls
+cd NucleoProf/
+ls
+ls
+vim __init__.py 
+ls
+python Basic.py 
+exit
+screenshot scr
+screenshot scr
+exit
+cd Projects/Python/FFI/ls
+cd Projects/Python/FFI/
+cd tutorial
+ls
+source makeenv 
+ls
+vim makeenv 
+cd ..
+ls
+ghci
+echo $H
+vim current 
+source current 
+ls
+source makeenv 
+echo $H
+ls
+echo $H
+ls
+source makeenv 
+mk() exit
+mk
+ls
+mkdir build
+ls
+mk
+mk
+source makeenv 
+ls
+cd build/
+ls
+cd ..
+ls
+mk
+ls
+cd build/
+ls
+rm module.o 
+cd ..
+ls
+mk
+mk
+echo $GHC_RUNTIME_FSUFFIX 
+echo $GHC_LIBS_PREFIX 
+ls
+mkdir NucleoProf
+ls
+mk
+mk -v
+-v
+ls
+cp makeenv makeenv.bak
+source makeenv
+mk
+ls
+cd NucleoProf/
+ls
+cd ..
+ls
+cd build/
+ls
+cd ..
+ls
+ls
+echo $GHC_LIBS_PREFIX 
+echo $GHC_RUNTIME_FSUFFIX 
+ghc -help
+man ghc
+ghc -shared -dynamic -fPIC -no-hs-main
+ghc -shared -dynamic -fPIC -no-hs-main -optl-Wl,-rpath,$GHC_LIBS_PREFIX -l$GHC_RUNTIME_FSUFFIX
+ghc -shared -dynamic -fPIC -no-hs-main -optl-Wl,-rpath,$GHC_LIBS_PREFIX -l$GHC_RUNTIME_FSUFFIX 
+ls
+cd ~
+ls
+source current 
+vim current 
+ls
+source current 
+ls
+cd py/NucleoProf/
+ls
+chromium
+chromium
+chromium
+vim junk 
+chromium junk 
+irssi 
+cd /etc/udev/rules.d/
+ls
+ls -la
+vim 80-net-name-slot.rules 
+cd ~
+ls
+ echo " http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames" >> junk 
+vim junk 
+chromium junk 
+cd /etc/udev/rules.d/
+ls
+vim 80-net-name-slot.rules 
+cd /boot
+ls
+cd /usr/src/
+ls
+cd linux
+ls
+eselect news
+sudo eselect news read new
+sudo eselect news read item
+sudo eselect news list
+sudo eselect news read 7
+vim /etc/fstab 
+vim /etc/fstab 
+sudo vim /etc/fstab 
+ls
+cd images/
+ls
+cd screenshots/
+ls
+mk
+nm
+mc
+cd ~
+ls
+echo "http://hackage.haskell.org/trac/ghc" >> junk 
+chromium junk 
+ls
+cd images/screenshots/
+ls
+ghc
+ghc -V
+cd ~
+ls
+vim README 
+su
+alsamixer 
+vim README 
+cd /etc/portage/
+l
+ls
+sudo vim package.use 
+cd ~
+vim README 
+emerge --search leksah
+         
+cd /etc/portage/
+sudo vim package.use 
+ls
+vim package.keywords
+vim make.profile/
+ls
+vim make.
+vim make.conf
+cd ~
+ls
+vim README 
+su
+rm -rf .mozilla
+sudo find // | grep -i firefox
+vim README 
+su
+vim README 
+sudo
+su
+alsamixer 
+alsamixer 
+vim README 
+eselect
+eselect news
+eselect news new
+eselect news read new
+sudo eselect news read new
+cd Projects/Haskell/Entropy/prototypes/
+ls
+vim foo.hs 
+ls
+vim circles.hs
+vim query_.hs 
+leksah
+su
+chromium
+sudo
+su
+vim README 
+cd .irssi/
+ls
+cd ..
+ls
+cd .irssi/
+ls -la
+cd ..
+ls
+cd irclogs/
+ls
+cd freenode/
+ls
+vim \#gentoo.log 
+vim \#gentoo.log 
+ls -d /sys/class/net/*
+vim \#gentoo.log 
+irssi 
+EXIT
+exit
+exit
+urxvt
+gcc-config -l
+gcc-config set 1
+gcc-config 1
+sudo gcc-config 1
+gcc
+gcc -V
+gcc -V
+gcc -v
+urxvt
+chromium
+gcc
+echo " * gcc-config: Active gcc profile is invalid!
+gcc-config: error: could not run/locate 'gcc'
+" >> junk
+chromium junk 
+startx 
+sudo reboot
+gcc
+su
+history 
+chromium
+gcc -v
+ghci
+su
+cd Projects/
+ls
+mkdir Valkyrie
+git clone https://github.com/bmod/Valkyrie
+git clone https://github.com/bmod/Valkyrie
+ls
+cd Valkyrie/
+ls
+cd ..
+ls
+cd Valkyrie/
+git clone https://github.com/bmod/Valkyrie
+ls
+rm Valkyrie/
+rm Valkyrie
+rm -R Valkyrie
+ls -la
+cd ..
+ls
+rm -R Valkyrie
+ls
+git clone https://github.com/bmod/Valkyrie
+ls -la
+cd Valkyrie/
+ls -la
+cd ..
+history | grep -i git
+su
+su
+irssi 
+source current 
+source current 
+ls
+ghci
+cd Projects/Haskell/Excercises/
+ls
+ghci
+cd Projects/Haskell/
+ls
+mkdit Excercises
+mkdir Excercises
+ls
+cd Excercises/
+ls
+vim foo.hs
+su
+echo "[*] Maintain a devtmpfs filesystem" >> junk 
+chromium junk 
+cd Projects/Haskell/
+chromium README
+cd ~
+ls
+vim README 
+vim junk 
+chromium junk 
+cd Projects/Haskell/
+ls
+ls
+cat README >> chromium
+cd ~
+chromium junk 
+chromium junk 
+su
+chromium
+alsamixer 
+vim .Xresources
+vim .Xresources
+cd Downloads/
+ls
+unzip 3_symcraft-0.1.zip 
+cd symcraft-0.1/
+ls
+ls -la
+ls -la
+cd data/
+ls
+ls -la
+cd ..
+ls
+vim game 
+vim types 
+vim ui 
+vim unit 
+alsamixer 
+alsamixer 
+cd ~
+ls
+cd irclogs/freenode/
+vim \#gentoo
+cd \#gentoo
+ls
+vim \#gentoo.log 
+cd ~
+ls
+cd Projects/Haskell/
+ls
+vim README 
+ls
+cd ~
+vim README 
+history 
+history | grep -i vim
+ls
+cd Projects/
+ls
+cd Haskell/
+ls
+cd FFI/
+ls
+cd ..
+ls
+cd Excercises/
+ls
+cd ~
+find | grep -i README
+cd Projects/
+find | grep -i README
+find | grep -i NOTES
+cd Haskell/Entropy/prototypes/
+ls
+vim README 
+ls
+cat README 
+cat README >> ~/Projects/Haskell/README
+cd ~/Projects/Haskell/
+ls
+vim README 
+chromium README 
+vim README 
+cd Projects/Haskell/Entropy/
+ls
+cd prototypes/
+ls
+vim foo.hs 
+ls
+vim circles.hs
+ls
+ghc circles.hs
+vim circles.hs
+vim circles.hs
+ls
+vim foo.hs 
+vim query.hs
+ls
+vim query_.hs 
+ls
+vim foo.hs 
+vim circles.hs
+irssi 
+ghci
+cd Projects/Haskell/Entropy/prototypes/
+ghci
+ls
+ghci
+ghci
+ghci
+ghci
+ls
+cd Projects/
+ls
+cd vcs/
+ls
+cd ..
+mkdir darc_test
+ls
+cd darc_test/
+darc init
+darcs init
+echo foo > file1
+vim file1 
+darcs add file1 
+darcs whatsnew
+darcs whatsnew -sl
+darcs status
+ls
+ls
+cabal unpack gloss
+cabal update
+ls
+rm -rf gloss-1.7.8.1
+ls
+cabal --help
+cabal list gloss
+cabal install gloss
+cabal install gloss-examples
+cd Projects/Haskell/Entropy/src/
+ls
+vim Main.hs
+ls
+cd ..
+ls
+cd prototypes/
+ls
+vim junk 
+chromium junk 
+su
+cd .cabal/packages/hackage.haskell.org/gloss-examples/
+ls
+cd 1.7.8.1/gloss-examples-1.7.8.1
+ls
+cd picture/
+ls
+cd Easy/
+echo "cd ~/.cabal/packages/hackage.haskell.org/gloss-examples/1.7.8.1/gloss-examples-1.7.8.1/picture/Easy" >> /home/madjestic/gloss-examples
+ls
+ls
+vim Main.hs 
+python
+exit
+source entropy 
+ghci
+ghci
+ghci
+ghci
+ghci
+hci
+ghci
+hci
+ghci
+ghci
+ls
+echo "draw'' (10.0, 10.0) [1..10] (circles' (10.0, 10.0) [1..10])" >> README
+ls
+ghci
+vim README 
+ghci
+echo "draw' :: (Float, Float) -> [Float] -> IO()
+draw' (x, y) xs = display' $ circles' (x, y) xs
+
+}:
+:q
+vim README 
+chromium README 
+ghci
+chromium README 
+ghci
+;s
+ls
+ghci
+ghci circles.hs
+ghci
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+ghci circles.hs
+screenshot scr
+screenshot scr
+g;uioy
+exit
+source current 
+ls
+ghci foo :: Num a => [a] -> a
+foo [] x + foo xs
+foo' :: Num a => [a] -> a
+foo (x:xs)
+
+--foo' [] = 0 
+--foo' (x:xs) = x + foo xs
+
+ghci circles.hs
+ghci
+cd Query/
+ls
+ghci query_.hs 
+cd ..
+ls
+mv History ./Query/
+ls
+cd Query/
+ls
+ghci query_.hs 
+ghci query_.hs 
+ghci query_.hs 
+ls
+ghci
+vim current 
+cp current entropy
+source entropy 
+ls
+vim circles.hs
+cp circles.hs circles.hs.bak
+vim circles.hs
+ls
+vim logic.hs 
+vim random_exr01.hs
+ls
+vim sequence.hs
+ls
+cd ..
+ls
+cd src/
+ls
+vim Main.hs
+cd ../prototypes/
+ls
+vim circles.hs
+ls
+vim circles.hs.short 
+vim circles.hs.even_shorter 
+vim circles.hs.short 
+cp circles.hs.short circles.hs
+vim circles.hs
+cp circles.hs.bak circles.hs
+vim circles.hs
+ls
+vim foo.hs 
+ls
+vim circles.hs
+ls
+mkdir Cirles
+mv circles.* ./Cirles/
+ls
+cd Cirles/
+ls
+cd ..
+ls
+mkdir Query
+mv query* ./Query/
+ls
+cd Query/
+ls
+vim query_.hs 
+ls
+vim query_.hs 
+vim query_.hs 
+vim query_.hs 
+vim
+vim query_.hs 
+vim query_.hs 
+source current 
+ls
+cd Query/
+ls
+sqlite3 History 
+sqlite3 --help
+sqlite3 History 
+sqlite3 History 
+sqlite3 History 
+ls
+cd ../Cirles/
+ls
+sqlite3 History 
+chromium
+./connect2wifi 
+./ping 
+echo "No instance for (Show (IO ())) arising from a use of `print'" >> junk
+vim junk 
+chromium junk 
+cd .xmonad/
+ls
+ghc xmonad.hs
+cd ~
+vim README 
+cd Projects/Haskell/Entropy/prototypes/
+vim README 
+cd ~
+su
+irssi 
+source current 
+ls
+vim quickSort.hs 
+ls
+ls
+vim quickSort.hs 
+cd Projects/Haskell/Entropy/prototypes/Cirles/
+ls
+sqlite3 History 
+ls
+sqlite3 Top\ Sites 
+ls
+sqlite3 Bookmarks 
+ls
+sqlite3 Favicons
+ls
+sqlite3 History 
+ls
+sqlite3 Favicons
+sqlite3 History 
+source current 
+ghci
+alsamixer 
+ls -la
+find ~/ | -i grep History
+find ~/ | grep History
+cp .config/chromium/Default/History Projects/Haskell/Entropy/prototypes/Query/
+alsamixer 
+vim README 
+vim README 
+cd Downloads/
+ls
+vim txtfmt_v24.vba 
+cd ..
+cd .vim
+ls
+cd plugin/
+ls
+vim txtfmt.vim 
+source current 
+ls
+cd Cirles/
+ls
+cd ~
+ls
+cd .config/chromium/Default/
+ls
+vim Top\ Sites
+sqlite3 History
+ls
+cp History ~/Projects/Haskell/Entropy/prototypes/Cirles/
+ls
+cp Top\ Sites ~/Projects/Haskell/Entropy/prototypes/Cirles/
+ls
+clrscr
+clear
+ls
+cp Bookmarks ~/Projects/Haskell/Entropy/prototypes/Cirles/
+vim Bookmarks
+ls
+ls
+
+cp Favicons ~/Projects/Haskell/Entropy/prototypes/Cirles/
+ls
+ls -l
+source current 
+cd Query/
+sqlite3 History 
+sqlite3 History 
+python
+exit
+source current 
+ls
+vim trees.hs 
+vim GlobRegex.hs
+vim trees.hs 
+vim trees.hs 
+vim trees.hs 
+]ls
+ls -la
+rm .trees.hs.swp 
+vim trees.hs 
+vim trees.hs 
+vim trees.hs 
+cp trees.hs.bak trees.hs
+vim trees.hs
+ls
+vim trees.hs
+ls -la
+ ?
+vim trees.hs
+vim treeWalk.hs
+:ghci foo.hs 
+ghci foo.hs 
+exit
+source current 
+vim foo.hs 
+ls
+cd ..
+ls
+leksah
+ls
+cd src/
+ls
+cd ..
+ls
+cp ./prototypes/trees.hs ./src/
+cd src/
+ls
+mv trees.hs Trees.hs
+ls
+ls
+cd ..
+ls
+leksah
+leksah
+ls
+vim Entropy.lksh
+vim Entropy.lkshs 
+ls
+vim Entropy.lkshw
+vim Entropy.cabal
+vim Entropy.cabal.bak 
+cp Entropy.cabal Entropy.cabal.bak.bak
+vim Entropy.cabal
+leksah
+exit
+cd Projects/Haskell/
+ls
+cd ..
+ls
+python
+ls
+cd Python/Junk/
+ls
+python list_singleton.py 
+pythoon
+python
+python
+python
+source current 
+cd ~
+cd Projects/Python/
+ls
+cd Junk/
+ls
+vim list_singleton.py
+cp list_singleton.py list.py
+vim list.py
+source current 
+ls
+cim foo.hs 
+vim foo.hs 
+ls
+ls -la
+rm .trees.hs.swp 
+rm .foo.hs.swp 
+vim foo.hs 
+vim tree.hs
+ls
+vim trees.hs
+vim trees.hs
+cd ..
+ls
+cd src/
+ls
+vim Trees.hs 
+source current 
+ls
+cd ../src/
+ls
+ls
+mkdir proto
+ls
+cd proto/
+ls
+cd ..
+l
+sls
+ls
+cp Trees.hs ./proto/
+cd proto/
+ls
+vim Trees.hs 
+ls
+cd ..
+ls
+ghci Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+source current 
+ls
+ghci
+:l trees.hs 
+ghci trees.hs 
+ghci
+ghci
+ghci
+ghci
+ghci treeWalk.hs 
+ghci tree.hs
+ls
+ghci trees.hs
+ghci
+ls
+ghci
+ghci
+ls
+mkdir Trees
+ls
+cp trees.hs ./Trees/Trees.hs
+ghci
+cd ../src/proto/
+ls
+ghci
+ls
+cd ..
+alsamixer 
+alsamixer 
+alsamixer 
+ls
+cd Projects/Haskell/cabal/
+ls
+cd src/
+ls
+cd gloss-1.7.8.1/
+ls
+cd Graphics/
+ls
+cd Gloss
+ls
+cd ..
+cd ../..
+cd ../..
+ls
+cd gloss-examples-1.7.7.2/
+ls
+cd picture/
+ls
+cd Clock/
+ls
+ghc Main.hs 
+ls
+./Main 
+ls
+vim Main.hs
+cd ..
+ls
+Styrene/
+cd Styrene/
+ls
+ghc Main.hs 
+ls
+./Main 
+ghc -O2 Main.hs 
+ghc -o2 Main.hs 
+ghc --help
+ghc -O Main.hs 
+ghc -O2 Main.hs 
+./Main 
+ls
+cd .xmonad/
+ls
+vim xmonad.hs
+vim .xmobarrc
+chromium
+cd Projects/Haskell/
+ls
+cd gloss-examples-1.7.7.2/
+ls
+cd picture/Styrene/
+ls
+vim Collide.hs
+cd ~
+ls
+ls
+cd Projects/Haskell/
+ls
+cd Entropy/
+ls
+leksah
+irssi 
+su
+source current
+cd ../src/
+ls
+cd proto/
+ls
+vim Trees.hs 
+vim Trees.hs 
+ls
+vim monads.hs
+vim monads.hs
+ls
+ls
+cd ..
+cd ..
+ls
+cd prototypes/
+ls
+vim README 
+vim monads.hs 
+vim monads2.hs
+source current_entropy_src 
+cd proto/
+
+ls
+cd ..
+ls
+vim Circles.hs 
+ls -la
+rm .Trees.hs.swp 
+rm .Circles.hs.swp 
+ls
+ls
+vim Circles.hs 
+cd ..
+cd prototypes/
+vim monads.hs 
+ls
+vim README 
+ls
+cp .xmobarrc .xmobarrc.orig
+vim .xmobarrc
+source current_entropy_src 
+ls
+cd proto
+ls
+vim Trees.hs 
+ghci Trees.hs 
+chromium Trees.hs 
+ghci Trees.hs 
+chromium Trees.hs 
+ghci Trees.hs 
+ghci Trees.hs 
+ghci
+cd ../..
+cd prototypes/
+ls
+ghci
+ghci
+source current_entropy_src 
+ls
+ghci Circles.hs 
+cd ..
+cd prototypes/
+ghci
+source current
+ls
+vim README 
+ vim GlobRegex.hs 
+vim mapMexr.hs
+vim overload.hs 
+vim primes.hs 
+vim random_exr.hs
+vim sequence.hs
+vim README 
+cd ../src/
+ls
+vim Query.hs 
+cd ~
+ls
+ls -la
+cd .irssi/
+ls
+cd ..
+cd irclogs/
+ls
+cd freenode/
+ls
+vim \#haskell
+ls
+vim \#haskell.log
+vim \#haskell.log
+cd ~
+source current
+vim indexing.hs
+ls
+vim trees.hs
+vim trees.hs.bak 
+cd ~
+source current
+cd ~
+source current_entropy_src 
+ls
+chromium Trees.hs 
+cd proto/
+ls
+chromium Trees.hs 
+ls
+ls
+chromium Trees.hs 
+vim .xmobarrc
+cp .xmobarrc.orig .xmobarrc
+ls
+ls
+irssi 
+cd Projects/Haskell/Excercises/Random/src/
+ls
+ghci Main.hs 
+source current_entropy_src 
+ls
+vim Trees.hs 
+source current
+ls
+vim monads.hs 
+vim monads~.hs 
+vim monads2.hs 
+mc
+cd Projects/Haskell/gloss-examples-1.7.7.2/picture/
+ls
+vim Styrene/
+cd Styrene/
+ls
+ghc Main.hs -O2
+ghc --help
+ghc -O Main.hs
+ghc Main.hs
+ls
+rm Main
+ghc -O Main.hs
+ls
+ls
+ls *.hs
+ls *.hs
+mkdir tmp
+cp * ./tmp/
+cd tmp/
+ls
+cd ..
+ls
+rm *.*
+ls
+rm Main 
+cp ./tmp/*.hs ./
+ls
+ghc -O2 Main.hs
+./Main 
+ls
+rm *.*
+ls
+rm Main 
+cp ./tmp/*.hs ./
+ls
+cd ~
+ls
+ls
+source current_entropy_src 
+ls
+cd proto/
+ls
+ls
+vim 2
+ls
+rm 2
+ls
+vim update 
+cd ~
+source current
+vim random.hs
+vim random.hs 
+vim random1.hs
+ls
+vim random2.hs
+ls
+cd ../src/proto/
+ls
+vim Trees.hs.pattern_matching 
+vim Trees.hs.pattern_matching 
+vim Trees.hs
+ls
+cd ..
+ls
+vim Trees.hs 
+vim Main.hs
+ls
+cd proto/
+ls
+vim Trees.hs
+vim Trees.hs.pattern_matching 
+ls
+cd ..
+ls
+mv proto/* ~/Projects/Haskell/Entropy/
+ls
+cd proto/
+ls
+cd ..
+rm proto/
+rm proto
+rm -R proto
+ls
+cd ..
+ls
+mv *.hs ./prototypes/
+ls
+mv Trees.hs.pattern_matching ./prototypes/
+ls
+vim update 
+ls
+rm update 
+ls
+cd prototypes/
+ls
+vim Trees.hs
+ls
+vim Trees.hs
+mc
+cd ..
+ls
+cd src/
+ls
+vim Trees.hs
+vim Trees.hs
+cd ..
+ls
+cd prototypes/
+ls
+vim datatypes.hs
+vim datatypes.hs
+vim datatypes.hs
+ls
+ls -la
+rm .datatypes.hs.swp 
+ls -la
+vim datatypes.hs
+ls
+cd ..
+ls
+cd prototypes/
+vim DTree.hs
+vim DTree.hs
+irssi 
+source current
+vim DTree.hs 
+vim .DTree.hs.swp 
+rm .DTree.hs.swp 
+vim DTree.hs 
+ls
+chromium
+cd Projects/Haskell/Excercises/Random/src/
+ghci Main.hs 
+cd ../..
+cd ../Entropy/
+ls
+cd src/
+ls
+ghci Trees.hs 
+ghci Trees.hs
+source current
+ls
+ghci datatypes.hs 
+ghci datatypes.hs 
+ghci datatypes.hs 
+ghci DTree.hs 
+source current
+ghci
+ghci random2.hs 
+su
+alsamixer 
+find // | grep -i comonad
+alsamixer 
+leksah
+leksah

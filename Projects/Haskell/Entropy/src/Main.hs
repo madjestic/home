@@ -14,25 +14,27 @@
 -----------------------------------------------------------------------------
 
 module Main (
-    main
+main
 ) where
 
-import Graphics.Gloss
-import Database.HDBC.Sqlite3 (connectSqlite3)
-import Database.HDBC
+
+import Circles
+import Query
+import Trees
+
+--treeToTriples :: [Tree [a]] -> [(b,b,b)]
+--
+--treeToTriples :: Tree [a] -> [(b,b,b)]
+--treeToTriple tree
+--              | leaf tree == True =
 
 
-draw_circles' :: IO()
-draw_circles' = display (InWindow "My Window" (200, 200) (10, 10)) white circles
 
-circles :: Picture
-circles = Pictures $ [circle 80, Translate 10 10 $ circle 70]--map circle $ take 15 [10,22..] --[circle 80, circle 70]
-
-
--- Hello World
 exeMain = do
-    --putStrLn "foo Hello World"
-    draw_circles'
+    draw_circles' $ rstorxys [50,70,60,10,80,30]
+    --draw_circles' [(50,70,60)]
+
+
 
 #ifndef MAIN_FUNCTION
 #define MAIN_FUNCTION exeMain

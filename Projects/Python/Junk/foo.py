@@ -5,8 +5,13 @@ def foo(i):
     else: pass 
 
 
+def loop(i,j):
+    for _i in range(i):
+        for _j in range(j):
+            print _i*j+_j 
+
 def main():
-    foo(1)
+    loop(1,1)
 
 if __name__ == "__main__":
     main()

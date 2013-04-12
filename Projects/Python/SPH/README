@@ -1,0 +1,3 @@
+# Efficient dot product function, maybe useful for dot product sum for SPH paper:
+sum(imap(operator.mul, vector1, vector2))
+

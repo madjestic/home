@@ -17,7 +17,7 @@ fi
 
 # Put your fun stuff here.
 
-PATH="${PATH}:/home/madjestic/.cabal/bin:/home/madjestic/.xmonad:/home/madjestic/cabal-dev/bin"
+PATH="${PATH}:/home/madjestic/.cabal/bin:/home/madjestic/.xmonad:/home/madjestic/cabal-dev/bin:/home/madjestic/Projects/Python/FFI"
 alias ls="ls -h --color=auto"
 
 HISTSIZE=10000

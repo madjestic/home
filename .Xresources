@@ -1,10 +1,10 @@
 !URxvt*shading		: 50
-URxvt*depth		: 32 
+URxvt*depth			: 32 
 URxvt*tintColor		: Grey
 URxvt*saveLines		: 12000
 URxvt*foreground	: rgba:7777/cccc/7777/ffff
 URxvt*background	: rgba:0000/0000/0000/cccc
-URxvt*font		: xft:DejaVu Sans Mono:pixelsize=15:antialias=true:hinting=true
+URxvt*font			: xft:DejaVu Sans Mono:pixelsize=15:antialias=true:hinting=true
 URxvt*boldFont		: xft:DejaVu Sans Mono:bold:pixelsize=15:antialias=true:hinting=true
 URxvt*color4		: RoyalBlue 
 URxvt*color12		: RoyalBlue

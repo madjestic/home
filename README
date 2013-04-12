@@ -1,16 +1,18 @@
 Quick notes:
 
-###VIM TIPS###
+###VIM TIPS###vim tips###
 1) <Ctrl>+l to switch off highlights in vim
 2) ds" - to remove "" around a word
 3) \\cc   - comment out
 3.5) \\cu - uncomment
 4) cs]} - surround with {}
-
+5) :%s/foo/bar/g - exchange all instances of foo with bar
+6) ctrl+R - redo
 
 2) Start ghci with gloss, so that it does not hang:
 ghci -fno-ghci-sandbox 
 3) Update Portage:
+emerge --sync
 emerge --update --deep --with-bdeps=y --newuse world
 emerge --update --deep --newuse world
 #  delete unused dependencies:
@@ -24,4 +26,5 @@ rc-status
 6)make ghc keep intermediary files: it will create (won't delete technically) /tmp/ghc${pid} with intermediate files
 ghc -keep-tmp-files foo.hs
 
-
+### PYTHON ### python ###
+python -m cProfile foo.py

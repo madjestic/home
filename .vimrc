@@ -7,6 +7,7 @@ syntax on
 filetype plugin on
 call pathogen#infect()
 colorscheme twilight
+set ts=4
 
 " This assumes that ghc is in your path, if it is not, or you
 " wish to use a specific version of ghc, then please change
