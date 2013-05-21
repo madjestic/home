@@ -1,124 +1,139 @@
 module Trees
-( sumLeaves
+( --sumLeaves
 ) where
 
-import Data.Tree hiding (Functor)
+import Data.Tree
+import Control.Applicative (Applicative(..), (<$>))
+import Control.Monad
+import Data.Traversable (Traversable(traverse))
 
 
+-- | draw a tree: putStrLn $ drawTree tree21
 -- debug trees
+
+drawT tree = putStrLn $ drawTree tree
+drawT' tree = putStrLn $ drawTree $ fmap show tree
+
 tree0 = Node {rootLabel = "0", subForest = []}
 tree1 = Node {rootLabel = "1", subForest = []}
+tree1Int = Node {rootLabel = 1, subForest = []}
 tree2 = Node {rootLabel = "2", subForest = []}
+tree2Int = Node {rootLabel = 2, subForest = []}
+tree3Int = Node {rootLabel = 3, subForest = []}
+tree123Int = Node {rootLabel = 7, subForest = tree1Int:tree2Int:tree3Int:[]}
+
+tree1_123_23Int = Node 9 (tree1Int:tree123Int:tree2Int:tree3Int:[])
+tree5Int = Node 5 []
+tree6Int = Node 6 []
+
+tree1_123_56Int = Node 6 ((Node (1) []):tree123Int:tree5Int:tree6Int:[])
+tree1_123_56_1_123_23Int = Node 6 ((Node (1) []):tree123Int:tree5Int:tree6Int:tree1_123_23Int:[])
+tree21Int = Node 21 (tree2Int:tree1Int:[])
+
+
 tree21 = Node {rootLabel = "21", subForest = tree2:tree1:[]}
 tree321 = Node {rootLabel = "321", subForest = tree2:tree1:tree21:[]}
 tree231 = Node {rootLabel = "231", subForest = tree2:tree21:tree1:[]}
-tree321321=Node{rootLabel="321321",subForest = tree321:tree321:[]}
-tree231231=Node{rootLabel="231231",subForest = tree231:tree231:[]}
+tree321321 = Node{rootLabel = "321321",subForest = tree321:tree321:[]}
+tree231231 = Node{rootLabel = "231231",subForest = tree231:tree231:[]}
+
+--treeFunc = Node (*0) (*1):(*2):(*3):[]
 
 root = Node {rootLabel = "root", subForest = tree0:tree1:tree2:tree321:tree21:tree0:[]}
 -- end of debug trees
 
--- | Neat 2-dimensional drawing of a tree.
-drawTree' :: Tree String -> String
-drawTree'  = unwords . draw
 
-draw :: Tree String -> [String]
-draw (Node x ts0) = x : drawSubTrees ts0
-  where
-    drawSubTrees [] = []
-    drawSubTrees [t] =
-        "|" : shift "`- " "   " (draw t)
-    drawSubTrees (t:ts) =
-        "|" : shift "+- " "|  " (draw t) ++ drawSubTrees ts
-
-    shift first other = zipWith (++) (first : repeat other)
+leaf :: (Eq a) => Tree a -> Bool
+leaf = (\x -> if (subForest x == []) then True else False)
 
 
-sumStrings :: [String] -> Int
-sumStrings [] = 0
-sumStrings xs = foldr1 (+) $ map read xs
+-- | (f tree) -> rootLabel                                                                         
+fmapT :: (Tree t -> a) -> Tree t -> Tree a
+fmapT f tree@(Node x ts) = Node (f tree) (map (fmapT f) ts)
 
 
-leaf :: Eq a => Tree a -> Bool
-leaf tree
-		| subForest tree == [] = True
-		| otherwise            = False
+newLabel l (Node _ ts) = l
 
 
-leaves :: Tree [Char] -> Tree Bool
-leaves tree
-		| leaf tree == True = Node {rootLabel = True,  subForest = []}
-		| otherwise         = Node {rootLabel = False, subForest = subleaves (subForest tree)}
-                                                             where subleaves [] = []
-                                                                   subleaves (t:ts)
-                                                                             | leaf t    = Node {rootLabel = True,  subForest = []} : subleaves ts
-                                                                             | otherwise = Node {rootLabel = False, subForest = (subleaves $ subForest t)} : subleaves ts
+newLabel' l (Node _ ts) = Node l ts
 
 
--- check whether the above patter-matching based functions can be replaced with
--- a better Functor alternative:
--- A
---mapLabel ::  Eq a => (a -> b) -> Tree a -> Tree b
---mapLabel f (Node label []) = Node (f label) []
---mapLabel f (Node label subTrees) = (Node (f label) (subLeaves subTrees))
---                                            where subLeaves [] = []
---                                                  subLeaves (t:ts)
---                                                              | leaf t    =  Node (f label) [] : subLeaves ts
---                                                              | otherwise =  Node (f label) (subLeaves subTrees) : subLeaves ts
---                                                                               where label    = rootLabel t
---
---
--- B
--- instance Functor Tree where
---    fmap f (Node x ts) = Node (f x) (map (fmap f) ts)
--- mapLabel (++ "foo") tree21
--- fmap (++ "foo") tree21
---      -> produce identical result
+newLabel'' (Node l _) (Node _ ts) = Node l ts
 
 
---mapSubForest f (Node x [])       =  Node x []
---mapSubForest f (Node x subTrees) = (Node (f subTrees) (subLeaves subTrees))
---                                                 where subLeaves [] = []
---                                                       subLeaves (t:ts)
---						                | leaf t    = Node (f subTrees) [] : subLeaves ts
---								| otherwise = Node (f subTrees) (subLeaves subTrees) : subLeaves ts
---							                        where subTrees = subForest t
--- The above is replaced by:
+mapF f (Node l ts@(x:xs)) = Node l (map f ts)
+mapF _ (Node l []) = Node l []
 
-fmapF :: (Forest t -> a) -> Tree t -> Tree a
-fmapF f (Node x ts) = Node (f ts) (map (fmapF f) ts)
-
-boolToInt :: Bool -> Integer
-boolToInt = (\x -> if x == True then 1 else 0)
+--mapF' tree@(Node l ts@(x:xs)) = map
 
 
--- rootLabel becomes a list of subforest rootLabel values as [Int]
-foobar :: Tree [Char] -> Tree [Int]
-foobar = fmapF (map (read . rootLabel))
+scanlT :: (Tree a -> Tree a -> Tree a) -> Tree a -> Tree a
+scanlT f t@(Node l ts)= Node l (scanlF f t ts)
 
-sumLeaves :: Tree [Char] -> Int
-sumLeaves t = sumStrings $ flatten $ leavesValue t
 
-leavesValue :: Tree [Char] -> Tree [Char]
-leavesValue tree
-		| leaf tree = tree
-		| otherwise = Node {rootLabel = "0", subForest = leaves_from (subForest tree)}
-		                                           where leaves_from [] = []
-		                                                 leaves_from st@(t:ts)
-	                                                                     | leaf t    = t : leaves_from ts	
-	                                                                     | otherwise = Node {rootLabel = "0", subForest = leaves_from (subForest t)} : leaves_from ts
+scanlF :: (Tree a -> Tree a -> Tree a) -> Tree a -> [Tree a] -> [Tree a]
+scanlF f q forest = case forest of
+                    []   -> []
+                    t:ts -> scanlT f (f q t):scanlF f (f q t) ts 
+
+
+--scanlF' tree@(Node l (x:xs)) = N
+scanlF' :: Num a => (a -> a -> a) -> a -> [a] -> [a]
+scanlF' _ q [] = []
+scanlF' f q (x:xs) = (f q x) : scanlF' f (f q x) xs 
+
+
+-- | zip 2 trees into a new tree, where the rootLabel is the product f of the 2 root
+-- | labels, coming from each tree
+-- zipWithT :: (t -> t1 -> a) -> Tree t -> Tree t1 -> Tree a
+zipWithT f (Node l1 qs) (Node l2 ts) = Node (f l1 l2) (zipWithF f qs ts)
+
+
+-- zipWithF :: (t -> t1 -> a) -> Forest t -> Forest t1 -> Forest a
+zipWithF f (q:qs) (t:ts) = zipWithT f q t : zipWithF f qs ts
+zipWithF _ _ _ = []
+
+
+leaves tree = fmapT ((\x -> if x == True then 1 else 0) . leaf) tree
+
+sum_leaves tree = foldr1 (+) $ flatten $ zipWithT (*) tree (leaves tree) 
+
+
+shifT' :: a -> Tree a -> Tree a
+shifT' q (Node _ []) = Node q []
+shifT' q tree@(Node l (t:ts)) = Node q (shifT' l t : map (shifT' l) ts)
+	
+shifT :: Tree a -> Tree a
+shifT tree = shifT' (rootLabel tree) tree
+
+
+fromIntegerT :: Fractional a => Tree Integer -> Tree a
+fromIntegerT (Node tl []) = Node (fromInteger tl) []
+fromIntegerT (Node tl ts) = Node (fromInteger tl) (map fromIntegerT ts)
+
+foo tree = fmapT sum_leaves tree
+
+bar tree = shifT $ foo tree
+
+baz tree = zipWithT (/) (foo $ f tree) (bar $ f tree)
+	where f = fromIntegerT
+
+
+-- drawT' $ ltoT (rootLabel tree1_123_56Int) tree1_123_56Int
+
+--drawT' $ Node (*2) [] <*> tree123Int -- applicative functor usage example
+--drawT' $ tree123Int >>= (\x -> Node (x*x) []) -- monad use example
+--drawT' $ fmap (\x -> if x == True then 1 else 0) $ fmapT leaf tree1_123_56Int
+
+-- ### I finished, looking for a way to use traversable, from Data.Trees
+-- drawT' $ traverse id (Just tree123Int)
+-- which is identical to this:
+-- drawT' $ tree123Int >>= (\x -> Node (Just x) [])
 
 
 
-walkTree :: Tree String -> [String]
-walkTree (Node x [])  = x : []
-walkTree (Node x ts0) = x : drawSubTrees ts0
-  where drawSubTrees [] = []
-	drawSubTrees [t]    = (walkTree t)
-	drawSubTrees (t:ts) = (walkTree t) ++ drawSubTrees ts
+--drawT' $ fmapT sum_leaves tree1_123_56Int
 
-
--- Radius and Weight are sinonyms
 -- I need a function, which takes a tree and draws a set of circles.
 -- 100) a draw function takes a triple (x, y, radius))
 -- each tree contains leafs and branches
@@ -130,18 +145,17 @@ walkTree (Node x ts0) = x : drawSubTrees ts0
 -- The tree is being walked through:
 -- 5) Compute the number of sub-objects on a tree and their weights:
 -- 10) 	Aquire a tree, containing weight (radius) values
---  		node weight is based on the number of sub-nodes per node
--- 13) 	Aquire a tree, containing the number of members per node #DONE
--- 15) 	(?) Modify the tree data type to accomodate for weights (radii) and number of members
---		   (number of members may be aquired from weights (radii))
+--  		node weight is based on the number o sub-nodes per node
+
+-- 13) 	Aquire a tree, containing the number of members per node 				#DONE
+
+-- 15) 	(?) Modify the tree data type to accomodate for weights (radii) 
+--      and number of members
+--		   (number of members may be aquired from weights (radii)) 				#DONE/Not needed 
+--         																		##- achieved with fmap and multiple trees/zips 
+
 -- 20)  Tree [radii] -> Tree [x,y]
 -- 25)  map draw $ zipWith (Tree -> (x,y,radius)) Tree [x,y] Tree [radii]
 
-
--- Aquire a tree with the number of sub-nodes as a value of the rootLabel:
-members :: Tree String -> Tree String
-members (Node x [])  = Node {rootLabel = "0", subForest = []}
-members (Node x ts0) = Node {rootLabel = (show $ length ts0), subForest = subNodes ts0}
-    where subNodes []     = []
-          subNodes [t]    = members t : []
-          subNodes (t:ts) = (members t): subNodes ts
+-- I am here: take a root coords - sin, cos -> child, repeat
+-- arc: 

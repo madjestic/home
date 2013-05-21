@@ -28,3 +28,7 @@ ghc -keep-tmp-files foo.hs
 
 ### PYTHON ### python ###
 python -m cProfile foo.py
+
+# iptables
+/etc/init.d/iptables 
+/etc/conf.d/iptables

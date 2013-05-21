@@ -7147,3 +7147,1007 @@ find // | grep -i comonad
 alsamixer 
 leksah
 leksah
+cd //usr/portage/profiles/default/linux/x86/
+ls
+vim parent 
+cd 13.0/
+ls
+ls
+cd desktop/
+ls
+vim eapi 
+vim parent 
+ls
+cd kde/
+ls
+cd ..
+ls
+cd ..
+ls
+vim use.mask 
+ls
+cat parent 
+cd ../../..
+ls
+cd ..
+ls
+cd releases/
+ls
+cd 13.0/
+ls
+vim parent 
+vim make.defaults 
+vim package.mask 
+cd ..
+ls
+vim make.defaults 
+cd freebsd-9.1
+ls
+vim ChangeLog 
+vim package
+vim package.mask 
+ls
+vim package
+vim packages
+:q
+python
+cd //usr/portage/profiles/
+ls
+vim package.mask 
+cd base/
+ls
+cd ..
+ls
+cd targets/
+ls
+cd developer/
+ls
+vim make.defaults 
+cd ../..
+ls
+cd default/
+ls
+cd linux/
+ls
+cd x86/
+ls
+cd 10.0/
+ls
+vim deprecated 
+ls
+cd desktop/
+ls
+cd ..
+ls
+mc
+chromium
+irssi
+source current_entropy_src 
+ls
+:r
+:r
+ghci Trees.hs
+su
+ls
+git status
+git --help
+cd Downloads/
+ls
+source current_entropy_src 
+cd ..
+leksah
+chromium
+alsamixer 
+vim README 
+emerge --help
+man emerge
+vim README 
+cd /dev
+ls -l
+alsamixer 
+cd ~
+ls
+history | grep -i git
+su
+eselect profile list
+eselect profile list
+eselect profile list
+cd /usr/portage/profiles/
+ls
+cd default/
+ls
+cd linux/
+ls
+cd //usr/portage/
+ls
+cd profiles/
+ls
+vim use.desc 
+ls
+cd ..
+ls
+cd profiles/
+ls
+vim use.desc 
+vim use.local.desc 
+cd /etc/portage/
+ls
+vim package.keywords
+eselect profile list
+eselect profile
+eselect profile show
+eselect profile list
+eselect profile set 1
+su
+cd~
+cd ~
+git status
+cd ..
+ls
+ls -la
+cd madjestic
+cd ..
+cd .keep 
+vim .keep 
+ls
+cd madjestic/
+ls
+cd git/
+ls
+cd ..
+ls
+ls -la
+cd .git
+ls
+cd ..
+ls
+history | grep -i got
+history | grep -i git
+ls
+git status
+ls
+git add Projects
+ls
+git add .vim*
+git add .xmonad
+git add portage
+git add .Xresources
+git add .bash*
+git add .gtk*
+git add .vim*
+git add .xinitrc
+git add .xmobarrc
+git add README 
+git add ascii 
+git status
+git commit
+git commit
+git commit
+git commit
+cd .git
+ls
+vim COMMIT_EDITMSG 
+cd ..
+git commit -m .git/COMMIT_EDITMSG
+vim README 
+git status
+git commit -m "updating tracked data"
+git commit -am "updating tracked data"
+git status
+git add Projects
+git status
+git commit -m 'updating Projects files'
+git commit -m 'updating Projects files'
+git commit -a -m 'updating Projects files'
+git push origin master
+git push origin master
+git push origin master
+lspci
+su
+startx 
+startx 
+startx 
+su
+su
+chromium junk 
+exit
+vim README 
+vim /etc/make.conf 
+vim /etc/portage/make.conf
+vim /etc/make.conf 
+vim /var/lib/layman/make.conf 
+chromium
+su
+alsamixer 
+su
+vim README 
+vim /var/tmp/portage/app-editors/leksah-0.12.1.3-r6/temp/build.log
+su
+irssi 
+./connect2wifi 
+./ping 
+./ping 
+sudo reboot
+./connect2wifi 
+  chromium
+su
+emerge --search xloadimage
+emerge -av media-gfx/xloadimage
+vim .Xresources
+view --help
+display --help
+cd Downloads/
+ls
+display gentoo-abducted-1024x768.png 
+ls
+chromium gentoo-abducted-1024x768.png 
+cd ..
+xmproot
+vim .Xresources
+su
+emerge --search xmproot
+xmproot
+chromium
+cd .xmonad/
+ls
+cd ..
+find // | grep -i xmproot
+xpmroot Downloads/gentoo-abducted-1024x768.png &
+cd Downloads/
+ls
+convert gentoo-abducted-1024x768.png background.xpm
+convert gentoo-abducted-1024x768.png background.xpm.gz 
+convert gentoo-abducted-1024x768.png background.xpm1
+xpmroot --help
+xpmroot --help
+ls -lk
+ls -l
+ls -l | grep -i *.xmp
+ls -l | grep -i *.xpm
+ls -l | grep *.xpm
+ls -l *.xpm
+ls -l
+convert --help
+convert gentoo-abducted-1024x768.png background.xpm
+emerge --search imagemagick
+emerge -av media-gfx/imagemagick
+convert --help
+convert --help
+convert 
+xpmroot --he;[
+xpmroot --help
+mogrify gentoo-abducted-1024x768.png background.xpm.gz 
+su
+su
+irssi 
+chromium
+vim .Xresources
+su
+su
+su
+chromium
+irssi 
+vim .xmonad/
+cd .xmonad/
+cd ..
+find // | grep -i .xsession
+su
+vim .Xresources
+ls -la
+vim xterm 
+xterm
+ls -la
+vim .xinitrc
+su
+chromium
+xrdb -merge .Xresources
+feh --bg-scale 1024x600 /home/madjestic/Downloads/gentoo-abducted-1024x768.png &
+feh --bg-scale 1024x600 /home/madjestic/Downloads/gentoo-abducted-1024x768.png &
+vim /etc/portage/
+cd /etc/portage/
+ls
+vim make.conf
+ls
+vim package.keywords
+vim package.use 
+su
+vim /etc/make.conf 
+vim /etc/portage/make.conf
+su
+su
+vim README 
+ghc-pkg recache
+su
+ls
+cd Projects/Haskell/Entropy/src/
+ls
+ghci Query.hs 
+vim Query.hs 
+ghci Query.hs 
+exit
+su
+darcs --help
+udevadm --help
+udevadm --info
+udevadm info
+udevadm info all
+which udev
+which udevadm 
+alsamixer 
+leksah
+cabal update
+cabal update
+leksah
+ghc-pkg update
+ghc-pkg update
+ghc-pkg recache
+su
+leksah
+cabal update
+leksah
+chromium
+ghci
+ghci
+ghci
+vim /etc/portage/package.use 
+su
+exit
+eric5
+cd .vim/syntax/
+ls
+vim txtfmt.vim 
+ls
+mc
+cd Downloads/
+ls
+ls | grep -i haskell.vim 
+cp haskell.vim ~/.vim/syntax/
+source current
+ls
+mc
+cd ../src/
+ls
+ls
+vim Trees.hs 
+source current
+cd ../src/
+ls
+mc
+ls
+su
+source current
+ls
+vim Trees.hs
+ls
+cd .vim/syntax/
+ls
+vim haskell.vim 
+vim haskell.vim 
+ls
+cd ..
+ls
+cd colors/
+ls
+vim twilight.vim
+ls
+vim twilight.vim.bak 
+lsvim twilight.vim
+vim twilight.vim
+cp twilight.vim twilight.vim.bak1
+vim twilight.vim
+ls
+cp twilight.vim.bak twilight.vim
+vim twilight.vim
+ls
+vimdiff twilight.vim twilight.vim.bak1
+vim twilight.vim
+vim twilight.vim
+cp twilight.vim.bak twilight.vim
+vim twilight.vim
+vim twilight.vim
+cd .vim
+ls
+cd colors
+ls
+vim twi
+vim twilight.vim
+vim ~/.vimrc
+rm ~/.vimrc.swp
+vim ~/.vimrc
+vim ~/.vimrc
+vim ~/.vimrc
+vim ~/.vimrc
+cp ~/.vimrc ~/.vimrc.bak 
+vim ~/.vimrc
+cd ~
+cp .vimrc.bak .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+cp .vimrc.bak .vimrc
+vim .vimrc
+vim .vimrc
+cp .vimrc.bak .vimrc
+vim .vimrc
+vim .vimrc
+cp .vimrc.bak .vimrc
+vim .vimrc
+vim .vimrc
+cd .vim/syntax/
+ls
+cd ..
+ls
+cd bundle/
+ls
+cd vim-colors-solarized/
+ls
+cd colors/
+ls
+ls
+vim solarized.vim 
+vim solarized.vim 
+cd ~
+vim .vimrc
+vim .vimrc.bak 
+vim .vimrc
+cd Downloads/
+ls
+pal2rgb 
+ls
+rgb2ycbcr 
+ls
+./colortest 
+ls
+cd Downloads/
+ls
+cp twilight.vim ~/.vim/colors/
+cp twilight.vim ~/.vim/colors/
+cd ..
+ls
+vim ls
+ls -la
+vim .Xresources
+ls
+vim xterm 
+echo $SVCNAME
+echo SVCNAME
+ls
+source current_entropy_src 
+ls
+vim Trees.hs 
+irssi 
+su
+su
+ls
+vim .vimrc
+su
+source current
+ls
+cd ../src/
+ls
+vim Trees.hs 
+ls
+rm .Trees.hs.swp 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+cd ~
+vim foo.hs
+source current
+cd ../src/
+ls
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+:q
+:q
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+cd ~
+ls
+cd .vim/syntax/
+ls
+cd ..
+ls
+cd colors/
+ls
+vim twilight.vim
+cd ~
+source current_entropy_src 
+ls
+cd //boot/
+ls
+chromium http://www.villustrator.com
+chromium http://www.vimtax.com
+chromium  http://sweyla.com/themes/
+chromium http://vpaste.net/zYx8U
+cd ~
+ls
+cd .vim
+ls
+cd plugin/
+ls
+vim NERD_commenter.vim 
+cd ..
+ls
+cd colors/
+ls
+mv twilight.vim.bak twilight.vim.orig
+ls
+mv twilight.vim.bak1 twilight.vim.bak
+ls
+cd ~
+source current
+cd ../src/
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim
+vim
+vim
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+cd /etc/ssh
+ls
+vim ssh_config
+vimdiff ssh_config ._cfg0000_ssh_config 
+su
+chromium
+cd ~/.vim/bundle
+ls
+git clone git://github.com/altercation/vim-colors-solarized.git
+ls
+vim ~/.vimrc
+vim ~/.vimrc
+ls
+vim ~/.vimrc
+cd ~
+cd .ssh/
+ls
+ls -la
+cd ~
+ssh-keygen -t rsa
+cd .ssh/
+ls
+vim id_rsa
+vim id_rsa.pub 
+cd ..
+ssh-keygen -t rsa
+mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+ssh localhost
+ssh localhost
+ssh start
+ssh restart
+/etc/init.d/ssh start
+/etc/init.d/sshd start
+ssh --help
+vim /etc/conf.d/sshd 
+su
+udevadm test-builtin net_id /sys/class/net/eth0 2> /dev/null
+udevadm test-builtin net_id /sys/class/net/wlan0 2> /dev/null
+ln -s net.lo /etc/init.d/net.enp2s0
+cd /etc/init.d/
+ls
+ls -la
+ls -la /sys/class/net
+cd ~
+which udev
+udev
+su
+chromium
+sudo reboot
+su
+ssh-keygen -t rsa
+mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys 
+ssh localhost
+ssh
+ssh localhost
+/etc/ssh
+ls
+cd /etc/ssh
+ls
+vim sshd_config 
+ls
+vim sshd_config
+sudo vim sshd_config 
+cd ..
+ls
+ls -la | grep -i host
+vim hosts 
+vim host.conf 
+ls -la
+ls -la | grep -i .
+ls -la
+vimdiff ._cfg0000_hosts hosts
+vimdiff hosts
+ls
+vim hosts
+vim ._cfg0000_hosts 
+vim host
+vim hosts
+vimdiff ._cfg0000_hosts hosts
+vim hosts
+su
+su
+cd /var/lib/layman/
+ls
+vim make.conf 
+cd /etc/portage/make.conf
+cd /etc/portage
+vim make.conf
+su
+su
+cd .irssi/
+ls
+vim config
+ls
+cd ..
+ls
+cd irclogs/
+ls
+cd freenode/
+ls
+vim \##typetheory.log 
+su
+chromium
+ls /sys/class/net -la
+cd /etc/udev/rules.d/
+ls
+vim 80-net-name-slot.rules 
+uname -a
+vim 80-net-name-slot.rules 
+cd /sys/class/net
+ls
+ls -la
+cd ~
+su
+irssi 
+irssi 
+/sbin/iptables -L -v
+su
+cd /etc/conf.d/
+ls
+vim sshd 
+ls
+ls -la
+cd net
+vim net
+cd ..
+ls
+cd init.d/
+ls
+ls -la
+ls
+cd net.lo 
+vim net.lo
+vim functions.sh 
+cd ~
+vim README 
+rc-status 
+man vimdiff
+find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+sudo find /etc/ -iname '._cfg????_*'
+rc-config 
+rc-config help
+rc-config list
+rc-config help
+rc-config list
+ps -l
+ps -a
+psed 
+top
+gvim
+chromium https://github.com/joachifm/acme-omitted/blob/master/src/Acme/Omitted.hs
+chromium http://hpaste.org/87744 (error message included)
+chromium http://hpaste.org/87744 (error message included
+chromium http://hpaste.org/87744
+chromium http://ideone.com/CGOOIg
+python
+source current_entropy_src 
+vim Trees_ScanRight.hs 
+source current_entropy_src 
+su
+cd .vimrc
+vim .vimrc
+cd /etc/udev/rules.d/
+ls
+cd ~
+su
+asd
+sudo ping 
+sudo ./ping 
+mc
+ls
+mv ping pingme
+sudo pingme 
+ls
+sudo ./pingme 
+ls
+vim README 
+chromium junk 
+vim junk 
+chromium junk 
+vim junk 
+chromium junk 
+vim junk 
+chromium junk 
+vim junk 
+chromium junk 
+vim junk 
+rm junk 
+vim junk
+chromium junk 
+vim junk
+chromium junk 
+vim junk
+chromium junk 
+vim junk
+chromium junk 
+vim junk 
+chromium
+chromium junk 
+cd Downloads/
+ls
+ls -la | grep -i python
+unzip diveintopython-pdf-5.4.zip 
+ls
+cd diveintopython-
+cd diveintopython-5.4/
+ls
+acroread diveintopython.pdf 
+rc-status list
+rc-status --help
+rc-status --list
+rc-status --all
+history | grep -i rc
+rc-status 
+rc-status --all
+top
+which udevd
+which --help
+uname -a
+chromium
+source current_entropy_src 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+which lastlog 
+cd /usr/bin/
+ls
+cd ~
+lastlog 
+man lastlog
+vim README 
+alsamixer 
+source current
+cd ~
+source current_entropy_src 
+ghci Trees.hs 
+irssi 
+vim .irssi/config
+irssi 
+source current
+cd ~
+source current_entropy_src 
+vim Trees.hs 
+vim Trees.hs 
+ls
+ls -la
+vim .Trees.hs.bak 
+cd ..
+cd prototypes/
+ls
+vim foo.hs
+cd Projects/Python/
+ls
+cd Junk/
+ls
+vim foo.py
+cd Projects/Python/Junk/
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+python foo.py
+source current
+ls
+ghci
+ls
+vim .xinitrc
+ls -la
+vim xterm 
+vim .Xresources
+source current
+ls
+su
+cd //usr/lib/yesod-core-1.2.1/
+ls
+cd ghc-7.6.2/
+ls
+cd Yesod/
+ls
+cd ~
+cd Downloads/
+ls
+history | grep tar
+history | grep -i tar
+history | grep -i zip
+ls
+tar --help
+ls
+tar -xf LightTableLinux.tar.gz 
+cd LightTable
+ls
+cd ..
+ls -la | grep -i light
+cd LightTable
+ls
+./LightTable 
+ls
+echo "/LightTable: error while loading shared libraries: libgconf-2.so.4: cannot open shared object file: No such file or directory" >> junk
+chromium junk 
+ls
+cd ..
+ls
+mv LightTableLinux.tar.gz LightTableLinux.bak.tar.gz
+mv LightTableLinux.bak.tar.gz foo
+mv LightTableLinux\ \(1\).tar.gz LightTableLinux.tar.gz 
+rm -R LightTable
+tar -xvfz LightTableLinux.tar.gz 
+tar -xvf LightTableLinux.tar.gz 
+ls
+cd LightTable
+ls
+./LightTable 
+cd ..
+chromium junk
+echo "/LightTable: error while loading shared libraries: libgconf-2.so.4: cannot open shared object file: No such file or directory" >> junk
+chromium junk
+uname -a
+cd /usr/src/
+ls
+eselect 
+eselect kernel
+eselect kernel list
+cd /var/log
+ls
+vim emerge.log 
+cat emerge.log 
+sudo cat emerge.log 
+sudo vim emerge.log 
+yesod

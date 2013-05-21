@@ -11,7 +11,11 @@ def loop(i,j):
             print _i*j+_j 
 
 def main():
-    loop(1,1)
+    bar()
+
+def bar():
+	""" fuck 
+		you"""
 
 if __name__ == "__main__":
     main()
