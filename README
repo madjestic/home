@@ -32,3 +32,7 @@ python -m cProfile foo.py
 # iptables
 /etc/init.d/iptables 
 /etc/conf.d/iptables
+
+
+# GIT
+http://git-scm.com/book/en/Git-on-the-Server-Hosted-Git

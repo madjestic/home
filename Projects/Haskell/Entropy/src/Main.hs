@@ -12,7 +12,6 @@
 -- this is supposed to draw circles, matching the number of list entries
 --
 -----------------------------------------------------------------------------
-
 module Main (
 main
 ) where
@@ -31,8 +30,8 @@ import Trees
 
 
 exeMain = do
-    draw_circles' $ rstorxys [50,70,60,10,80,30]
-    --draw_circles' [(50,70,60)]
+    --draw_circles' $ rstorxys [50,70,60,10,80,30]
+    draw_circles' [(50,70,60)]
 
 
 

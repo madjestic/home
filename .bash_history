@@ -8151,3 +8151,796 @@ cat emerge.log
 sudo cat emerge.log 
 sudo vim emerge.log 
 yesod
+yesod
+su
+ghc-pkg check
+su
+cd /usr/bin/
+ls
+ls -la
+ls -la
+vim python-wrapper 
+alsamixer 
+cd ~
+cabal install grapefruit-ui-gtk
+cabal install grapefruit-examples
+su
+glade
+vim README 
+history | grep -i git
+git commit -a -m 'updating Projects files'
+git push origin master
+alsamixer 
+vim README 
+su
+su
+alsamixer 
+wine
+uname -a
+cat README 
+alsamixer 
+chromium junk 
+ghc-pkg list
+ghc-pkg list | grep -i yesod
+ghc-pkg check
+ghc-pkg --help
+ghc-pkg dot repa-3.2.3.1
+ghc-pkg dot
+ghc-pkg dot | grep -i repa
+ghc-pkg --help
+ghc-pkg --help
+cabal install repa-io-3.2.3.
+cabal --help
+cabal install repa-io-3.2.3.1
+cabal update
+cabal
+cabal --help
+ghc-pkg check
+cabal install repa-3.2.3.1
+ghc-pkg check
+cabal update
+su
+,.?
+ghc-pkg list | grep -i yesod
+ghc-pkg list | grep -i cabal
+vim README 
+cd Projects/
+ls
+cd Haskell/
+ls
+cd ..
+l
+ls
+mkdir Yesod
+ls
+cd Yesod/
+ls
+yesod init
+cd ~
+yesod
+~ yesod
+ghc-pkg | grep -i yesod
+ghc-pkg list | grep -i yesod
+su
+source current
+vim foo.hs
+vim tree_monads.hs
+vim grapefruit.hs
+runhaskell grapefruit.hs 
+vim grapefruit.hs
+runhaskell grapefruit.hs 
+vim grapefruit.hs
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd Python/
+ls
+cd FFI/
+ls
+cd tutorial_/
+ls
+cd ..
+ls
+cd NucleoProf/
+ls
+ls
+cd hs/
+ls
+cd NucleoProf/
+ls
+vin Basic.hs 
+vim Basic.hs 
+vim Basic.hs 
+source current
+ghci foo.hs
+ghci tree_monads.hs 
+ghco grapefruit.hs 
+ghci grapefruit.hs 
+runhaskell grapefruit.hs 
+runhaskell grapefruit.hs 
+runhaskell grapefruit.hs 
+runhaskell grapefruit.hs 
+ls
+cd ~/Projects/Haskell/FFI
+ls
+ls
+ls
+cd haskell-from-python/
+ls
+vim README.md 
+source current
+ls
+vim foo_instance.hs 
+cd ~
+ls
+ls -la
+ls
+cd Projects/
+cd Yesod/
+ls
+yesod init
+chromium http://www.yesodweb.com/boo
+chromium http://www.yesodweb.com/book
+ls
+cd yosog/
+cabal install && yesod devel
+ls
+yesod devel
+yesod devel
+cd Projects/Yesod/
+cd yosog/
+ls
+cd ..
+ls
+git init 
+git add
+git add .
+ls
+ls -la
+git init .
+git add .
+git commit -a -m "Initial yesod commit"
+ls
+cd yosog/
+ls
+cd config/
+ls
+vim routes 
+cd ..
+ls
+yesod add-handler
+ls
+cd config/
+ls
+cd ..
+ls
+ls -la
+cd ..
+ls
+ls -la
+history | grep -i git
+git push origin master
+git config --list
+git status
+git diff
+git diff
+git diff --cached
+git diff --staged
+git status
+git commit -a
+git commit -a "yesog project check-in"
+history | grep -i git
+ls
+cd yosog/
+git status
+git commit -a -m "Initial yesod commit"
+git status
+git remot
+git remote
+git remote add origin https://github.com/madjestic/yosog.git
+man git
+git push -u origin master
+ghci
+cd Projects/
+ls
+cd Haskell/
+ls
+cd Excercises/
+ls
+ls
+cd ..
+ls
+mkdir Shuklan
+ls
+cd Shuklan/
+ls
+mkdir Lectures
+cd Lectures/
+mkdir 08
+cd 08/
+vim Main.hs
+ls
+vim getLine.hs
+vim lines.hs
+vim foo
+vim file.hs
+vim file.hs
+vim file.hs
+vim README
+vim file.hs 
+vim README 
+cd Projects/Haskell/Shuklan/Lectures/08/
+ls
+ghci Main.hs 
+ghci getLine.hs 
+ghci lines.hs 
+ghci 
+source current
+ls
+vim zipper.hs
+source current
+ghci zipper.hs 
+irssi 
+irssi 
+chromium
+source current_entropy_src 
+ls
+vim Trees.hs 
+su
+su
+su
+echo "/LightTable: error while loading shared libraries: libgconf-2.so.4" >> junk
+sudo rm junk 
+echo "/LightTable: error while loading shared libraries: libgconf-2.so.4" >> junk
+chromium junk 
+vim README 
+source current_entropy_src 
+ghci Trees.hs 
+ghci Trees.hs 
+ghci Trees.hs 
+asd
+git config --list
+git remote
+vim README
+cd Downloads/
+ls
+cd LightTable
+ls
+./LightTable 
+alsamixer 
+cd ~
+ls
+vim README 
+cd .irssi/
+ls
+ls -la
+cd ..
+ls
+cd irclogs/
+ls
+cd freenode/
+ls
+vim \#odforce.log 
+cat \#odforce.log | grep -i Eisen
+ls
+vim \#odforce.log 
+vim \#odforce.log 
+ls
+cd ..
+cd ..
+ls
+cd .irssi/
+ls
+vim config
+cd ..
+ls
+cd irclogs/
+ls -la
+cd freenode/
+ls -la
+rm .#haskell.log.swp 
+ls
+ls -la
+su
+cd ~
+vim README 
+cd /etc/init.d/
+ls -la
+ls -la | grep -i iptables
+cd /etc/conf.d/
+ls -la | grep -i iptables
+ls -la
+vim iptables 
+cd ~/irclogs/
+cd freenode/
+ls
+ls 0la
+ls -la
+ls -la | grep -i May
+ls
+ls -la
+cd ..
+ls
+cd freenode/
+ls
+ls
+ls -la
+cd /etc/portage/
+vim package.use 
+cd ~
+chromium junk 
+cd /etc/portage/
+ls
+vim package.license 
+sudo vim package.license 
+cd ~
+darcs init
+ls -la
+  
+su
+chromium
+vim README 
+cd Downloads/
+cd LightTable
+ls
+./LightTable 
+ls
+vim irc.log 
+ls -la
+ls
+cd irclogs/
+ls
+cd freenode/
+ls -la
+su
+links
+link
+link www.google.nl
+link --help
+vim README 
+su
+cd Downloads/LightTable
+./LightTable 
+cd ~
+vim README 
+rm .README.swp 
+vim README 
+cd /usr/src/
+ls
+eselect 
+eselect kernel list
+eselect news read unread
+eselect news
+eselect news read new
+ls
+vim ~/README 
+ls
+cd linux-3.7.10-gentoo/
+ls
+ls -la
+cd ../linux-3.8.13-gentoo/
+ls
+ls -la
+cp ../linux-3.7.10-gentoo/.config ./
+sudo cp ../linux-3.7.10-gentoo/.config ./
+ls -la
+make menuconfig
+make menuconfig
+su
+su
+cd README 
+vim README 
+tail history
+history tail
+history -tail
+history
+su
+cd Downloads/LightTable
+./LightTable 
+cd ~
+source current_entropy_src 
+vim Trees.sh
+ls
+vim Trees.hs
+rm .Trees.hs.swp 
+vim Trees.hs
+irssi 
+source current_entropy_src 
+ghci Trees.hs
+chromium
+startx 
+startx 
+sudo reboot
+uname -a
+whoami
+ps -a
+vim README 
+eselect kernel list
+eselect kernel 4
+eselect kernel 
+eselect kernel set 4
+su
+chromium
+su
+./connect2wifi 
+uname -a
+su
+cd /etc/udev/rules.d/
+ls
+vim 80-net-name-slot.rules 
+cd /etc/conf.d/net
+cd /etc/conf.d/
+ls
+vim net
+cd ~
+su
+su
+su
+cd /usr/src/linux
+vim .config
+./connect2wifi 
+alsamixer 
+source current_entropy_src 
+vim Trees.hs 
+vim Trees.hs 
+vim Trees.hs 
+source current
+ls
+vim datatypes.hs 
+ls
+vim foo_instance.hs 
+cd ~
+emacs
+vim README 
+cd .vim
+ls
+cd plugin/
+ls
+vim surround.vim 
+alsamixer 
+cd ~
+./pingme 
+ls -la
+ls -la .*
+ls -la | grep -i .
+vim .bashrc 
+vim .bash_profile 
+vim .bashrc 
+set
+vim .bashrc 
+su
+chromium anglesF :: (Num a, Fractional a) => a -> [Tree a] -> [Tree a] 
+anglesF q forest = case forest of
+ode (q + l) []] 
+ode (q + l) (anglesF (q + l) (subForest t)): anglesF (q + l) ts
+chromium http://forums.gentoo.org/viewtopic-t-894950.html
+cd .vim
+ls
+cd plugin/
+ls
+cd ..
+ls
+cd bundle/
+ls
+cd ..
+ls
+vim
+cabal --help
+cabal list angle
+cabal install AC-Angle
+mkdir overlays
+ls
+cd overlays/
+git clone git://github.com/gentoo-haskell/gentoo-haskell.git
+cd gentoo-haskell/
+hackport update
+ls
+exit
+alsamixer 
+su
+ls
+cd Dropbox/
+ls
+cd Public/
+ls
+ls
+cd ..
+ls
+cd Kasia/
+ls
+cd ..
+ls
+cd Public/
+ls
+ls
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd Public/
+ls
+cd ~
+su
+ghc-pkg check
+haskell-updater
+su
+su
+dropbox 
+dropbox 
+dropbox status
+dropbox stop
+cd Dropbox/
+ls
+top
+cd ..
+alsamixer 
+glxgears 
+vim junk 
+chromium junk 
+glxgears LIBGL_DEBUG=verbose
+glxgears LIBGL_DEBUG=verbose -info
+glxgears LIBGL_DEBUG=info
+glxgears -info LIBGL_DEBUG=verbose
+glxgears -info
+vim junk 
+vim junk 
+source current_entropy_src 
+vim Trees
+vim Trees.hs
+rm .Trees.hs.swp 
+vim Trees.hs
+vim Trees.hs
+vim Trees.hs
+vim Trees.hs
+source current_entropy_src 
+ls
+vim Circles.hs 
+source current_entropy_src 
+ghci Circles.hs 
+ghci Circles.hs 
+ghci Circles.hs 
+echo "libGL error: failed to load driver: i915" >> ~/junk 
+chromium ~/junk 
+cd .vim
+cd plugin/
+ls
+vim surround.vim 
+cd ~/Downloads/
+ls
+ls | grep -i quat
+ls | grep -i q
+cd ~
+source current
+ls
+vim foo.hs
+runhaskell foo.hs
+ls
+source current_entropy_src 
+ghci Trees.hs 
+chromium
+irssi 
+sudo reboot
+glxgears 
+chromium
+irssi 
+irssi 
+irssi 
+irssi 
+irssi 
+su
+./connect2wifi 
+./pingme 
+./pingme 
+glxgears 
+vim junk 
+chromium junk 
+su
+sudo reboot
+su
+glxgears 
+sudo glxgears
+glxgears 
+exit
+cd irclogs/
+ls
+cd freenode/
+ls
+ls -la
+cat \#gentoo.log | grep -i chromium
+cat \#gentoo.log | grep -i chromium | grep -i madjestic
+vim \#gentoo.log 
+exit
+su
+glxgears 
+su
+glxinfo 
+glxinfo LIBGL_DEBUG=verbose
+glxinfo LIBGL_DEBUG=verbose -t
+export LIBGL_DEBUG=verbose
+glxinfo 
+vim junk 
+chromium junk 
+chromium junk 
+chromium
+glxgears 
+cd /etc/group
+cd /etc
+ls
+vim group
+irssi 
+sudo reboot
+irssi 
+vim .emacs.el
+vim .emacs.el
+vim .emacs.el
+vim .emacs.el
+su
+su
+glxgears 
+chromium
+chromium
+./connect2wifi 
+emerge --search leksah
+su
+irssi 
+source current
+source ~/current_entropy_src 
+vim Circles.hs 
+source current_entropy_src 
+vim Trees.hs 
+emacs Trees.hs 
+./pingme 
+cd /lib/
+ls
+ls
+cd ~
+ls
+ls -la
+sudo find // | grep -i emacs
+ls -la
+vim .emacs.el
+vim .emacs.el
+vim .emacs
+vim .emacs.el
+su
+leksah
+ghc-pkg recache
+sudo ghc-pkg recache
+leksah
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+vim .emacs.el
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+emacs
+emacs
+emacs
+cp .emacs.el.bak .emacs.el
+emacs
+emacs
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+emacs
+cp .emacs.el .emacs.el.bak
+emacs
+emacs foo.hs
+emacs foo.hs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+emacs
+cp .emacs.el.bak .emacs.el
+emacs
+emacs
+emacs
+cp .emacs.el.bak .emacs.el
+cd ~/.emacs
+sudo find // | grep -i .emacs
+vim .emacs
+vim .emacs
+emacs
+rm .emacs
+emacs
+emacs
+vim .emacs.el
+rm .emacs.el.swp 
+vim .emacs.el
+emacs
+vim .emacs.el
+emacs
+emacs
+emacs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+emacs ~/Projects/Haskell/Entropy/prototypes/foo.hs
+vim .emacs.el.bak 
+emacs
+vim .emacs.el
+emacs
+vim .emacs.el
+vim .emacs.el
+vim .emacs.el
+cd .emacs.d/
+ls
+vim init.el
+ls
+rm init.el 
+cd ~
+cp .emacs.el .emacs.el.bak 
+vim .emacs.el
+rm .emacs.el
+vim .emacs.el
+vim .emacs
+emacs
+rm .emacs
+emacs
+emacs
+emacs
+top
+vim .emacs
+rm .emacs.el
+vim .emacs.el
+vim .emacs.el
+source current_entropy_src 
+ghci Trees.hs
+emacs
+source current_entropy_src 
+ghci Circles.hs 
+ghci Circles.hs 
+sudo reboot
+cd //usr/share/
+cd haskell-mode/
+ls
+cd ~
+cabal install hasktags
+exit
+./connect2wifi 
+sudo find // | grep -i haskell-mode
+su
+exit

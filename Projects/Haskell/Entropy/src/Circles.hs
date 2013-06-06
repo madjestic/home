@@ -26,7 +26,7 @@ import Data.List
 scale = 100
 
 circles :: [(Float,Float)] -> [Float] -> [Picture]
-circles = zipWith (\x y -> translate' x (Circle y))
+circles = zipWith (\xy r -> translate' xy (Circle r))
 
 translate' :: (Float, Float) -> (Picture -> Picture)
 translate' (a,b) = Translate a b
@@ -87,7 +87,7 @@ p_nodes_positions' _ []         = []
 p_nodes_positions' r (ang:angs)  =
                                   let -- r     = node_radius rs
                                     pos_x = (-1) * r * cosine (Degrees ang)
-                                    pos_y = (-1) * r * sine   (Degrees ang)
+                                    pos_y = (-1) * r * sine (Degrees ang)
                                   in (pos_x, pos_y) : p_nodes_positions' r angs
 
 a_bc_abc :: [Float] -> [(Float,Float)] -> [(Float, Float, Float)]

@@ -1,0 +1,18 @@
+Version of session file format:
+               1
+Time of storage:
+               "Wed Dec 26 02:33:05 CET 2012"
+Layout:        TerminalP {paneGroups = fromList [("Browser",TerminalP {paneGroups = fromList [], paneTabs = Nothing, currentPage = 2, detachedId = Nothing, detachedSize = Nothing}),("Debug",HorizontalP (TerminalP {paneGroups = fromList [], paneTabs = Nothing, currentPage = 0, detachedId = Nothing, detachedSize = Nothing}) (TerminalP {paneGroups = fromList [], paneTabs = Just TopP, currentPage = 1, detachedId = Nothing, detachedSize = Nothing}) 199)], paneTabs = Just LeftP, currentPage = 6, detachedId = Nothing, detachedSize = Nothing}
+Population:    [(Just (BreakpointsSt BreakpointsState),[GroupP "Debug",SplitP BottomP]),(Just (FilesSt FilesState),[]),(Just (GrepSt GrepState),[]),(Just (InfoSt (InfoState Nothing)),[GroupP "Browser"]),(Just (LogSt LogState),[]),(Just (BufferSt (BufferState "/home/madjestic/.leksah-0.13/leksah-welcome/src/Main.hs" 993)),[]),(Just (ModulesSt (ModulesState 419 (SystemScope,False) (Nothing,Nothing) (ExpanderState {packageExp = ([],[]), packageExpNoBlack = ([],[]), packageDExp = ([],[]), packageDExpNoBlack = ([],[]), workspaceExp = ([],[]), workspaceExpNoBlack = ([],[]), workspaceDExp = ([],[]), workspaceDExpNoBlack = ([],[]), systemExp = ([],[]), systemExpNoBlack = ([],[])}))),[GroupP "Browser"]),(Just (SearchSt (SearchState {searchString = "", searchScope = SystemScope, searchMode = Prefix {caseSense = False}})),[]),(Just (TraceSt TraceState),[GroupP "Debug",SplitP BottomP]),(Just (VariablesSt VariablesState),[GroupP "Debug",SplitP BottomP]),(Just (WorkspaceSt WorkspaceState),[GroupP "Browser"]),(Just (BufferSt (BufferStateTrans "_Eval.hs" "\n" 0)),[GroupP "Debug",SplitP TopP])]
+Window size:   (1022,581)
+Completion size:
+               (750,400)
+Workspace:     Just "/home/madjestic/leksah.lkshw"
+Active pane:   Just "Search"
+Toolbar visible:
+               True
+FindbarState:  (True,FindState {entryStr = "", entryHist = [""], replaceStr = "", replaceHist = [], caseSensitive = False, entireWord = False, wrapAround = False, regex = False, lineNr = 1})
+Recently opened files:
+               ["/home/madjestic/Projects/Haskell/Entropy/src/Main.hs","/home/madjestic/Projects/Haskell/Entropy/prototypes/circles.hs","/home/madjestic/.leksah-0.13/leksah-welcome/src/Main.hs"]
+Recently opened workspaces:
+               ["/home/madjestic/Projects/Haskell/Test/Test.lkshw","/home/madjestic/Projects/Haskell/Entropy/Entropy.lkshw","/home/madjestic/leksah.lkshw"]
