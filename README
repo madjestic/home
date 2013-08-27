@@ -1,6 +1,6 @@
 Quick notes:
 
-###VIM TIPS###vim tips###
+### VIM TIPS ###
 1) <Ctrl>+l to switch off highlights in vim
 2) ds" - to remove "" around a word
 3) \\cc   - comment out
@@ -11,14 +11,35 @@ Quick notes:
 
 2) Start ghci with gloss, so that it does not hang:
 ghci -fno-ghci-sandbox 
-3) Update Portage:
-emerge --sync
+
+### SYSTEMA MAINTENANCE ###
+3) UPDATE PORTAGE:
+Emerge --sync
 emerge --update --deep --with-bdeps=y --newuse world
 emerge --update --deep --newuse world
-#  delete unused dependencies:
+# delete unused dependencies:
 emerge --depclean 
-#  rebuild missing dependencies
-revdep-rebuild
+# rebuild missing dependencies
+# revdep-rebuild
+revdep-rebuild -ip
+
+### Kernel Upgrade###
+# copy old config
+make oldconfig
+make && make modules_install
+cp ./arch/x86/boot/bzImage /boot/kernel-3.10.7-gentoo
+# edit /boot/grub/grub.conf
+# eselect:
+eselect kernel list
+eselect kernel set 1
+
+
+### EMACS TIPS ###
+# turn off line-wrapping:
+M-x toggle-truncate-lines
+
+
+### MISC ###
 4) Find out your own IP:
 wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
 5)check running services:
@@ -34,5 +55,12 @@ python -m cProfile foo.py
 /etc/conf.d/iptables
 
 
-# GIT
+### GIT ###
 http://git-scm.com/book/en/Git-on-the-Server-Hosted-Git
+
+# add all files in 
+git add /Projects
+# commit added files
+git commit
+# write the changes
+git push

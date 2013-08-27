@@ -17,10 +17,13 @@ fi
 
 # Put your fun stuff here.
 
-PATH="${PATH}:/home/madjestic/.cabal/bin:/home/madjestic/.xmonad:/home/madjestic/cabal-dev/bin:/home/madjestic/Projects/Python/FFI"
+PATH="${PATH}:/home/madjestic/.cabal/bin:/home/madjestic/.xmonad:/home/madjestic/cabal-dev/bin:/home/madjestic/Projects/Python/FFI:/home/madjestic/bin"
 alias ls="ls -h --color=auto"
 
 HISTSIZE=10000
 
+alias e="emacsclient -t"
+alias ec="emacsclient -c"
+alias cim=vim
 
 

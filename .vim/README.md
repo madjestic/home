@@ -1,90 +1,70 @@
-# ghcmod.vim
-Happy Haskell programming on Vim, powered by [ghc-mod](https://github.com/kazu-yamamoto/ghc-mod)
+# neocomplcache-ghc (neco-ghc)
 
-## Features
+A completion plugin for Haskell, using ghc-mod
 
-- Displaying the type of sub-expressions (`ghc-mod type`)
-- Displaying error/warning messages and their locations (`ghc-mod check` and `ghc-mod lint`)
-- Displaying the expansion of splices (`ghc-mod expand`)
+## What is neco-ghc
 
-Completions are supported by another plugin.
-See [neco-ghc](https://github.com/ujihisa/neco-ghc) .
+This plugin supports the following completion.
 
-## Requirements
+* pragma
+    ![](http://cache.gyazo.com/c922e323be7dbed9aa70b2bac62be45e.png)
+* language
+    ![](http://cache.gyazo.com/9df4aa3cf06fc07495d6dd67a4d07cc4.png)
+* importing a module
+    ![](http://cache.gyazo.com/17a8bf08f3a6d5e123346f5f1c74c5f9.png)
+* importing a function of a module
+    ![](http://cache.gyazo.com/d3698892a40ffb8e4bef970a02198715.png)
+* function based on importing modules
+    ![](http://cache.gyazo.com/bc168a8aad5f38c6a83b8aa1b0fb14f6.png)
 
-### vimproc
-https://github.com/Shougo/vimproc
+neco-ghc was originally implemented by @eagletmt on July 25, 2010, and then
+ujihisa added some new features.
 
-### ghc-mod
-~~~sh
-cabal install ghc-mod
-~~~
+## Install
 
-## Details
-If you'd like to give GHC options, set `g:ghcmod_ghc_options`.
+* Install ghc-mod package by `cabal install ghc-mod`
+* Unarchive neco-ghc and put it into a dir of your &rtp.
 
-~~~vim
-let g:ghcmod_ghc_options = ['-idir1', '-idir2']
-~~~
+## Usage
 
-### :GhcModType, :GhcModTypeClear
-Type `:GhcModType` on a expression, then the sub-expression is highlighted and its type is echoed.
-If you type `:GhcModType` multiple times, the sub-expression changes.
+### For neocomplcache users
 
-1. ![type1](http://cache.gyazo.com/361ad3652a412f780106ab07ad11f206.png)
-2. ![type2](http://cache.gyazo.com/0c884849a971e367c75a6ba68bed0157.png)
-3. ![type3](http://cache.gyazo.com/3644d66a3c5fbc51c01b5bb2053864cd.png)
-4. ![type4](http://cache.gyazo.com/ece85e8a1250bebfd13208a63679a3db.png)
-5. ![type5](http://cache.gyazo.com/71e4c79f9b42faaaf81b4e3695fb4d7f.png)
+This plugin can be used as a source of
+[neocomplcache](http://www.vim.org/scripts/script.php?script_id=2620) or
+[neocomplete](https://github.com/Shougo/neocomplete.vim).
+You can enjoy auto-completions without any specific configuration.
 
-Since ghc-mod 1.10.8, not only sub-expressions but name bindings and sub-patterns are supported.
+### For non-neocomplcache users
 
-- ![type-bind](http://cache.gyazo.com/cee203adbf715f00d2dbd82c5cff3eaa.png)
-- ![type-pat](http://cache.gyazo.com/7a22068b73442e8447a4081d5ddffd31.png)
+neco-ghc provides `necoghc#omnifunc` for omni-completion.
 
-Type `:GhcModTypeClear` to clear sub-expression's highlight.
+I suggest adding in your ~/.vim/ftplugin/haskell.vim: `setlocal
+omnifunc=necoghc#omnifunc`.
 
-Sub-expressions are highlighted as `Search` by default.
-You can customize it by setting `g:ghcmod_type_highlight` .
+See `:help compl-omni` for details on omni-completion.
 
-~~~vim
-hi ghcmodType ctermbg=yellow
-let g:ghcmod_type_highlight = 'ghcmodType'
-~~~
+## Options
+### `g:necoghc_enable_detailed_browse`
+Default: 0
 
-### :GhcModCheck, :GhcModLint
-You can get compiler errors/warnings by `:GhcModCheck` and they are available in quickfix window.
+Show detailed information (type) of symbols.
+You can enable it by adding `let g:necoghc_enable_detailed_browse = 1` in your vimrc.
+While it is quite useful, it would take longer boot time.
 
-![check](http://cache.gyazo.com/c09399b2fe370ce9d328b8ed12118de8.png)
+This feature was introduced in ghc-mod 1.11.5.
 
-Similarly, type `:GhcModLint` to get suggestions by `ghc-mod lint`.
+![](http://cache.gyazo.com/f3d2c097475021615581822eee8cb6fd.png)
 
-If you'd like to pass options to hlint, set `g:ghcmod_hlint_options`.
+## Troubleshoot
 
-~~~vim
-let g:ghcmod_hlint_options = ['--ignore=Redundant $']
-~~~
+If for some reason the neco-ghc plugin is not being added to neocomplcache,
+check that the $PATH variable in vim contains the path to your .cabal/bin
+directory.
 
-![lint](http://cache.gyazo.com/3b64724ce2587e03761fe618457f1c2e.png)
+if not, add in your .vimrc:
 
-
-### :GhcModCheckAsync, :GhcModLintAsync, :GhcModCheckAndLintAsync
-You can run check and/or lint asynchronously.
-
-This would be useful when you'd like to run check and/or lint automatically (especially on `BufWritePost`).
-See Customize wiki page for more detail.
-
-### :GhcModExpand
-You can see the expansion of splices by `:GhcModExpand` and they are available in quickfix window.
-
-![expand](http://cache.gyazo.com/bcbee2b84f956a87b636a67b5d5af488.png)
-
-This feature was introduced since ghc-mod 1.10.10.
-
-## Customize
-See wiki page [Customize](https://github.com/eagletmt/ghcmod-vim/wiki/Customize).
+`let $PATH = $PATH . ':' . expand("~/.cabal/bin")`
 
 ## License
-[BSD3 License](http://www.opensource.org/licenses/BSD-3-Clause), the same license as ghc-mod.
 
-Copyright (c) 2012, eagletmt
+[BSD3 License](http://www.opensource.org/licenses/BSD-3-Clause), the same license as ghc-mod.
