@@ -1,0 +1,11 @@
+stopped here: http://shuklan.com/haskell/lec08.html#/0/18
+
+-> I was planning to write an equivalent in python:
+
+module Main where
+
+import System.IO
+
+main = readFile "input.txt" >>= print.length.lines
+
+-> that is a one-liner to output the number of lines in an input file

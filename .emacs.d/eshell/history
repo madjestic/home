@@ -1,0 +1,42 @@
+ls
+cd ~
+ls
+ls -la
+cd .emacs.d/setnu/
+ls
+wget http://www.wonderworks.com/download/setnu.el
+cd ..
+ls
+cd ~
+su
+pingme
+su
+exit
+cd ..
+cd ..
+ls
+mkdir EmacsTest
+cd EmacsTest/
+ls
+find-file foo.hs
+mkdir src
+ls
+exit
+mkdir bak
+cp Main.hs ./bak/
+cd bak/
+ls
+cd ..
+exit
+ls
+cd ..
+ls
+ls
+man find
+screenshot scr
+cd ~
+ls
+rm lein
+ls
+ghc -V
+man grep

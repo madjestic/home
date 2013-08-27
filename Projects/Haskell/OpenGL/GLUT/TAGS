@@ -1,0 +1,91 @@
+
+./Main.hs~,23
+main ::4,5
+main =5,6
+
+./Cube.hs~,33
+module Cube where0,1
+cube w5,6
+
+./Display.hs~,43
+module Display (display)0,1
+display =7,8
+
+./archive/Main.hs.22.08.2013,116
+module Main where4,5
+myPoints ::9,10
+myPoints =10,11
+main ::12,13
+main =13,14
+display ::19,20
+display =20,21
+
+./archive/Main.hs.23.08.2013,116
+module Main where4,5
+myPoints ::9,10
+myPoints =10,11
+main ::12,13
+main =13,14
+display ::19,20
+display =20,21
+
+./Cube.hs,81
+module Cube where0,1
+vertify3 ::5,6
+vertify3 verts6,7
+cube ::8,9
+cube w9,10
+
+./Points.hs~,52
+module Points where0,1
+points ::4,5
+points n'5,6
+
+./Points.hs,52
+module Points where0,1
+points ::4,5
+points n'5,6
+
+./Bindings.hs,123
+module Bindings (idle,display,reshape,keyboardMouse)0,1
+reshape s@(Size8,9
+keyboardAct a11,12
+keyboardMouse angle34,35
+
+./Bindings.hs~,96
+module Bindings (display,reshape,keyboardMouse)0,1
+reshape s@(Size7,8
+keyboardMouse key10,11
+
+./dist/build/autogen/Paths_glutfoobar.hs,684
+module Paths_glutfoobar (0,1
+catchIO ::11,12
+catchIO =12,13
+version ::15,16
+version =16,17
+bindir, libdir, datadir, libexecdir :: FilePath17,18
+bindir, libdir, datadir, libexecdir :: FilePath17,18
+bindir, libdir, datadir, libexecdir17,18
+bindir, libdir,17,18
+bindir     =19,20
+libdir     =20,21
+datadir    =21,22
+libexecdir =22,23
+getBinDir, getLibDir, getDataDir, getLibexecDir :: IO FilePath24,25
+getBinDir, getLibDir, getDataDir, getLibexecDir :: IO24,25
+getBinDir, getLibDir, getDataDir, getLibexecDir24,25
+getBinDir, getLibDir,24,25
+getBinDir =25,26
+getLibDir =26,27
+getDataDir =27,28
+getLibexecDir =28,29
+getDataFileName ::30,31
+getDataFileName name31,32
+
+./Display.hs,70
+module Display (display,idle)0,1
+display angle9,10
+idle angle25,26
+
+./Main.hs,11
+main =6,7

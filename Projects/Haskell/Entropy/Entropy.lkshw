@@ -1,10 +1,10 @@
 Version of workspace file format:
                1
 Time of storage:
-               "Mon Apr  8 19:30:36 CEST 2013"
+               "Thu Jul  4 21:26:30 CEST 2013"
 Name of the workspace:
                "Entropy"
 File paths of contained packages:
-               ["/home/madjestic/Projects/Haskell/Excercises/Random/Random.cabal","Entropy.cabal"]
+               ["/home/madjestic/Projects/GTK+/Glade/Dump.cabal"]
 Maybe file path of an active package:
-               Just "Entropy.cabal"
+               Just "/home/madjestic/Projects/GTK+/Glade/Dump.cabal"

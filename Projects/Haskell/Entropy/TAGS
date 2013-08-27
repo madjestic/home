@@ -1,0 +1,2225 @@
+
+./src/Main.hs.bak,99
+module Main (15,16
+--treeToTriples ::24,25
+--treeToTriples ::26,27
+exeMain =32,33
+main =41,42
+
+./src/Trees.21.05.2013.hs,970
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321 =36,37
+tree231231 =37,38
+--treeFunc =39,40
+root =41,42
+leaf ::45,46
+leaf =46,47
+fmapT ::50,51
+fmapT f51,52
+newLabel l54,55
+newLabel' l57,58
+newLabel'' (Node60,61
+mapF f63,64
+--mapF' tree@(Node66,67
+scanlT ::69,70
+scanlT f70,71
+scanlF ::73,74
+scanlF f74,75
+--scanlF' tree@(Node79,80
+scanlF' ::80,81
+scanlF' _81,82
+zipWithT f88,89
+zipWithF f92,93
+leaves tree96,97
+sum_leaves tree98,99
+shifT' ::101,102
+shifT' q102,103
+shifT ::105,106
+shifT tree106,107
+fromIntegerT ::109,110
+fromIntegerT (Node110,111
+foo tree113,114
+bar tree115,116
+baz tree117,118
+--drawT' $124,125
+--		(~=146,147
+
+./src/Trees_ScanRight.hs,926
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321=Node{rootLabel="321321",subForest =36,37
+tree231231=Node{rootLabel="231231",subForest =37,38
+root =39,40
+fmapT ::44,45
+fmapT f45,46
+leaf ::48,49
+leaf =49,50
+leaf' ::52,53
+leaf' =53,54
+fmapF ::58,59
+fmapF f59,60
+scanlF ::67,68
+scanlF f68,69
+scanlT ::73,74
+scanlT f74,75
+scanrF ::77,78
+scanrF _78,79
+scanrT ::84,85
+scanrT _85,86
+foo =89,90
+--zipTreesWith f98,99
+boolToInt ::101,102
+boolToInt =102,103
+listLabelsF ::106,107
+listLabelsF =107,108
+listBoolLeaves ::110,111
+listBoolLeaves =111,112
+--		(~=125,126
+members ::133,134
+members =134,135
+
+./src/.Trees.hs.bak,950
+module Trees2,3
+tree0 =12,13
+tree1 =13,14
+tree1Int =14,15
+tree2 =15,16
+tree2Int =16,17
+tree3Int =17,18
+tree123Int =18,19
+tree21 =19,20
+treeInteger21 =20,21
+treeIntegerList21 =21,22
+tree321 =22,23
+tree231 =23,24
+tree321321=Node{rootLabel="321321",subForest =24,25
+tree231231=Node{rootLabel="231231",subForest =25,26
+root =27,28
+draw ::31,32
+draw (Node32,33
+sumStrings ::43,44
+sumStrings []44,45
+fmapT ::49,50
+fmapT f50,51
+{-leaves tree-}54,55
+leaf ::63,64
+leaf =64,65
+fmapF ::78,79
+fmapF f79,80
+--scanF f82,83
+--scanlF ::84,85
+scanlF f85,86
+scanlF1 f93,94
+--zipTreesWith f99,100
+boolToInt ::102,103
+boolToInt =103,104
+listLabelsF ::107,108
+listLabelsF =108,109
+listBoolLeaves ::111,112
+listBoolLeaves =112,113
+listIntBoolLeaves ::115,116
+listIntBoolLeaves =116,117
+sumLeaves ::119,120
+sumLeaves t120,121
+leavesValue ::123,124
+leavesValue tree124,125
+--		(~=140,141
+members ::153,154
+members (Node154,155
+
+./src/Trees.27.05.2013.hs,944
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321 =36,37
+tree231231 =37,38
+--treeFunc =39,40
+root =41,42
+leaf ::45,46
+leaf =46,47
+fmapT ::50,51
+fmapT f51,52
+newLabel l54,55
+newLabel' l57,58
+newLabel'' (Node60,61
+mapF f63,64
+scanlT ::67,68
+scanlT f68,69
+scanlF ::77,78
+scanlF f78,79
+--zipWithT ::86,87
+zipWithT f87,88
+zipWithT' f90,91
+zipWithF f94,95
+leaves tree98,99
+sum_leaves tree100,101
+shifT' ::103,104
+shifT' q104,105
+shifT ::107,108
+shifT tree108,109
+fromIntegerT ::111,112
+fromIntegerT (Node112,113
+weightT ::116,117
+weightT tree117,118
+--treePhi treeWeights128,129
+--drawT' $134,135
+--		(~=153,154
+
+./src/Main.hs.orig,99
+module Main (15,16
+hello s26,27
+prop_hello s30,31
+exeMain =33,34
+testMain =37,38
+main =48,49
+
+./src/Trees.24.05.2013.hs,1000
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321 =36,37
+tree231231 =37,38
+--treeFunc =39,40
+root =41,42
+leaf ::45,46
+leaf =46,47
+fmapT ::50,51
+fmapT f51,52
+newLabel l54,55
+newLabel' l57,58
+newLabel'' (Node60,61
+mapF f63,64
+--mapF' tree@(Node66,67
+scanlT ::69,70
+scanlT f70,71
+scanlF ::73,74
+scanlF f74,75
+--scanlF' tree@(Node79,80
+scanlF' ::80,81
+scanlF' _81,82
+zipWithT f88,89
+zipWithF f92,93
+leaves tree96,97
+sum_leaves tree98,99
+shifT' ::101,102
+shifT' q102,103
+shifT ::105,106
+shifT tree106,107
+fromIntegerT ::109,110
+fromIntegerT (Node110,111
+foo tree113,114
+bar tree115,116
+baz tree117,118
+--treePhi treeWeights124,125
+--drawT' $130,131
+--		(~=149,150
+
+./src/Query.hs,597
+module Query14,15
+--draw_circles ::29,30
+--draw_circles =30,31
+convRow ::32,33
+convRow [sqlId,33,34
+convRow' ::41,42
+convRow' [sqlId,42,43
+query' ::58,59
+query' maxId59,60
+query_visits ::75,76
+query_visits maxId76,77
+---- draw_parents125,126
+----	current126,127
+------					let157,158
+------						     l158,159
+------								L159,160
+------					   (reduce160,161
+------									    =>161,162
+------										  where163,164
+node_radius ::166,167
+node_radius []167,168
+p_nodes_angles ::173,174
+p_nodes_angles xs174,175
+p_nodes_positions ::178,179
+p_nodes_positions []179,180
+
+./src/Trees.hs,1040
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321 =36,37
+tree231231 =37,38
+--treeFunc =39,40
+root =41,42
+leaf ::45,46
+leaf =46,47
+fmapT ::50,51
+fmapT f51,52
+newLabel l54,55
+newLabel' l57,58
+newLabel'' (Node60,61
+mapF f63,64
+scanlT ::67,68
+scanlT f68,69
+scanlF ::77,78
+scanlF f78,79
+zipWithT ::86,87
+zipWithT f87,88
+zipWithF f91,92
+zipWithT' ::96,97
+zipWithT' f97,98
+leaves tree101,102
+sum_leaves tree103,104
+shifT' ::106,107
+shifT' q107,108
+shifT ::110,111
+shifT tree111,112
+fromIntegerT ::114,115
+fromIntegerT (Node115,116
+weightT ::119,120
+weightT tree120,121
+anglesT ::130,131
+anglesT tree@(Node131,132
+anglesF ::134,135
+anglesF q135,136
+geoT ::143,144
+geoT =144,145
+foo =146,147
+bar =147,148
+
+./src/Circles.hs,809
+module Circles14,15
+scale =25,26
+circles ::27,28
+circles =28,29
+translate' ::30,31
+translate' (a,b)31,32
+draw_circles ::33,34
+draw_circles ys34,35
+draw_circles' ::36,37
+draw_circles' xs37,38
+abctoa ::41,42
+abctoa (a,_,_)42,43
+abctobc ::44,45
+abctobc (_,b,c)45,46
+display' ::47,48
+display' =48,49
+arc_len ::50,51
+arc_len rs51,52
+node_radius ::54,55
+node_radius []55,56
+p_nodes_angles ::63,64
+p_nodes_angles rs64,65
+k_list ::67,68
+k_list xs68,69
+weighted_k_list ::71,72
+weighted_k_list rs72,73
+p_nodes_positions ::78,79
+p_nodes_positions r79,80
+p_nodes_positions' ::84,85
+p_nodes_positions' _85,86
+a_bc_abc ::92,93
+a_bc_abc []93,94
+--angles_with_positions =96,97
+rstorxys ::98,99
+rstorxys []99,100
+--current_node_with_parents ::110,111
+--current_node_with_parents rs111,112
+
+./src/Main.hs,102
+module Main (14,15
+--treeToTl30riples ::23,24
+--treeToTriples ::24,25
+exeMain =30,31
+main =39,40
+
+./src/Trees.20.05.2013.hs,1081
+module Trees0,1
+drawT tree13,14
+drawT' tree14,15
+tree0 =16,17
+tree1 =17,18
+tree1Int =18,19
+tree2 =19,20
+tree2Int =20,21
+tree3Int =21,22
+tree123Int =22,23
+tree1_123_23Int =24,25
+tree5Int =25,26
+tree6Int =26,27
+tree1_123_56Int =28,29
+tree1_123_56_1_123_23Int =29,30
+tree21Int =30,31
+tree21 =33,34
+tree321 =34,35
+tree231 =35,36
+tree321321 =36,37
+tree231231 =37,38
+--treeFunc =39,40
+root =41,42
+leaf ::45,46
+leaf =46,47
+fmapT ::50,51
+fmapT f51,52
+newLabel l54,55
+newLabel' l57,58
+newLabel'' (Node60,61
+mapF f63,64
+--mapF' tree@(Node66,67
+scanlT ::69,70
+scanlT f70,71
+scanlF ::73,74
+scanlF f74,75
+--scanlF' tree@(Node79,80
+scanlF' ::80,81
+scanlF' _81,82
+zipWithT f88,89
+zipWithF f92,93
+leaves tree96,97
+sum_leaves tree98,99
+shifT' ::101,102
+shifT' q102,103
+shifT ::105,106
+shifT tree106,107
+fromIntegerT ::109,110
+fromIntegerT (Node110,111
+foo tree113,114
+bar tree115,116
+baz tree117,118
+--unfoldTree ::121,122
+--unfoldTree f122,123
+unfoldForest ::124,125
+unfoldForest f125,126
+foobar b127,128
+--drawT' $132,133
+--		(~=149,150
+
+./prototypes/treeWalk.hs,629
+data Tree a3,4
+data Tree a = Empty |3,4
+data Tree a = Empty | Node a3,4
+freeTree ::5,6
+freeTree =6,7
+data Direction =30,31
+data Direction = L |30,31
+data Direction = L | R deriving30,31
+type Directions =31,32
+changeToP ::33,34
+changeToP (L:ds)34,35
+elemAt ::38,39
+elemAt (L:ds)39,40
+goLeft ::43,44
+goLeft (Node44,45
+goRight ::46,47
+goRight (Node47,48
+goUp ::49,50
+goUp (t,50,51
+x -:53,54
+data Crumb a55,56
+data Crumb a = LeftCrumb a55,56
+data Crumb a = LeftCrumb a (Tree a) | RightCrumb a (Tree a)55,56
+type Breadcrumbs a57,58
+type Breadcrumbs a =57,58
+type Zipper a59,60
+modify ::61,62
+modify f62,63
+
+./prototypes/overload.hs,50
+class AddClass a0,1
+	add ::1,2
+instance Num3,4
+
+./prototypes/random_exr.hs,57
+threeCoinsÂ ::Â2,3
+threeCoinsÂ genÂ3,4
+Â Â4,5
+Â Â5,6
+
+./prototypes/zipper.hs,33
+--zip3With ::6,7
+zip3With _7,8
+
+./prototypes/gloss-1.7.6.5/Setup.hs,11
+main =1,2
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss.hs,29
+module Graphics.Gloss 63,64
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Point.hs,97
+module Graphics.Gloss.Data.Point2,3
+type Point	=10,11
+instance Num19,20
+pointInBox (x0,46,47
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Extent.hs,816
+module Graphics.Gloss.Data.Extent5,6
+data Extent31,32
+	= Extent Int32,33
+type Coord37,38
+--	The north value must be > south, and east > west, else `error`.42,43
+makeExtent n50,51
+takeExtent ::59,60
+takeExtent (Extent60,61
+squareExtent ::65,66
+squareExtent i66,67
+sizeOfExtent ::71,72
+sizeOfExtent (Extent72,73
+isUnitExtent ::77,78
+isUnitExtent extent78,79
+coordInExtent ::83,84
+coordInExtent (Extent84,85
+pointInExtent ::90,91
+pointInExtent (Extent91,92
+centerCoordOfExtent ::102,103
+centerCoordOfExtent (Extent103,104
+cutQuadOfExtent ::109,110
+cutQuadOfExtent quad110,111
+quadOfCoord ::121,122
+quadOfCoord extent122,123
+pathToCoord ::129,130
+pathToCoord extent130,131
+intersectSegExtent ::155,156
+intersectSegExtent p1@(x1,156,157
+touchesSegExtent ::189,190
+touchesSegExtent p1190,191
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Quad.hs,145
+module Graphics.Gloss.Data.Quad1,2
+data Quad7,8
+	= NW 	--8,9
+	| NE 	--9,10
+	| SW 	--10,11
+	| SE	--11,12
+allQuads ::15,16
+allQuads =16,17
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Picture.hs,1669
+module Graphics.Gloss.Data.Picture2,3
+type Path	=58,59
+data Picture62,63
+	= Blank66,67
+	| Polygon 	Path69,70
+	| Line		Path72,73
+	| Circle	Float75,76
+	| ThickCircle	Float79,80
+        | Arc           Float83,84
+        | ThickArc	Float88,89
+	| Text		String91,92
+	| Bitmap	Int100,101
+	| Color		Color104,105
+	| Translate	Float108,109
+	| Rotate	Float111,112
+	| Scale		Float114,115
+	| Pictures	[Picture]118,119
+instance Monoid123,124
+blank ::133,134
+blank	=134,135
+polygon ::137,138
+polygon =138,139
+line ::141,142
+line 	=142,143
+circle  ::145,146
+circle 	=146,147
+thickCircle  ::150,151
+thickCircle =151,152
+arc     ::155,156
+arc =156,157
+thickArc ::161,162
+thickArc =162,163
+text ::165,166
+text =166,167
+bitmap  ::176,177
+bitmap =177,178
+color ::180,181
+color =181,182
+translate ::184,185
+translate =185,186
+rotate  ::188,189
+rotate =189,190
+scale   ::192,193
+scale =193,194
+pictures ::196,197
+pictures =197,198
+bitmapOfForeignPtr ::208,209
+bitmapOfForeignPtr width209,210
+bitmapOfByteString ::223,224
+bitmapOfByteString width224,225
+bitmapOfBMP ::239,240
+bitmapOfBMP bmp240,241
+loadBMP ::259,260
+loadBMP filePath260,261
+lineLoop ::269,270
+lineLoop []270,271
+circleSolid ::276,277
+circleSolid r277,278
+arcSolid  ::282,283
+arcSolid a1283,284
+sectorWire ::296,297
+sectorWire a1297,298
+rectanglePath sizeX314,315
+rectangleWire ::321,322
+rectangleWire sizeX322,323
+rectangleUpperWire ::327,328
+rectangleUpperWire sizeX328,329
+rectangleUpperPath ::333,334
+rectangleUpperPath sizeX334,335
+rectangleSolid ::340,341
+rectangleSolid sizeX341,342
+rectangleUpperSolid ::346,347
+rectangleUpperSolid sizeX347,348
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Color.hs,1385
+module Graphics.Gloss.Data.Color2,3
+data Color33,34
+	= RGBA  !Float35,36
+instance Num39,40
+makeColor r74,75
+makeColor' ::82,83
+makeColor' r83,84
+makeColor8 r96,97
+rgbaOfColor ::106,107
+rgbaOfColor (RGBA107,108
+rawColor =120,121
+clampColor ::127,128
+clampColor cc128,129
+normaliseColor ::133,134
+normaliseColor cc134,135
+mixColors ratio1150,151
+addColors ::166,167
+addColors c1167,168
+dim ::179,180
+dim (RGBA180,181
+bright ::185,186
+bright (RGBA186,187
+light ::192,193
+light (RGBA193,194
+dark ::199,200
+dark (RGBA200,201
+greyN 	::207,208
+greyN 	::207,208
+black, white :: Color211,212
+black, white211,212
+black		=212,213
+white		=213,214
+red, green, blue :: Color216,217
+red, green, blue ::216,217
+red, green,216,217
+red		=217,218
+green		=218,219
+blue		=219,220
+yellow, cyan, magenta :: Color222,223
+yellow, cyan, magenta ::222,223
+yellow, cyan,222,223
+yellow		=223,224
+cyan		=224,225
+magenta		=225,226
+rose, violet, azure, aquamarine, chartreuse, orange :: Color228,229
+rose, violet, azure, aquamarine, chartreuse, orange :: Color228,229
+rose, violet, azure, aquamarine, chartreuse, orange :: Color228,229
+rose, violet, azure, aquamarine, chartreuse, orange228,229
+rose, violet, azure, aquamarine,228,229
+rose, violet,228,229
+rose		=229,230
+violet		=230,231
+azure		=231,232
+aquamarine	=232,233
+chartreuse	=233,234
+orange		=234,235
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/QuadTree.hs,526
+module Graphics.Gloss.Data.QuadTree5,6
+data QuadTree a23,24
+	= TNil25,26
+	| TLeaf a28,29
+	| TNode (QuadTree31,32
+emptyTree ::37,38
+emptyTree =38,39
+emptyNode ::42,43
+emptyNode =43,44
+takeQuadOfTree quad53,54
+liftToQuad quad72,73
+insertByPath ::86,87
+insertByPath []88,89
+insertByCoord ::100,101
+insertByCoord extent101,102
+lookupNodeByPath []112,113
+lookupByPath ::125,126
+lookupByPath path126,127
+lookupByCoord extent139,140
+flattenQuadTree extentInit151,152
+flattenQuadTreeWithExtents extentInit175,176
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Display.hs,121
+module Graphics.Gloss.Data.Display1,2
+data Display6,7
+        = InWindow   String8,9
+        | FullScreen (Int,11,12
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Data/Vector.hs,364
+module Graphics.Gloss.Data.Vector4,5
+type Vector	=20,21
+magV ::24,25
+magV (x,26,27
+argV ::30,31
+argV (x,32,33
+dotV ::36,37
+dotV (x1,38,39
+detV ::42,43
+detV (x1,44,45
+mulSV ::48,49
+mulSV s50,51
+rotateV ::54,55
+rotateV r56,57
+angleVV ::62,63
+angleVV p164,65
+normaliseV ::74,75
+normaliseV v76,77
+unitVectorAtAngle ::81,82
+unitVectorAtAngle r83,84
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Geometry.hs,35
+module Graphics.Gloss.Geometry1,2
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/ViewPort.hs,120
+module Graphics.Gloss.Internals.Render.ViewPort4,5
+import	Graphics.Rendering.OpenGL9,10
+withViewPort backendRef22,23
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/Bitmap.hs,501
+module Graphics.Gloss.Internals.Render.Bitmap3,4
+data BitmapData 14,15
+        = BitmapData 15,16
+instance Show21,22
+bitmapPath ::26,27
+bitmapPath width27,28
+reverseRGBA ::35,36
+reverseRGBA (BitmapData36,37
+reverseRGBA_ptr ::41,42
+reverseRGBA_ptr length842,43
+freeBitmapData ::60,61
+freeBitmapData p62,63
+isolateByte0 ::67,68
+isolateByte0 word68,69
+isolateByte1 ::72,73
+isolateByte1 word73,74
+isolateByte2 ::77,78
+isolateByte2 word78,79
+isolateByte3 ::82,83
+isolateByte3 word83,84
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/Circle.hs,638
+module Graphics.Gloss.Internals.Render.Circle4,5
+circleSteps ::20,21
+circleSteps sDiam21,22
+renderCircle ::30,31
+renderCircle posX31,32
+renderCircleLine ::55,56
+renderCircleLine (F#56,57
+renderCircleStrip ::67,68
+renderCircleStrip (F#68,69
+renderArc ::83,84
+renderArc posX84,85
+renderArcLine ::101,102
+renderArcLine (F#102,103
+renderArcStrip ::118,119
+renderArcStrip (F#119,120
+        | tt `geFloat#` tStop173,174
+addPoint ::201,202
+addPoint x202,203
+addPointOnCircle ::207,208
+addPointOnCircle posX208,209
+renderSectorLine ::222,223
+renderSectorLine pX@(F#223,224
+renderSector ::239,240
+renderSector posX240,241
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/Picture.hs,492
+module Graphics.Gloss.Internals.Render.Picture4,5
+import Graphics.Rendering.OpenGL20,21
+renderPicture35,36
+drawPicture circScale71,72
+checkErrors ::230,231
+checkErrors place231,232
+handleError ::236,237
+handleError place237,238
+loadTexture refTextures278,279
+installTexture width307,308
+freeTexture ::345,346
+freeTexture tex346,347
+setBlendAlpha ::354,355
+setBlendAlpha state355,356
+setLineSmooth ::365,366
+setLineSmooth state366,367
+vertexPFs ::371,372
+vertexPFs []373,374
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/Common.hs,110
+module Graphics.Gloss.Internals.Render.Common where1,2
+gf ::13,14
+gf x15,16
+gsizei ::18,19
+gsizei x20,21
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Render/State.hs,556
+module Graphics.Gloss.Internals.Render.State3,4
+data State16,17
+	= State17,18
+	{ -- | Whether to18,19
+	  stateColor		::19,20
+	, stateWireframe	::22,23
+	, stateBlendAlpha	::25,26
+	, stateLineSmooth	::28,29
+	, stateTextures         ::31,32
+data Texture36,37
+        = Texture37,38
+        { -- | Stable name38,39
+          texName       ::39,40
+        , texWidth      ::42,43
+        , texHeight     ::45,46
+        , texData       ::48,49
+        , texObject     ::51,52
+        , texCacheMe    ::54,55
+stateInit ::58,59
+stateInit59,60
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Color.hs,101
+module Graphics.Gloss.Internals.Color where2,3
+glColor4OfColor ::10,11
+glColor4OfColor color11,12
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Simulate.hs,83
+module Graphics.Gloss.Internals.Interface.Simulate2,3
+simulateWithBackendIO42,43
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort.hs,217
+module Graphics.Gloss.Internals.Interface.ViewPort3,4
+data ViewPort8,9
+	= ViewPort {9,10
+	  viewPortTranslate	::11,12
+	, viewPortRotate	::14,15
+	, viewPortScale		::17,18
+viewPortInit ::22,23
+viewPortInit23,24
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Game.hs,334
+module Graphics.Gloss.Internals.Interface.Game2,3
+data Event25,26
+	= EventKey    Key26,27
+	| EventMotion (Float,27,28
+playWithBackendIO45,46
+callback_keyMouse worldRef111,112
+handle_keyMouse worldRef121,122
+callback_motion worldRef134,135
+handle_motion worldRef143,144
+convertPoint ::150,151
+convertPoint backendRef155,156
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Debug.hs,160
+module Graphics.Gloss.Internals.Interface.Debug4,5
+dumpFramebufferState ::12,13
+dumpFramebufferState13,14
+dumpFragmentState ::55,56
+dumpFragmentState56,57
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Callback.hs,55
+module Graphics.Gloss.Internals.Interface.Callback3,4
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Animate.hs,128
+module Graphics.Gloss.Internals.Interface.Animate1,2
+animateWithBackendIO backend35,36
+getsIORef ::78,79
+getsIORef ref79,80
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Backend/GLFW.hs,1338
+module Graphics.Gloss.Internals.Interface.Backend.GLFW4,5
+data GLFWState35,36
+        = GLFWState36,37
+        { -- | Status of37,38
+          modifiers     ::38,39
+        , mousePosition ::41,42
+        , mouseWheelPos ::44,45
+        , dirtyScreen   ::47,48
+        , display       ::50,51
+        , idle          ::53,54
+glfwStateInit ::58,59
+glfwStateInit59,60
+instance Backend70,71
+initializeGLFW ::91,92
+initializeGLFW _92,93
+exitGLFW ::108,109
+exitGLFW _109,110
+openWindowGLFW _125,126
+dumpStateGLFW ::153,154
+dumpStateGLFW _154,155
+installDisplayCallbackGLFW stateRef194,195
+callbackDisplay stateRef203,204
+installWindowCloseCallbackGLFW _221,222
+installReshapeCallbackGLFW stateRef237,238
+callbackReshape glfwState246,247
+installKeyMouseCallbackGLFW stateRef264,265
+callbackKeyboard stateRef277,278
+setModifiers stateRef297,298
+callbackChar stateRef319,320
+callbackMouseButton stateRef343,344
+callbackMouseWheel stateRef360,361
+setMouseWheel stateRef374,375
+installMotionCallbackGLFW stateRef389,390
+callbackMotion stateRef396,397
+setMousePos stateRef408,409
+installIdleCallbackGLFW stateRef421,422
+callbackIdle stateRef428,429
+runMainLoopGLFW stateRef438,439
+postRedisplayGLFW stateRef467,468
+class GLFWKey a473,474
+  fromGLFW ::474,475
+charToSpecial ::545,546
+charToSpecial c546,547
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Backend/GLUT.hs,772
+module Graphics.Gloss.Internals.Interface.Backend.GLUT1,2
+import Graphics.UI.GLUT8,9
+data GLUTState 17,18
+        = GLUTState18,19
+glutStateInit ::20,21
+glutStateInit  =21,22
+instance Backend24,25
+initializeGLUT _70,71
+openWindowGLUT _96,97
+dumpStateGLUT _138,139
+installDisplayCallbackGLUT ref173,174
+callbackDisplay ref180,181
+installReshapeCallbackGLUT ref203,204
+callbackReshape ref211,212
+installKeyMouseCallbackGLUT ref222,223
+callbackKeyMouse ref233,234
+installMotionCallbackGLUT ref249,250
+callbackMotion ref258,259
+installIdleCallbackGLUT ref270,271
+callbackIdle ref277,278
+glutKeyToKey ::284,285
+glutKeyToKey key285,286
+glutKeyStateToKeyState ::326,327
+glutKeyStateToKeyState state327,328
+glutModifiersToModifiers (GLUT.Modifiers338,339
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Backend/Types.hs,3351
+{-# OPTIONS1,2
+module Graphics.Gloss.Internals.Interface.Backend.Types3,4
+class Backend a20,21
+        initBackendState           ::23,24
+        initializeBackend          ::28,29
+        exitBackend                ::31,32
+        openWindow                 ::34,35
+        dumpBackendState           ::37,38
+        installDisplayCallback     ::40,41
+        installWindowCloseCallback ::43,44
+        installReshapeCallback     ::46,47
+        installKeyMouseCallback    ::49,50
+        installMotionCallback      ::52,53
+        installIdleCallback        ::55,56
+        runMainLoop                ::58,59
+        postRedisplay              ::61,62
+        getWindowDimensions        ::64,65
+        elapsedTime                ::68,69
+        sleep                      ::71,72
+type DisplayCallback       =79,80
+type KeyboardMouseCallback =82,83
+type MotionCallback        =85,86
+type IdleCallback          =88,89
+type ReshapeCallback       =91,92
+data Callback94,95
+        = Display  DisplayCallback95,96
+        | KeyMouse KeyboardMouseCallback96,97
+        | Idle     IdleCallback97,98
+        | Motion   MotionCallback98,99
+        | Reshape  ReshapeCallback99,100
+data Key106,107
+        = Char        Char107,108
+        | SpecialKey  SpecialKey108,109
+        | MouseButton MouseButton109,110
+data MouseButton112,113
+        = LeftButton113,114
+        | MiddleButton114,115
+        | RightButton115,116
+        | WheelUp116,117
+        | WheelDown117,118
+        | AdditionalButton Int118,119
+data KeyState121,122
+        = Down122,123
+        | Up123,124
+data SpecialKey126,127
+        = KeyUnknown127,128
+        | KeySpace128,129
+        | KeyEsc129,130
+        | KeyF1130,131
+        | KeyF2131,132
+        | KeyF3132,133
+        | KeyF4133,134
+        | KeyF5134,135
+        | KeyF6135,136
+        | KeyF7136,137
+        | KeyF8137,138
+        | KeyF9138,139
+        | KeyF10139,140
+        | KeyF11140,141
+        | KeyF12141,142
+        | KeyF13142,143
+        | KeyF14143,144
+        | KeyF15144,145
+        | KeyF16145,146
+        | KeyF17146,147
+        | KeyF18147,148
+        | KeyF19148,149
+        | KeyF20149,150
+        | KeyF21150,151
+        | KeyF22151,152
+        | KeyF23152,153
+        | KeyF24153,154
+        | KeyF25154,155
+        | KeyUp155,156
+        | KeyDown156,157
+        | KeyLeft157,158
+        | KeyRight158,159
+        | KeyTab159,160
+        | KeyEnter160,161
+        | KeyBackspace161,162
+        | KeyInsert162,163
+        | KeyNumLock163,164
+        | KeyBegin164,165
+        | KeyDelete165,166
+        | KeyPageUp166,167
+        | KeyPageDown167,168
+        | KeyHome168,169
+        | KeyEnd169,170
+        | KeyPad0170,171
+        | KeyPad1171,172
+        | KeyPad2172,173
+        | KeyPad3173,174
+        | KeyPad4174,175
+        | KeyPad5175,176
+        | KeyPad6176,177
+        | KeyPad7177,178
+        | KeyPad8178,179
+        | KeyPad9179,180
+        | KeyPadDivide180,181
+        | KeyPadMultiply181,182
+        | KeyPadSubtract182,183
+        | KeyPadAdd183,184
+        | KeyPadDecimal184,185
+        | KeyPadEqual185,186
+        | KeyPadEnter186,187
+data Modifiers189,190
+        = Modifiers190,191
+        { shift ::191,192
+        , ctrl  ::192,193
+        , alt   ::193,194
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Animate/State.hs,456
+module Graphics.Gloss.Internals.Interface.Animate.State2,3
+data State8,9
+	= State9,10
+	  stateAnimate			::12,13
+        , stateAnimateCount             ::15,16
+	, stateAnimateStart		::18,19
+	, stateAnimateTime		::21,22
+	, stateDisplayTime		::24,25
+	, stateDisplayTimeLast		::25,26
+	, stateDisplayTimeClamp		::29,30
+	, stateGateTimeStart		::32,33
+	, stateGateTimeEnd		::35,36
+	, stateGateTimeElapsed		::38,39
+stateInit ::41,42
+stateInit42,43
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Animate/Timing.hs,284
+module Graphics.Gloss.Internals.Interface.Animate.Timing11,12
+animateBegin ::23,24
+animateBegin stateRef24,25
+        when (animateCount `mod` 5 == 0)42,43
+	 $ stateRef `modifyIORef` \s ->49,50
+animateEnd ::61,62
+animateEnd stateRef62,63
+getsIORef ::81,82
+getsIORef ref82,83
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Window.hs,58
+import Graphics.Rendering.OpenGL10,11
+createWindow24,25
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Simulate/Idle.hs,307
+module Graphics.Gloss.Internals.Interface.Simulate.Idle3,4
+callback_simulate_idle simSR29,30
+simulate_reset ::49,50
+simulate_reset simSR50,51
+simulate_run simSR70,71
+{-	putStr94,95
+-}100,101
+simulate_step simSR133,134
+getsIORef ::147,148
+getsIORef ref148,149
+untilM ::151,152
+untilM test152,153
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Simulate/State.hs,348
+module Graphics.Gloss.Internals.Interface.Simulate.State2,3
+data State	8,9
+ = 	State9,10
+	{ -- | The iteration10,11
+	  stateIteration	::11,12
+	, stateRun		::14,15
+	, stateStep		::17,18
+	, stateReset		::20,21
+	, stateResolution	::23,24
+	, stateSimTime		::26,27
+	, stateStepsPerFrame 	::29,30
+stateInit ::33,34
+stateInit resolution34,35
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Common/Exit.hs,152
+module Graphics.Gloss.Internals.Interface.Common.Exit4,5
+callback_exit ::9,10
+callback_exit stateRef10,11
+keyMouse_exit ::13,14
+keyMouse_exit14,15
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Display.hs,87
+module Graphics.Gloss.Internals.Interface.Display1,2
+displayWithBackend backend30,31
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort/ControlState.hs,280
+module Graphics.Gloss.Internals.Interface.ViewPort.ControlState2,3
+data State14,15
+	= State {15,16
+	  stateCommands		::19,20
+	, stateScaleStep	::22,23
+	, stateRotateFactor	::25,26
+	, stateTranslateMark	::29,30
+	, stateRotateMark	::33,34
+stateInit ::38,39
+stateInit39,40
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort/Reshape.hs,225
+module Graphics.Gloss.Internals.Interface.ViewPort.Reshape2,3
+import Graphics.Rendering.OpenGL7,8
+callback_viewPort_reshape ::13,14
+callback_viewPort_reshape14,15
+viewPort_reshape ::18,19
+viewPort_reshape stateRef19,20
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort/KeyMouse.hs,358
+module Graphics.Gloss.Internals.Interface.ViewPort.KeyMouse3,4
+callback_viewPort_keyMouse portRef24,25
+viewPort_keyMouse portRef33,34
+{-	putStr36,37
+-}39,40
+controlZoomIn ::170,171
+controlZoomIn portRef171,172
+controlZoomOut ::177,178
+controlZoomOut portRef178,179
+motionBump ::184,185
+motionBump185,186
+getsIORef ::205,206
+getsIORef ref206,207
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort/Command.hs,375
+module Graphics.Gloss.Internals.Interface.ViewPort.Command4,5
+data Command13,14
+	= CRestore14,15
+	| CTranslate16,17
+	| CRotate17,18
+	| CBumpZoomOut20,21
+	| CBumpZoomIn21,22
+	| CBumpLeft24,25
+	| CBumpRight25,26
+	| CBumpUp26,27
+	| CBumpDown27,28
+	| CBumpClockwise30,31
+	| CBumpCClockwise31,32
+defaultCommandConfig36,37
+isCommand commands84,85
+isCommand2 _91,92
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/ViewPort/Motion.hs,227
+module Graphics.Gloss.Internals.Interface.ViewPort.Motion3,4
+callback_viewPort_motion portRef24,25
+viewPort_motion32,33
+--	putStr37,38
+motionTranslate 71,72
+motionRotate 106,107
+getsIORef ::123,124
+getsIORef ref124,125
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Internals/Interface/Backend.hs,140
+module Graphics.Gloss.Internals.Interface.Backend5,6
+defaultBackendState ::26,27
+defaultBackendState ::28,29
+defaultBackendState =32,33
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Geometry/Angle.hs,158
+module Graphics.Gloss.Geometry.Angle2,3
+degToRad ::10,11
+degToRad d11,12
+radToDeg ::16,17
+radToDeg r17,18
+normaliseAngle ::22,23
+normaliseAngle f23,24
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Geometry/Line.hs,441
+module Graphics.Gloss.Geometry.Line6,7
+segClearsBox (x1,40,41
+--	return the point on that line that is closest to `P3`49,50
+	:: Point 	-- ^ `P1`51,52
+closestPointOnLine p158,59
+closestPointOnLineParam p191,92
+intersectLineLine (x1,120,121
+intersectSegLine p1151,152
+intersectSegHorzLine (x1,177,178
+intersectSegVertLine (x1,218,219
+intersectSegSeg p1251,252
+intersectSegHorzSeg p1@(x1,282,283
+intersectSegVertSeg p1@(x1,314,315
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Algorithms/RayCast.hs,245
+module Graphics.Gloss.Algorithms.RayCast3,4
+	, c : _		<- sortBy ((compareDistanceTo p1) `on` (\(a, _, _) ->34,35
+compareDistanceTo ::40,41
+compareDistanceTo p041,42
+distance ::46,47
+distance (x1,47,48
+traceSegIntoCellularQuadTree p165,66
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/IO/Simulate.hs,87
+module Graphics.Gloss.Interface.IO.Simulate8,9
+simulateIO ::23,24
+simulateIO =35,36
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/IO/Game.hs,76
+module Graphics.Gloss.Interface.IO.Game4,5
+playIO  ::19,20
+playIO =30,31
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/IO/Animate.hs,100
+module Graphics.Gloss.Interface.IO.Animate2,3
+animateIO display27,28
+animateFixedIO display43,44
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/Pure/Simulate.hs,91
+module Graphics.Gloss.Interface.Pure.Simulate8,9
+simulate ::29,30
+simulate display40,41
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/Pure/Game.hs,85
+module Graphics.Gloss.Interface.Pure.Game7,8
+play    ::22,23
+play    display33,34
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/Pure/Animate.hs,88
+module Graphics.Gloss.Interface.Pure.Animate2,3
+animate ::19,20
+animate display25,26
+
+./prototypes/gloss-1.7.6.5/Graphics/Gloss/Interface/Pure/Display.hs,82
+module Graphics.Gloss.Interface.Pure.Display2,3
+display ::27,28
+display =32,33
+
+./prototypes/foo.hs,842
+drawT tree7,8
+drawT' tree8,9
+tree0 =10,11
+tree1 =11,12
+tree1Int =12,13
+tree2 =13,14
+tree2Int =14,15
+tree3Int =15,16
+tree123Int =16,17
+tree1_123_23Int =18,19
+tree5Int =19,20
+tree6Int =20,21
+tree1_123_56Int =22,23
+tree1_123_56_1_123_23Int =23,24
+tree21Int =24,25
+tree21 =27,28
+tree321 =28,29
+tree231 =29,30
+tree321321 =30,31
+tree231231 =31,32
+--treeFunc =33,34
+root =35,36
+instance Monad40,41
+class Foo a45,46
+	foo ::46,47
+zip' (x:xs)61,62
+zipWith' f64,65
+func f67,68
+data Shape =69,70
+data Shape = Circle Float69,70
+data Shape = Circle Float Float Float | Rectangle Float69,70
+data Point =71,72
+data Point = Point Float71,72
+data RGB =73,74
+data RGB = Red Float73,74
+data RGB = Red Float | Green Float73,74
+data RGB = Red Float | Green Float | Blue Float73,74
+devides d75,76
+main =77,78
+reverse' l82,83
+
+./prototypes/logic.hs,145
+infix 11,2
+(==>) ::2,3
+(==>) :: Bool2,3
+x ==>3,4
+(<=>) :: Bool8,9
+(<+>) :: Bool13,14
+p =16,17
+q =17,18
+formula1 =19,20
+formula2 p20,21
+
+./prototypes/sequence.hs,11
+main =0,1
+
+./prototypes/datatypes.hs,72
+data Foo =4,5
+data Foo = Bool |4,5
+data Foo = Bool | Int deriving4,5
+
+./prototypes/mapMexr.hs,11
+main =0,1
+
+./prototypes/trees.hs.study,959
+--data Tree10,11
+--type Leaf11,12
+data Rose a13,14
+data Rose a = Rose a13,14
+tree0 =22,23
+tree1 =23,24
+tree2 =24,25
+tree21 =25,26
+tree321 =26,27
+tree231 =27,28
+tree321321=Node{rootLabel="321321",subForest =28,29
+tree231231=Node{rootLabel="231231",subForest =29,30
+data Hetero =31,32
+data Hetero = HeteroInt Int31,32
+data Hetero = HeteroInt Int | HeteroString String31,32
+--treeHetero =33,34
+root =35,36
+drawTree' ::38,39
+drawTree'  =39,40
+draw ::41,42
+draw (Node42,43
+--bar =60,61
+addString ::64,65
+addString []65,66
+stoi ::69,70
+stoi =70,71
+stof ::73,74
+stof =74,75
+--addLabels ::85,86
+--addLabels t86,87
+--foobar []93,94
+--		|96,97
+leaf ::101,102
+leaf tree102,103
+nonLeaves ::107,108
+nonLeaves ts108,109
+rebuild ::111,112
+rebuild tree112,113
+foo ::114,115
+foo []115,116
+slice ::123,124
+slice t124,125
+bar ::130,131
+bar ([],[])131,132
+split xs137,138
+class AddClass a142,143
+	add ::143,144
+instance Num145,146
+
+./prototypes/random.hs,49
+threeCoins ::2,3
+threeCoins gen3,4
+foo =10,11
+
+./prototypes/trees.hs,472
+module Trees0,1
+tree0 =9,10
+tree1 =10,11
+tree2 =11,12
+tree21 =12,13
+tree321 =13,14
+tree231 =14,15
+tree321321=Node{rootLabel="321321",subForest =15,16
+tree231231=Node{rootLabel="231231",subForest =16,17
+root =18,19
+drawTree' ::22,23
+drawTree'  =23,24
+draw ::25,26
+draw (Node26,27
+sumStrings ::37,38
+sumStrings []38,39
+leaf ::42,43
+leaf tree43,44
+leaves' ::48,49
+leaves' []49,50
+leaves ::55,56
+leaves tree56,57
+countLeaves ::61,62
+countLeaves t62,63
+
+./prototypes/tamo.hs,16
+module TAMO0,1
+
+./prototypes/bar.hs,21
+foo ::0,1
+foo x1,2
+
+./prototypes/Trees.hs.pattern_matching,851
+mapLabel ::4,5
+mapLabel f5,6
+instance Functor15,16
+module Trees18,19
+tree0 =26,27
+tree1 =27,28
+tree2 =28,29
+tree21 =29,30
+tree321 =30,31
+tree231 =31,32
+tree321321=Node{rootLabel="321321",subForest =32,33
+tree231231=Node{rootLabel="231231",subForest =33,34
+root =35,36
+drawTree' ::39,40
+drawTree'  =40,41
+draw ::42,43
+draw (Node43,44
+sumStrings ::54,55
+sumStrings []55,56
+leaf ::59,60
+leaf tree60,61
+--leaves' ::65,66
+--leaves' []66,67
+--	|68,69
+leaves ::72,73
+leaves tree73,74
+mapLabel' ::81,82
+mapLabel' f82,83
+mapLabel'' ::90,91
+mapLabel'' f91,92
+mapLabel''' ::98,99
+mapLabel''' f99,100
+mapLabel ::108,109
+{-mapLabel f120,121
+sumLeaves ::134,135
+sumLeaves t135,136
+leavesValue ::137,138
+leavesValue tree138,139
+walkTree ::148,149
+walkTree (Node149,150
+--		(~=164,165
+members ::177,178
+members (Node178,179
+
+./prototypes/DTree.hs,164
+data Tree a17,18
+data Tree a = Node {17,18
+        rootLabel ::18,19
+        subForest ::19,20
+type Forest a23,24
+type Forest a =23,24
+instance Functor26,27
+
+./prototypes/Trees.hs.bak,1272
+module Trees3,4
+tree0 =13,14
+tree1 =14,15
+tree2 =15,16
+tree21 =16,17
+treeInteger21 =17,18
+tree321 =18,19
+tree231 =19,20
+tree321321=Node{rootLabel="321321",subForest =20,21
+tree231231=Node{rootLabel="231231",subForest =21,22
+root =23,24
+drawTree' ::27,28
+drawTree'  =28,29
+draw ::30,31
+draw (Node31,32
+sumStrings ::42,43
+sumStrings []43,44
+leaf ::47,48
+leaf tree48,49
+leaves ::53,54
+leaves tree54,55
+--mapLabel ::66,67
+--mapLabel f67,68
+--mapSubForest f84,85
+--						                |88,89
+--								|89,90
+--							                        where90,91
+fmapF ::93,94
+fmapF f94,95
+fmapF' f96,97
+multLabels ::99,100
+multLabels t100,101
+multIntSubForests ::102,103
+multIntSubForests t103,104
+gamma ::105,106
+gamma t106,107
+multIntTrees ::108,109
+multIntTrees =109,110
+multIntForests ::112,113
+multIntForests []113,114
+boolToInt ::117,118
+boolToInt =118,119
+listLabelsF ::122,123
+listLabelsF =123,124
+listBoolLeaves ::126,127
+listBoolLeaves =127,128
+listIntBoolLeaves ::130,131
+listIntBoolLeaves =131,132
+sumLeaves ::134,135
+sumLeaves t135,136
+alpha ::138,139
+alpha (Node139,140
+leavesValue ::142,143
+leavesValue tree143,144
+walkTree ::153,154
+walkTree (Node154,155
+--		(~=169,170
+members ::182,183
+members (Node183,184
+
+./prototypes/primes.hs,860
+divides ::2,3
+divides d3,4
+ld ::5,6
+ld n6,7
+ldf ::8,9
+ldf k9,10
+ldp ::13,14
+ldp n14,15
+ldpf ::17,18
+ldpf (x:xs)18,19
+prime ::23,24
+prime n24,25
+primes ::29,30
+primes =30,31
+primes1 ::33,34
+primes1 =34,35
+mnmInt ::37,38
+mnmInt []38,39
+maxInt ::43,44
+maxInt []44,45
+removeFst ::49,50
+removeFst _50,51
+count ::56,57
+count _57,58
+copyChar ::65,66
+copyChar 066,67
+blowup ::70,71
+blowup xs71,72
+blowup' ::74,75
+blowup' []75,76
+{-sortStrings []80,81
+quickSort ::83,84
+quickSort []84,85
+half' ::91,92
+half' []92,93
+half ::96,97
+half []97,98
+binarySort ::101,102
+binarySort []102,103
+sortBinary ::108,109
+sortBinary (a,109,110
+bind ::114,115
+bind xs115,116
+lengthOfMembers ::118,119
+lengthOfMembers xs119,120
+sumLOM ::122,123
+sumLOM []123,124
+filter' ::127,128
+filter' p128,129
+randList ::134,135
+randList seed135,136
+
+./prototypes/Trees/Trees.hs,472
+module Trees0,1
+tree0 =9,10
+tree1 =10,11
+tree2 =11,12
+tree21 =12,13
+tree321 =13,14
+tree231 =14,15
+tree321321=Node{rootLabel="321321",subForest =15,16
+tree231231=Node{rootLabel="231231",subForest =16,17
+root =18,19
+drawTree' ::22,23
+drawTree'  =23,24
+draw ::25,26
+draw (Node26,27
+sumStrings ::37,38
+sumStrings []38,39
+leaf ::42,43
+leaf tree43,44
+leaves' ::48,49
+leaves' []49,50
+leaves ::55,56
+leaves tree56,57
+countLeaves ::61,62
+countLeaves t62,63
+
+./prototypes/fibonacci.hs,36
+g' n0,1
+g n4,5
+h' n8,9
+h n12,13
+
+./prototypes/grapefruit.hs,11
+main =4,5
+
+./prototypes/random2.hs,90
+--newtype State4,5
+randomSt ::7,8
+randomSt =8,9
+threeCoins ::11,12
+threeCoins =12,13
+
+./prototypes/monads.hs,287
+data Person a0,1
+data Person a = Person {father::String,0,1
+data Person a = Person {father::String, mother::String} deriving0,1
+data Person a = Person {father::String, mother::String} deriving Show 0,1
+father ::2,3
+mother ::3,4
+{-maternalGrandfather p6,7
+bothGrandfathers p10,11
+
+./prototypes/helloworld.hs,11
+main =0,1
+
+./prototypes/monads2.hs,62
+unJust ::0,1
+unJust (Just1,2
+safeSqrt ::4,5
+safeSqrt x5,6
+
+./prototypes/quickSort.hs,34
+quickSort ::0,1
+quickSort []1,2
+
+./prototypes/random_exr01.hs,11
+main =2,3
+
+./prototypes/GTK/Main.hs.bak,45
+module Main where0,1
+main ::4,5
+main =5,6
+
+./prototypes/GTK/Main.hs,45
+module Main where0,1
+main ::4,5
+main =5,6
+
+./prototypes/tree_monads.hs,547
+data Tree a12,13
+data Tree a = Node {12,13
+        rootLabel ::13,14
+        subForest ::14,15
+type Forest a17,18
+type Forest a =17,18
+{-instance Monad20,21
+instance Monad25,26
+tree0 =33,34
+tree1 =34,35
+tree1Int =35,36
+tree2 =36,37
+tree2Int =37,38
+tree3Int =38,39
+tree123Int =39,40
+tree1_123_23Int =41,42
+tree5Int =42,43
+tree6Int =43,44
+tree1_123_56Int =45,46
+tree1_123_56_1_123_23Int =46,47
+tree21Int =47,48
+tree21 =50,51
+tree321 =51,52
+tree231 =52,53
+tree321321 =53,54
+tree231231 =54,55
+--treeFunc =56,57
+root =58,59
+
+./prototypes/Trees.hs,628
+module Trees0,1
+tree0 =8,9
+tree1 =9,10
+tree2 =10,11
+tree21 =11,12
+tree321 =12,13
+tree231 =13,14
+tree321321=Node{rootLabel="321321",subForest =14,15
+tree231231=Node{rootLabel="231231",subForest =15,16
+root =17,18
+drawTree' ::21,22
+drawTree'  =22,23
+draw ::24,25
+draw (Node25,26
+sumStrings ::36,37
+sumStrings []37,38
+leaf ::41,42
+leaf tree42,43
+leaves ::47,48
+leaves tree48,49
+mapLabel ::57,58
+mapLabel f58,59
+mapSubForest f66,67
+sumLeaves ::74,75
+sumLeaves t75,76
+leavesValue ::77,78
+leavesValue tree78,79
+walkTree ::88,89
+walkTree (Node89,90
+--		(~=104,105
+members ::117,118
+members (Node118,119
+
+./prototypes/indexing.hs,0
+
+./prototypes/gtk.hs.bak,45
+module Main where0,1
+main ::4,5
+main =5,6
+
+./prototypes/Trees.hs.bak1,1215
+module Trees4,5
+tree0 =14,15
+tree1 =15,16
+tree2 =16,17
+tree21 =17,18
+treeInteger21 =18,19
+treeIntegerList21 =19,20
+tree321 =20,21
+tree231 =21,22
+tree321321=Node{rootLabel="321321",subForest =22,23
+tree231231=Node{rootLabel="231231",subForest =23,24
+root =25,26
+drawTree' ::29,30
+drawTree'  =30,31
+draw ::32,33
+draw (Node33,34
+sumStrings ::44,45
+sumStrings []45,46
+leaf ::49,50
+leaf tree50,51
+leaves ::55,56
+leaves tree56,57
+--mapLabel ::68,69
+--mapLabel f69,70
+--mapSubForest f86,87
+--						                |90,91
+--								|91,92
+--							                        where92,93
+fmapF ::95,96
+fmapF f96,97
+fmapF' f98,99
+delta f100,101
+gamma ::102,103
+gamma t103,104
+multIntTrees ::107,108
+multIntTrees =108,109
+multIntForests ::111,112
+multIntForests []112,113
+boolToInt ::117,118
+boolToInt =118,119
+listLabelsF ::122,123
+listLabelsF =123,124
+listBoolLeaves ::126,127
+listBoolLeaves =127,128
+listIntBoolLeaves ::130,131
+listIntBoolLeaves =131,132
+sumLeaves ::134,135
+sumLeaves t135,136
+alpha ::138,139
+alpha (Node139,140
+leavesValue ::142,143
+leavesValue tree143,144
+walkTree ::153,154
+walkTree (Node154,155
+--		(~=169,170
+members ::182,183
+members (Node183,184
+
+./prototypes/sieve.hs,83
+sieve ::2,3
+sieve (n:ns)3,4
+primes ::6,7
+primes =7,8
+main ::9,10
+main =10,11
+
+./prototypes/goodby.hs,54
+greeting ::2,3
+greeting =3,4
+main ::5,6
+main =6,7
+
+./prototypes/GlobRegex.hs,239
+module GlobRegex0,1
+import Text.Regex.Posix6,7
+globToRegex ::8,9
+globToRegex ""9,10
+escape ::22,23
+escape c | c `elem` regexChars =23,24
+charClass ::28,29
+charClass (']':cs)29,30
+matchesGlob ::34,35
+name `matchesGlob` pat =35,36
+
+./prototypes/tutorial.hs,331
+type Point     =7,8
+type Color     =8,9
+type Polygon   =9,10
+type Person    =10,11
+type Link      =11,12
+type Placement =12,13
+type EnergyFunction a14,15
+type EnergyFunction a              =14,15
+type TemperatureFunction           =15,16
+type TransitionProbabilityFunction =16,17
+type MotionFunction a17,18
+main =19,20
+
+./prototypes/Cirles/circles.hs.zip,267
+draw ::5,6
+draw (x,6,7
+draw_circles ::8,9
+draw_circles =9,10
+circles ::11,12
+circles (x,y)12,13
+--circles' ::14,15
+--circles' [(x,y)]15,16
+circles'' ::17,18
+circles'' (x:xs)18,19
+translate' ::20,21
+translate' (a,b)21,22
+display' ::23,24
+display' =24,25
+
+./prototypes/Cirles/circles.hs.even_shorter,46
+display_circles ::5,6
+display_circles xs6,7
+
+./prototypes/Cirles/circles.hs,148
+circles ::5,6
+circles =6,7
+translate' ::8,9
+translate' (a,b)9,10
+draw_circles ::11,12
+draw_circles ys12,13
+display' ::14,15
+display' =15,16
+
+./prototypes/Cirles/circles.hs.short,188
+draw ::5,6
+draw =6,7
+circles ::8,9
+circles xs9,10
+display_circles ::11,12
+display_circles xs12,13
+display' ::15,16
+display' =16,17
+--draw_circles' ::18,19
+--draw_circles' =19,20
+
+./prototypes/Cirles/circles.hs.many_variants,363
+draw ::5,6
+draw xs6,7
+draw' ::8,9
+draw' (x,9,10
+draw''' ::11,12
+draw''' =12,13
+--draw''''' ::14,15
+--draw'''''(x,y) xs15,16
+draw'''' ::17,18
+draw'''' =18,19
+draw'' ::20,21
+draw'' (x,21,22
+circles ::23,24
+circles xs24,25
+circles' ::26,27
+circles' (x,y)27,28
+display' ::29,30
+display' =30,31
+--display'' ::((Float,Float)32,33
+--display'' =33,34
+
+./prototypes/Cirles/Circles.hs,174
+module Circles2,3
+circles ::10,11
+circles =11,12
+translate' ::13,14
+translate' (a,b)14,15
+draw_circles ::16,17
+draw_circles ys17,18
+display' ::19,20
+display' =20,21
+
+./prototypes/Cirles/circles.hs.recursion_and_zipWith,200
+--draw ::5,6
+--draw (x,6,7
+draw_circles ::8,9
+draw_circles ys9,10
+circles ::11,12
+--circles []12,13
+circles =16,17
+translate' ::18,19
+translate' (a,b)19,20
+display' ::21,22
+display' =22,23
+
+./prototypes/Cirles/circles.hs.bak,182
+--draw ::5,6
+--draw (x,6,7
+draw_circles ::8,9
+draw_circles ys9,10
+circles ::11,12
+circles []12,13
+translate' ::16,17
+translate' (a,b)17,18
+display' ::19,20
+display' =20,21
+
+./prototypes/Cirles/circles.hs.curry_variants,261
+draw ::5,6
+draw xs6,7
+draw' ::8,9
+draw' (x,9,10
+draw''' ::11,12
+draw''' =12,13
+draw'''' ::14,15
+draw'''' =15,16
+draw'' ::17,18
+draw'' (x,18,19
+circles ::20,21
+circles xs21,22
+circles' ::23,24
+circles' (x,y)24,25
+display' ::26,27
+display' =27,28
+
+./prototypes/Query/.query_.hs.swp,408
+  û	  á	  Ã	  Â8,9
+  ð  Î  Í  ¥        D  .  -  ê  §      K    æ  å    Q    Ñ  Ð      J     ÿ  þ  Ë  ¹  ¸        9      Ý  º  ¹      {  z                                                                                                                                                                                             ---- parents9,10
+
+./prototypes/Query/query.hs.bak3,516
+draw_circles ::6,7
+draw_circles =7,8
+convRow ::9,10
+convRow [sqlId,10,11
+convRow' ::18,19
+convRow' [sqlId,19,20
+query' ::35,36
+query' maxId36,37
+query_visits ::52,53
+query_visits maxId53,54
+---- draw_parents102,103
+----	current103,104
+------										let132,133
+------										l133,134
+------										L134,135
+------						   (reduce135,136
+------													 =>136,137
+------															where138,139
+node_radius ::141,142
+node_radius [xs]142,143
+node_angle ::146,147
+node_angle xs147,148
+
+./prototypes/Query/query.hs,582
+draw_circles ::6,7
+draw_circles =7,8
+convRow ::9,10
+convRow [sqlId,10,11
+convRow' ::18,19
+convRow' [sqlId,19,20
+query' ::35,36
+query' maxId36,37
+query_visits ::52,53
+query_visits maxId53,54
+---- draw_parents102,103
+----	current103,104
+------										let132,133
+------										l133,134
+------										L134,135
+------						   (reduce135,136
+------													 =>136,137
+------															where138,139
+node_radius ::141,142
+node_radius [xs]142,143
+p_nodes_angles ::146,147
+p_nodes_angles xs147,148
+p_nodes_positions ::151,152
+p_nodes_positions []152,153
+
+./prototypes/Query/query.hs.bak2,514
+draw_circles ::5,6
+draw_circles =6,7
+convRow ::8,9
+convRow [sqlId,9,10
+convRow' ::17,18
+convRow' [sqlId,18,19
+query' ::34,35
+query' maxId35,36
+query_visits ::51,52
+query_visits maxId52,53
+---- draw_parents101,102
+----	current102,103
+------										let131,132
+------										l132,133
+------										L133,134
+------						   (reduce134,135
+------													 =>135,136
+------															where137,138
+node_radius ::140,141
+node_radius [xs]141,142
+node_angle ::145,146
+node_angle xs146,147
+
+./prototypes/Query/query.hs.bak1,510
+draw_circles ::5,6
+draw_circles =6,7
+convRow ::8,9
+convRow [sqlId,9,10
+convRow' ::17,18
+convRow' [sqlId,18,19
+query' ::34,35
+query' maxId35,36
+query_visits ::51,52
+query_visits maxId52,53
+---- draw_parents101,102
+----	current102,103
+------										let131,132
+------										l132,133
+------										L133,134
+------						   (reduce134,135
+------													 =>135,136
+------															where137,138
+arc_length ::139,140
+arc_length =140,141
+node_radius ::142,143
+node_radius l143,144
+
+./prototypes/Query/query.hs.bak,29
+query ::7,8
+query maxId8,9
+
+./prototypes/Query/query_.hs.bak,137
+draw_circles ::5,6
+draw_circles =6,7
+convRow ::8,9
+convRow [sqlId,9,10
+query' ::21,22
+query' maxId22,23
+{-query_visits maxId39,40
+
+./prototypes/Query/query_.hs,198
+draw_circles ::5,6
+draw_circles =6,7
+convRow ::8,9
+convRow [sqlId,9,10
+convRow' ::17,18
+convRow' [sqlId,18,19
+query' ::34,35
+query' maxId35,36
+query_visits ::51,52
+query_visits maxId52,53
+
+./prototypes/foo.hs.bak,381
+foo::IO()0,1
+foo =1,2
+data Shape =3,4
+data Shape = Circle Float3,4
+data Shape = Circle Float Float Float | Rectangle Float3,4
+data Point =5,6
+data Point = Point Float5,6
+data RGB =7,8
+data RGB = Red Float7,8
+data RGB = Red Float | Green Float7,8
+data RGB = Red Float | Green Float | Blue Float7,8
+devides d9,10
+main =11,12
+foo ::15,16
+foo' ::19,20
+foo' (x:xs)20,21
+
+./prototypes/foo_instance.hs,439
+class Foo a4,5
+	foo ::5,6
+instance a7,8
+zip' (x:xs)20,21
+zipWith' f23,24
+func f26,27
+data Shape =28,29
+data Shape = Circle Float28,29
+data Shape = Circle Float Float Float | Rectangle Float28,29
+data Point =30,31
+data Point = Point Float30,31
+data RGB =32,33
+data RGB = Red Float32,33
+data RGB = Red Float | Green Float32,33
+data RGB = Red Float | Green Float | Blue Float32,33
+devides d34,35
+main =36,37
+reverse' l41,42
+
+./prototypes/gtk.hs,45
+module Main where0,1
+main ::4,5
+main =5,6
+
+./prototypes/trees.hs.bak,615
+--data Tree10,11
+--type Leaf11,12
+data Rose a13,14
+data Rose a = Rose a13,14
+tree0 =22,23
+tree1 =23,24
+tree2 =24,25
+tree21 =25,26
+tree221 =26,27
+tree321 =27,28
+root =29,30
+drawTree' ::32,33
+drawTree'  =33,34
+draw ::35,36
+draw (Node36,37
+--bar =54,55
+addString ::58,59
+addString []59,60
+stoi ::63,64
+stoi =64,65
+stof ::67,68
+stof =68,69
+--addLabels ::79,80
+--addLabels t80,81
+--foobar []87,88
+--		|90,91
+--leaf ::95,96
+--foo ::101,102
+foo =102,103
+split xs105,106
+class AddClass a109,110
+	add ::110,111
+instance Num112,113
+--	add116,117
+--instance Num122,123
+--add (Single135,136
+
+./dist/build/autogen/Paths_Entropy.hs,681
+module Paths_Entropy (0,1
+catchIO ::11,12
+catchIO =12,13
+version ::15,16
+version =16,17
+bindir, libdir, datadir, libexecdir :: FilePath17,18
+bindir, libdir, datadir, libexecdir :: FilePath17,18
+bindir, libdir, datadir, libexecdir17,18
+bindir, libdir,17,18
+bindir     =19,20
+libdir     =20,21
+datadir    =21,22
+libexecdir =22,23
+getBinDir, getLibDir, getDataDir, getLibexecDir :: IO FilePath24,25
+getBinDir, getLibDir, getDataDir, getLibexecDir :: IO24,25
+getBinDir, getLibDir, getDataDir, getLibexecDir24,25
+getBinDir, getLibDir,24,25
+getBinDir =25,26
+getLibDir =26,27
+getDataDir =27,28
+getLibexecDir =28,29
+getDataFileName ::30,31
+getDataFileName name31,32

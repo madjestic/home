@@ -1,0 +1,13 @@
+
+./Main.hs~,11
+main =7,8
+
+./Main.hs,45
+module Main where0,1
+main ::5,6
+main =6,7
+
+./Foo.hs,45
+module Foo where0,1
+foo::IO()3,4
+foo =4,5

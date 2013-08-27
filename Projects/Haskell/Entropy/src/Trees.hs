@@ -47,7 +47,7 @@ leaf :: (Eq a) => Tree a -> Bool
 leaf = (\x -> if (subForest x == []) then True else False)
 
 
--- | (f tree) -> rootLabel                                                                         
+-- | (f tree) -> rootLabel
 fmapT :: (Tree t -> a) -> Tree t -> Tree a
 fmapT f tree@(Node x ts) = Node (f tree) (map (fmapT f) ts)
 
@@ -66,9 +66,9 @@ mapF _ (Node l []) = Node l []
 
 
 scanlT :: (a -> a -> a) -> Tree a -> Tree a -> Tree a
-scanlT f q tree@(Node _ forest) = 
-	let 
-		k = rootLabel $ zipWithT' f q tree 
+scanlT f q tree@(Node _ forest) =
+	let
+		k = rootLabel $ zipWithT' f q tree
  		l = zipWithT' f q tree
 	in case forest of
 		[]     -> Node k []
@@ -93,7 +93,7 @@ zipWithF f (q:qs) (t:ts) = zipWithT f q t : zipWithF f qs ts
 zipWithF _ _ _ = []
 
 
--- | Cheaper version of zipWithT: children are not computed 
+-- | Cheaper version of zipWithT: children are not computed
 zipWithT' :: (t -> t1 -> a) -> Tree t -> Tree t1 -> Tree a
 zipWithT' f (Node l1 _) (Node l2 _) = Node (f l1 l2) []
 
@@ -101,7 +101,7 @@ zipWithT' f (Node l1 _) (Node l2 _) = Node (f l1 l2) []
 
 leaves tree = fmapT ((\x -> if x == True then 1 else 0) . leaf) tree
 
-sum_leaves tree = foldr1 (+) $ flatten $ zipWithT (*) tree (leaves tree) 
+sum_leaves tree = foldr1 (+) $ flatten $ zipWithT (*) tree (leaves tree)
 
 
 shifT' :: a -> Tree a -> Tree a
@@ -119,72 +119,30 @@ fromIntegerT (Node tl ts) = Node (fromInteger tl) (map fromIntegerT ts)
 
 weightT :: (Eq a, Fractional a) => Tree Integer -> Tree a
 weightT tree = zipWithT (/) (k $ f tree) (l $ f tree)
-	where 
+	where
 		f = fromIntegerT
-		k = fmapT sum_leaves 
+		k = fmapT sum_leaves
 		l t = shifT $ fmapT sum_leaves t
 
 
 -- | Compute angles, based on weights
 -- | An angle is the arc, connecting the x axis and the center of a leaf node
 
-anglesT :: (Num a, Fractional a) => Tree a -> Tree a 
+anglesT :: (Num a, Fractional a) => Tree a -> Tree a
 anglesT tree@(Node l forest) = Node q (anglesF q forest)
 						      where q = 0.5 * l
 
-anglesF :: (Num a, Fractional a) => a -> [Tree a] -> [Tree a] 
+anglesF :: (Num a, Fractional a) => a -> [Tree a] -> [Tree a]
 anglesF q forest = case forest of
 		[] 	   -> []
-		(t:[]) -> [Node l []] 
+		(t:[]) -> [Node l []]
 			where l = 180 * ( q + 0.5 * rootLabel t )
 		(t:ts) -> Node l (anglesF l (subForest t)): anglesF l ts
 			where l = 180 * ( q + 0.5 * rootLabel t )
 
 
 geoT :: Floating t => Tree t -> Tree t -> Tree (t, t, t)
-geoT = zipWithT (\weight angle -> (weight, weight*sin(angle), weight*cos(angle))) 
+geoT = zipWithT (\weight angle -> (weight, weight*sin(angle), weight*cos(angle)))
 
 foo = anglesT (fromIntegerT tree1_123_56Int)
 bar = weightT tree1_123_56Int
---drawT' $ geoT foo bar
-
--- drawT' $ ltoT (rootLabel tree1_123_56Int) tree1_123_56Int
-
---drawT' $ Node (*2) [] <*> tree123Int -- applicative functor usage example
---drawT' $ tree123Int >>= (\x -> Node (x*x) []) -- monad use example
---drawT' $ fmap (\x -> if x == True then 1 else 0) $ fmapT leaf tree1_123_56Int
-
--- ### I finished, looking for a way to use traversable, from Data.Trees
--- drawT' $ traverse id (Just tree123Int)
--- which is identical to this:
--- drawT' $ tree123Int >>= (\x -> Node (Just x) [])
-
-
-
---drawT' $ fmapT sum_leaves tree1_123_56Int
-
--- I need a function, which takes a tree and draws a set of circles.
--- 100) a draw function takes a triple (x, y, radius))
--- each tree contains leafs and branches
--- 		(~= each node contains 0 or more sub-nodes)
--- both branches and trees are represented as circles: a branch is a circle,
--- 		(~= each node is a circle)
--- surrounded by other circles - leaves and sub-branches
---		(~= each node is surrounded by 0 or more sub-nodes)
--- The tree is being walked through:
--- 5) Compute the number of sub-objects on a tree and their weights:
--- 10) 	Aquire a tree, containing weight (radius) values
---  		node weight is based on the number o sub-nodes per node
-
--- 13) 	Aquire a tree, containing the number of members per node 				#DONE
-
--- 15) 	(?) Modify the tree data type to accomodate for weights (radii) 
---      and number of members
---		   (number of members may be aquired from weights (radii)) 				#DONE/Not needed 
---         																		##- achieved with fmap and multiple trees/zips 
-
--- 20)  Tree [radii] -> Tree [x,y]
--- 25)  map draw $ zipWith (Tree -> (x,y,radius)) Tree [x,y] Tree [radii]
-
--- I am here: take a root coords - sin, cos -> child, repeat
--- arc: 

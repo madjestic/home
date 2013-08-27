@@ -1,0 +1,24 @@
+name: Dump
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+description:  
+data-dir: ""
+ 
+executable Dump
+    build-depends: QuickCheck -any, base -any, gtk -any,
+                   gtk-0.12.4 -any, gtksourceview2 -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+ 
+test-suite test-Dump
+    build-depends: QuickCheck -any, base -any, gtk -any,
+                   gtk-0.12.4 -any, gtksourceview2 -any
+    type: exitcode-stdio-1.0
+    main-is: Main.hs
+    buildable: True
+    cpp-options: -DMAIN_FUNCTION=testMain
+    hs-source-dirs: src

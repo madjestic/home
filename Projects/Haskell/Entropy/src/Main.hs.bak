@@ -12,28 +12,27 @@
 -- this is supposed to draw circles, matching the number of list entries
 --
 -----------------------------------------------------------------------------
-
 module Main (
 main
 ) where
 
 
-import Circles
-import Query
-import Trees
+--import Circles
+--import Query
+--import Trees
 
---treeToTriples :: [Tree [a]] -> [(b,b,b)]
---
+--treeToTl30riples :: [Tree [a]] -> [(b,b,b)]
 --treeToTriples :: Tree [a] -> [(b,b,b)]
 --treeToTriple tree
 --              | leaf tree == True =
 
 
 
+exeMain :: IO ()
 exeMain = do
-    draw_circles' $ rstorxys [50,70,60,10,80,30]
+    --draw_circles' $ rstorxys [50,70,60,10,80,30]
     --draw_circles' [(50,70,60)]
-
+    putStrLn "hoi"
 
 
 #ifndef MAIN_FUNCTION

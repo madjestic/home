@@ -1,0 +1,159 @@
+-- | draw a tree: putStrLn $ drawTree tree21
+
+module Trees
+( sumLeaves
+) where
+
+import Data.Tree
+import Control.Applicative (Applicative(..), (<$>))
+import Control.Monad
+
+
+-- debug trees
+tree0 = Node {rootLabel = "0", subForest = []}
+tree1 = Node {rootLabel = "1", subForest = []}
+tree1Int = Node {rootLabel = 1, subForest = []}
+tree2 = Node {rootLabel = "2", subForest = []}
+tree2Int = Node {rootLabel = 2, subForest = []}
+tree3Int = Node {rootLabel = 3, subForest = []}
+tree123Int = Node {rootLabel = 7, subForest = tree1Int:tree2Int:tree3Int:[]}
+tree21 = Node {rootLabel = "21", subForest = tree2:tree1:[]}
+treeInteger21 = Node {rootLabel = 21, subForest = []}
+treeIntegerList21 = Node {rootLabel = [21], subForest = []}
+tree321 = Node {rootLabel = "321", subForest = tree2:tree1:tree21:[]}
+tree231 = Node {rootLabel = "231", subForest = tree2:tree21:tree1:[]}
+tree321321=Node{rootLabel="321321",subForest = tree321:tree321:[]}
+tree231231=Node{rootLabel="231231",subForest = tree231:tree231:[]}
+
+root = Node {rootLabel = "root", subForest = tree0:tree1:tree2:tree321:tree21:tree0:[]}
+-- end of debug trees
+
+-- | Neat 2-dimensional drawing of a tree.
+draw :: Tree String -> [String]
+draw (Node x ts0) = x : drawSubTrees ts0
+  where
+    drawSubTrees [] = []
+    drawSubTrees [t] =
+        "|" : shift "`- " "   " (draw t)
+    drawSubTrees (t:ts) =
+        "|" : shift "+- " "|  " (draw t) ++ drawSubTrees ts
+
+    shift first other = zipWith (++) (first : repeat other)
+
+
+sumStrings :: [String] -> Int
+sumStrings [] = 0
+sumStrings xs = foldr1 (+) $ map read xs
+
+
+-- | Apply a function to the whole self.tree and write it into the rootLabel                                                                         
+fmapT :: (Tree t -> a) -> Tree t -> Tree a
+fmapT f tree@(Node x ts) = Node (f tree) (map (fmapT f) ts)
+
+-- | The function above makes the following commented out piece of code redundant:
+{-leaves :: Tree [Char] -> Tree Bool-}
+{-leaves tree-}
+		{-| leaf tree == True = Node {rootLabel = True,  subForest = []}-}
+		{-| otherwise         = Node {rootLabel = False, subForest = subleaves (subForest tree)}-}
+                                                             {-where subleaves [] = []-}
+                                                                   {-subleaves (t:ts)-}
+                                                                             {-| leaf t    = Node {rootLabel = True,  subForest = []} : subleaves ts-}
+																			 {-| otherwise = Node {rootLabel = False, subForest = (subleaves $ subForest t)} : subleaves ts-}
+-- ##############################################################################################
+
+leaf :: (Eq a) => Tree a -> Bool
+leaf = (\x -> if (subForest x == []) then True else False)
+
+-- Above I prefer to the equivalent bellow (the function is quite primitive, readability is
+-- sufficient and does not need pattern matching approach here, I belive.  Patterh matching
+-- approach is, in general, more readable than lambda notation, but I like lambdas for brevity)
+{-leaf :: Eq a => Tree a -> Bool-}
+{-leaf tree-}
+		{-| subForest tree == [] = True-}
+		{-| otherwise            = False-}
+
+
+
+
+-- | Apply a function to the rootLabel and write it into the rootLabel
+fmapF :: (Forest t -> a) -> Tree t -> Tree a
+fmapF f (Node x ts) = Node (f ts) (map (fmapF f) ts)
+
+
+--scanF f tree@(Node x ts) = Node x (scanl1 f ts)
+-- scanlF :: (Tree a -> Tree a -> Tree a) -> Tree a -> [Tree a] -> Tree a
+--scanlF :: t -> Tree a -> Forest a -> Tree a
+scanlF f q forest = Node (rootLabel q) ((case forest of
+                                           []   -> []
+                                           x:xs -> (scanlF f (f q x) xs):[] ))-- (Node (f q (rootLabel x)) xs))) 
+
+-- it's doing something, but doing it wrong:
+-- let foo = (\x y -> Node ((rootLabel x) + (rootLabel y)) [])
+-- scanlF1 foo treeRoot123
+-- Output ...
+scanlF1 f tree = scanlF f tree (subForest tree)
+-- write a function, that accumulates a value, before passing it as an argument to the next
+-- member of a set
+
+-- | zip 2 trees into a new tree, where the rootLabel is the product f of the 2 root
+-- | labels, coming from each tree
+--zipTreesWith f (Node a ts) (Node b ks) = (Node (f a b) (zipWith (zipTreesWith f) ts ks))
+
+
+boolToInt :: Bool -> Integer
+boolToInt = (\x -> if x == True then 1 else 0)
+
+
+-- | rootLabel becomes a list of subforest rootLabel values as [Int]
+listLabelsF :: Tree [Char] -> Tree [Int]
+listLabelsF = fmapF (map (read . rootLabel))
+
+
+listBoolLeaves :: Tree [Char] -> Tree [Bool]
+listBoolLeaves = fmapF (map (leaf))
+
+
+listIntBoolLeaves :: Tree [Char] -> Tree [Integer]
+listIntBoolLeaves = fmapF (map (boolToInt . leaf))
+
+
+sumLeaves :: Tree [Char] -> Int
+sumLeaves t = sumStrings $ flatten $ leavesValue t
+
+
+leavesValue :: Tree [Char] -> Tree [Char]
+leavesValue tree
+		| leaf tree = tree
+		| otherwise = Node {rootLabel = "0", subForest = leaves_from (subForest tree)}
+		                                           where leaves_from [] = []
+		                                                 leaves_from st@(t:ts)
+	                                                                     | leaf t    = t : leaves_from ts	
+	                                                                     | otherwise = Node {rootLabel = "0", subForest = leaves_from (subForest t)} : leaves_from ts
+
+
+-- I need a function, which takes a tree and draws a set of circles.
+-- 100) a draw function takes a triple (x, y, radius))
+-- each tree contains leafs and branches
+-- 		(~= each node contains 0 or more sub-nodes)
+-- both branches and trees are represented as circles: a branch is a circle,
+-- 		(~= each node is a circle)
+-- surrounded by other circles - leaves and sub-branches
+--		(~= each node is surrounded by 0 or more sub-nodes)
+-- The tree is being walked through:
+-- 5) Compute the number of sub-objects on a tree and their weights:
+-- 10) 	Aquire a tree, containing weight (radius) values
+--  		node weight is based on the number of sub-nodes per node
+-- 13) 	Aquire a tree, containing the number of members per node #DONE
+-- 15) 	(?) Modify the tree data type to accomodate for weights (radii) and number of members
+--		   (number of members may be aquired from weights (radii))
+-- 20)  Tree [radii] -> Tree [x,y]
+-- 25)  map draw $ zipWith (Tree -> (x,y,radius)) Tree [x,y] Tree [radii]
+
+
+-- Aquire a tree with the number of sub-nodes as a value of the rootLabel:
+members :: Tree String -> Tree String
+members (Node x [])  = Node {rootLabel = "0", subForest = []}
+members (Node x ts0) = Node {rootLabel = (show $ length ts0), subForest = subNodes ts0}
+    where subNodes []     = []
+          subNodes [t]    = members t : []
+          subNodes (t:ts) = (members t): subNodes ts

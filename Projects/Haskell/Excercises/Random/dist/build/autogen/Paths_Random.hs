@@ -18,7 +18,7 @@ version = Version {versionBranch = [0,0,1], versionTags = []}
 bindir, libdir, datadir, libexecdir :: FilePath
 
 bindir     = "/home/madjestic/.cabal/bin"
-libdir     = "/home/madjestic/.cabal/lib/Random-0.0.1/ghc-7.6.2"
+libdir     = "/home/madjestic/.cabal/lib/Random-0.0.1/ghc-7.6.3"
 datadir    = "/home/madjestic/.cabal/share/Random-0.0.1"
 libexecdir = "/home/madjestic/.cabal/libexec"
 
