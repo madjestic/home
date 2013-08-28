@@ -982,3 +982,39 @@ leksah Main.hs
 leksah
 leksah
  
+git -commit
+git commit
+git status
+git add Projects/
+git status
+git push
+git push
+git add /etc/portage/package.*
+ls
+cp /etc/portage/package.* ./portage/
+cd portage/
+ls
+cd ..
+git status
+git add .
+git status
+git commit -a
+git commit -a
+git push
+exit
+cd .git
+ls
+vim COMMIT_EDITMSG
+cd ..
+vim .gitconfig 
+vim .gitconfig 
+vim .gitconfig 
+vim .gitconfig 
+exit
+vim .emacs.d/haskell.el 
+cd .emacs.d
+cp haskell.el haskell.el.bak
+vim haskell.el
+emacs haskell.el
+emacs haskell.el
+exit

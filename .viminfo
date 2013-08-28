@@ -18,8 +18,8 @@ $
 
 # Command Line History (newest to oldest):
 :wqa
-:qa!
 :qa
+:qa!
 :w
 :q
 :capi
@@ -133,7 +133,9 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
+""0	CHAR	0
+	(package-initialize)
+	
 	
 "1	LINE	0
 	###SYSTEM MAINTAINANCE###
@@ -158,25 +160,32 @@ $
 	5+
 "u	CHAR	0
 	e	€kb	;:rew
-""-	CHAR	0
+"-	CHAR	0
 	m
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  6  14  ~/.gitconfig
-'1  66  7  ~/README
-'2  61  18  ~/README
-'3  15  0  ~/.bashrc
-'4  42  9  ~/README
-'5  41  0  ~/README
-'6  91  0  ~/Projects/Haskell/OpenGL/GLUT/TAGS
-'7  29  0  ~/README
-'8  15  0  ~/README
-'9  39  3  ~/README
+'0  71  56  ~/README
+'1  1  0  ~/.emacs.el
+'2  1  0  ~/.emacs.d/haskell.el
+'3  35  1  ~/.emacs.d/haskell.el
+'4  8  0  ~/.emacs.d/haskell.el
+'5  1  0  ~/.git/COMMIT_EDITMSG
+'6  64  12  ~/README
+'7  6  14  ~/.gitconfig
+'8  66  7  ~/README
+'9  61  18  ~/README
 
 # Jumplist (newest first):
+-'  71  56  ~/README
+-'  64  0  ~/README
+-'  1  0  ~/.emacs.el
+-'  1  0  ~/.emacs.d/haskell.el
+-'  35  1  ~/.emacs.d/haskell.el
+-'  8  0  ~/.emacs.d/haskell.el
+-'  1  0  ~/.git/COMMIT_EDITMSG
+-'  66  0  ~/README
 -'  6  14  ~/.gitconfig
--'  66  7  ~/README
 -'  61  0  ~/README
 -'  43  0  ~/README
 -'  42  0  ~/README
@@ -237,7 +246,6 @@ $
 -'  12  0  ~/.emacs.el.bak
 -'  35  1  ~/.emacs.el~
 -'  1  0  ~/.emacs.el~
--'  1  1  ~/.emacs.el
 -'  60  5  ~/.emacs.el
 -'  7  1  ~/.emacs.el
 -'  27  0  ~/.emacs.el
@@ -267,25 +275,13 @@ $
 -'  66  0  ~/.emacs.el
 -'  43  4  ~/.emacs.el
 -'  1  0  ~/.emacs
--'  27  0  ~/.bashrc
--'  28  0  ~/.bashrc
--'  24  0  ~/.emacs.d/prelude-modules.el
--'  11  25  ~/.emacs.d/prelude-modules.el
--'  1  0  ~/.emacs.d/prelude-modules.el
--'  28  0  ~/README
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitconfig
-	"	6	14
-	^	6	15
-	.	6	14
-	+	6	14
-
 > ~/README
-	"	66	7
-	^	66	8
-	.	66	7
+	"	71	56
+	^	71	57
+	.	71	56
 	+	30	1
 	+	16	16
 	+	22	17
@@ -319,50 +315,14 @@ $
 	+	64	10
 	+	63	14
 	+	66	7
-
-> ~/.git/COMMIT_EDITMSG
-	"	312	0
-
-> ~/.bashrc
-	"	15	0
-
-> ~/Projects/Haskell/OpenGL/GLUT/TAGS
-	"	91	0
-
-> ~/irclogs/freenode/#haskell.log
-	"	141258	0
-	.	157230	0
-	+	157229	0
-	+	157230	0
-
-> ~/irclogs/freenode/#haskell
-	"	1	0
-
-> /usr/share/vim/vim73/doc/help.txt
-	"	109	1
-
-> /usr/share/vim/vim73/doc/motion.txt
-	"	1036	3
-
-> /etc/portage/package.keywords
-	"	16	0
-
-> ~/.Xresources
-	"	21	0
-	^	21	6
-	.	21	5
-	+	21	5
+	+	64	12
+	+	72	8
+	+	71	56
 
 > ~/.emacs.el
-	"	34	1
-	^	3	24
-	.	3	24
-	+	48	0
-	+	48	31
-	+	48	26
-	+	48	4
-	+	48	3
-	+	48	29
+	"	1	0
+	^	1	18
+	.	1	1
 	+	48	4
 	+	48	5
 	+	48	91
@@ -457,6 +417,54 @@ $
 	+	3	23
 	+	5	0
 	+	3	24
+	+	1	0
+	+	2	0
+	+	1	18
+	+	1	18
+	+	1	18
+	+	1	1
+
+> ~/.emacs.d/haskell.el
+	"	1	0
+
+> ~/.git/COMMIT_EDITMSG
+	"	1	0
+
+> ~/.gitconfig
+	"	6	14
+	^	6	15
+	.	6	14
+	+	6	14
+
+> ~/.bashrc
+	"	15	0
+
+> ~/Projects/Haskell/OpenGL/GLUT/TAGS
+	"	91	0
+
+> ~/irclogs/freenode/#haskell.log
+	"	141258	0
+	.	157230	0
+	+	157229	0
+	+	157230	0
+
+> ~/irclogs/freenode/#haskell
+	"	1	0
+
+> /usr/share/vim/vim73/doc/help.txt
+	"	109	1
+
+> /usr/share/vim/vim73/doc/motion.txt
+	"	1036	3
+
+> /etc/portage/package.keywords
+	"	16	0
+
+> ~/.Xresources
+	"	21	0
+	^	21	6
+	.	21	5
+	+	21	5
 
 > ~/Projects/Haskell/EmacsTest/src/TAGS
 	"	2	9
@@ -487,6 +495,3 @@ $
 
 > /etc/conf.d/hostname
 	"	2	0
-
-> /etc/networks
-	"	1	0

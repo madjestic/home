@@ -1,17 +1,5 @@
 (package-initialize)
 
-(load "//usr/share/emacs/site-lisp/haskell-mode/haskell-mode.el")
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-(define-key haskell-mode-map (kbd "C-,") 'haskell-move-nested-left)
-(define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
-
-(require 'haskell-unicode-input-method)
-(add-hook 'haskell-mode-hook
-  (lambda () (set-input-method "haskell-unicode")))
-
-(global-linum-mode t)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -21,19 +9,18 @@
  '(ac-expand-on-auto-complete t)
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
+ '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(fringe-mode nil nil (fringe))
  '(global-auto-complete-mode t)
  '(global-hl-line-mode t)
- '(haskell-indent-offset 4)
- '(haskell-mode-hook (quote ((lambda nil (ghc-init)) (lambda nil (set-input-method "haskell-unicode")) turn-on-haskell-indent turn-on-haskell-doc-mode)))
- '(haskell-stylish-on-save t)
- '(haskell-tags-on-save t)
  '(minimap-dedicated-window t)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(powerline-default-separator (quote arrow))
+ '(powerline-height nil)
+ '(powerline-text-scale-factor nil)
  '(scroll-bar-mode nil)
  '(speedbar-default-position (quote left))
  '(speedbar-directory-button-trim-method (quote trim))
@@ -41,11 +28,7 @@
  '(speedbar-hide-button-brackets-flag t)
  '(speedbar-use-images nil)
  '(tool-bar-mode nil)
- '(tooltip-frame-parameters (quote ((name . "tooltip") (internal-border-width . 2) (border-width . 1))))
- '(yas/global-mode t nil (yasnippet))
- '(yas/root-directory (quote ("~/.emacs.d/snippets")) nil (yasnippet))
- '(yas/use-menu (quote real-modes))
- '(yas/visit-from-menu nil))
+ '(tooltip-frame-parameters (quote ((name . "tooltip") (internal-border-width . 2) (border-width . 1)))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -61,6 +44,10 @@
  '(menu ((t (:background "#222244" :foreground "#797985" :inverse-video t))))
  '(minimap-active-region-background ((t (:background "#454857"))))
  '(popup-tip-face ((t (:background "#797985" :foreground "black" :height 0.8))))
+ '(powerline-active1 ((t (:inherit mode-line :background "grey22"))))
+ '(powerline-active2 ((t (:inherit mode-line :background "grey40"))))
+ '(powerline-inactive1 ((t (:inherit mode-line-inactive :background "grey11"))))
+ '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "grey20"))))
  '(speedbar-button-face ((t (:foreground "green3" :height 0.8))))
  '(speedbar-directory-face ((t (:foreground "steel blue" :height 0.8))))
  '(speedbar-file-face ((t (:foreground "light blue" :height 0.8))))
@@ -84,17 +71,9 @@
       "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(require 'speedbar)
-(speedbar-add-supported-extension ".hs")
-
-(autoload 'ghc-init "ghc" nil t)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
-(global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
-
 (require 'auto-complete)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (require 'auto-complete-config)
 (ac-config-default)
 
 (powerline-default-theme)
-
