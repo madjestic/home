@@ -42,7 +42,7 @@ initShaders = do vs <- loadShader "hello-gl.vert"
                  fs <- loadShader "hello-gl.frag"
                  p  <- linkShaderProgram [vs] [fs]
                  Shaders vs fs p
-                   <$> get (uniformLocation p "fade_factor")
+                   <$> get (uniformLocation p "fade_factor") -- refactor witghout applicatives
                    <*> mapM (get . uniformLocation p)
                            ["textures[0]", "textures[1]"]
                    <*> get (attribLocation p "position")

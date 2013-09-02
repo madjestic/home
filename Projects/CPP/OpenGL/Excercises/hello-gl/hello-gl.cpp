@@ -7,7 +7,9 @@
 #endif
 #include <math.h>
 #include <stdio.h>
+extern "C" {
 #include "util.h"
+}
 
 /*
  * Global data used by our render callback:
@@ -48,7 +50,7 @@ static GLuint make_buffer(
 static GLuint make_texture(const char *filename)
 {
     int width, height;
-    void *pixels = read_tga((char *)filename, &width, &height);
+    void *pixels = (void *)read_tga(filename, &width, &height);
     GLuint texture;
 
     if (!pixels)
@@ -90,7 +92,7 @@ static void show_info_log(
 static GLuint make_shader(GLenum type, const char *filename)
 {
     GLint length;
-    GLchar *source = (char *)file_contents(filename, &length);
+    GLchar *source = (GLchar *)file_contents(filename, &length);
     GLuint shader;
     GLint shader_ok;
 

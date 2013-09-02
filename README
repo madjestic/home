@@ -59,7 +59,7 @@ python -m cProfile foo.py
 http://git-scm.com/book/en/Git-on-the-Server-Hosted-Git
 
 # add all files in 
-git add /Projects
+git add ./Projects
 # commit added files
 git commit -a
 # write the changes

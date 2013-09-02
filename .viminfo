@@ -17,12 +17,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q
 :wqa
 :!ls
 :.!
 :!cp Makefile Makefile.bak
 :qa
-:q
 :qa!
 :w
 :capi
@@ -165,18 +165,21 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
-'1  1  0  /var/chroot/home/prisoner/.emacs.el
-'2  14  4  ~/.emacs.el
-'3  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
-'4  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
-'5  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
-'6  127  10  ~/Downloads/haskell-indent.el
-'7  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
-'8  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.hs
-'9  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.h
+'0  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
+'1  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
+'2  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+'3  1  0  /var/chroot/home/prisoner/.emacs.el
+'4  14  4  ~/.emacs.el
+'5  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
+'6  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
+'7  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
+'8  127  10  ~/Downloads/haskell-indent.el
+'9  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
 
 # Jumplist (newest first):
+-'  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
 -'  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 -'  1  0  /var/chroot/home/prisoner/.emacs.el
@@ -273,11 +276,14 @@ $
 -'  47  5  ~/.emacs.el
 -'  46  31  ~/.emacs.el
 -'  52  4  ~/.emacs.el
--'  51  85  ~/.emacs.el
--'  71  0  ~/.emacs.el
--'  22  0  ~/.bashrc
 
 # History of marks within files (newest to oldest):
+
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
+	"	13	4
+
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
+	"	1	0
 
 > ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 	"	8	0
@@ -480,12 +486,3 @@ $
 
 > ~/.git/COMMIT_EDITMSG
 	"	1	0
-
-> ~/.gitconfig
-	"	6	14
-	^	6	15
-	.	6	14
-	+	6	14
-
-> ~/.bashrc
-	"	15	0
