@@ -6,9 +6,9 @@
 
 
 # hlsearch on (H) or off (h):
-~H
+~h
 # Last Search Pattern:
-~MSle0~/motion
+~MSle0~/frin
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -18,10 +18,13 @@ $
 
 # Command Line History (newest to oldest):
 :wqa
+:!ls
+:.!
+:!cp Makefile Makefile.bak
 :qa
+:q
 :qa!
 :w
-:q
 :capi
 :help
 :gcc
@@ -64,11 +67,11 @@ $
 :help x
 ::q
 :diffthis
-:vs ../src/Trees.hs
-:!ls
-:wq
 
 # Search String History (newest to oldest):
+?/frin
+?/fin
+?/clang
 ?/motion
 ?/gcc
 ? \<System\>
@@ -116,9 +119,6 @@ $
 ?/member
 ? walkTree'
 ?/zip
-? addStrings
-?/stof
-?/stoi
 
 # Expression History (newest to oldest):
 
@@ -165,21 +165,40 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  71  56  ~/README
-'1  1  0  ~/.emacs.el
-'2  1  0  ~/.emacs.d/haskell.el
-'3  35  1  ~/.emacs.d/haskell.el
-'4  8  0  ~/.emacs.d/haskell.el
-'5  1  0  ~/.git/COMMIT_EDITMSG
-'6  64  12  ~/README
-'7  6  14  ~/.gitconfig
-'8  66  7  ~/README
-'9  61  18  ~/README
+'0  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+'1  1  0  /var/chroot/home/prisoner/.emacs.el
+'2  14  4  ~/.emacs.el
+'3  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
+'4  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
+'5  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
+'6  127  10  ~/Downloads/haskell-indent.el
+'7  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
+'8  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.hs
+'9  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.h
 
 # Jumplist (newest first):
--'  71  56  ~/README
--'  64  0  ~/README
+-'  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+-'  1  0  /var/chroot/home/prisoner/.emacs.el
+-'  14  4  ~/.emacs.el
 -'  1  0  ~/.emacs.el
+-'  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
+-'  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
+-'  1  0  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
+-'  127  10  ~/Downloads/haskell-indent.el
+-'  1  0  ~/Downloads/haskell-indent.el
+-'  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
+-'  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.hs
+-'  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.h
+-'  15  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
+-'  2  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
+-'  1  0  ~/.emacs.d/ede.el
+-'  72  0  ~/README
+-'  71  0  ~/README
+-'  64  0  ~/README
 -'  1  0  ~/.emacs.d/haskell.el
 -'  35  1  ~/.emacs.d/haskell.el
 -'  8  0  ~/.emacs.d/haskell.el
@@ -257,70 +276,21 @@ $
 -'  51  85  ~/.emacs.el
 -'  71  0  ~/.emacs.el
 -'  22  0  ~/.bashrc
--'  26  0  ~/.bashrc
--'  25  1  ~/.emacs.el
--'  10  0  ~/.emacs.el
--'  14  0  ~/.emacs.el
--'  16  0  ~/.emacs.el
--'  13  0  ~/.emacs.el
--'  23  2  ~/.emacs.el
--'  26  0  ~/.emacs.el
--'  21  20  ~/.emacs.el.orig
--'  57  0  ~/.emacs.el.orig
--'  42  6  ~/.emacs.el.orig
--'  18  1  ~/.emacs.el
--'  57  4  ~/.emacs.el
--'  63  0  ~/.emacs.el
--'  1  0  ~/.emacs.el.orig
--'  66  0  ~/.emacs.el
--'  43  4  ~/.emacs.el
--'  1  0  ~/.emacs
 
 # History of marks within files (newest to oldest):
 
-> ~/README
-	"	71	56
-	^	71	57
-	.	71	56
-	+	30	1
-	+	16	16
-	+	22	17
-	+	16	20
-	+	16	19
-	+	17	0
-	+	15	17
-	+	24	18
-	+	40	0
-	+	39	20
-	+	40	0
-	+	39	3
-	+	42	9
-	+	62	9
-	+	60	0
-	+	58	10
-	+	42	3
-	+	38	25
-	+	37	14
-	+	32	1
-	+	31	1
-	+	27	1
-	+	26	2
-	+	22	2
-	+	20	2
-	+	15	23
-	+	3	3
-	+	61	19
-	+	62	24
-	+	62	16
-	+	64	10
-	+	63	14
-	+	66	7
-	+	64	12
-	+	72	8
-	+	71	56
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+	"	8	0
+	^	8	1
+	.	8	1
+	+	7	0
+	+	8	1
+
+> /var/chroot/home/prisoner/.emacs.el
+	"	1	0
 
 > ~/.emacs.el
-	"	1	0
+	"	14	4
 	^	1	18
 	.	1	1
 	+	48	4
@@ -424,6 +394,87 @@ $
 	+	1	18
 	+	1	1
 
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
+	"	397	0
+
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
+	"	1	0
+
+> ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
+	"	16	4
+
+> ~/Downloads/haskell-indent.el
+	"	127	10
+
+> ~/Projects/Haskell/EmacsTest/src/Main.hs
+	"	1	0
+
+> ~/Projects/Haskell/OpenGL/GLUT/Main.hs
+	"	1	0
+
+> ~/Projects/Haskell/OpenGL/GLUT/Main.h
+	"	1	0
+
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
+	"	15	0
+	^	2	16
+	.	2	14
+	+	1	27
+	+	2	14
+
+> ~/Projects/CPP/OpenGL/Excercises/_01_/Makefile
+	"	1	0
+
+> ~/Projects/CPP/OpenGL/Excercises/tutorial03/Makefile
+	"	127	0
+
+> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Mingw
+	"	1	0
+
+> ~/.emacs.d/ede.el
+	"	1	0
+
+> ~/README
+	"	72	0
+	^	71	57
+	.	71	56
+	+	30	1
+	+	16	16
+	+	22	17
+	+	16	20
+	+	16	19
+	+	17	0
+	+	15	17
+	+	24	18
+	+	40	0
+	+	39	20
+	+	40	0
+	+	39	3
+	+	42	9
+	+	62	9
+	+	60	0
+	+	58	10
+	+	42	3
+	+	38	25
+	+	37	14
+	+	32	1
+	+	31	1
+	+	27	1
+	+	26	2
+	+	22	2
+	+	20	2
+	+	15	23
+	+	3	3
+	+	61	19
+	+	62	24
+	+	62	16
+	+	64	10
+	+	63	14
+	+	66	7
+	+	64	12
+	+	72	8
+	+	71	56
+
 > ~/.emacs.d/haskell.el
 	"	1	0
 
@@ -438,60 +489,3 @@ $
 
 > ~/.bashrc
 	"	15	0
-
-> ~/Projects/Haskell/OpenGL/GLUT/TAGS
-	"	91	0
-
-> ~/irclogs/freenode/#haskell.log
-	"	141258	0
-	.	157230	0
-	+	157229	0
-	+	157230	0
-
-> ~/irclogs/freenode/#haskell
-	"	1	0
-
-> /usr/share/vim/vim73/doc/help.txt
-	"	109	1
-
-> /usr/share/vim/vim73/doc/motion.txt
-	"	1036	3
-
-> /etc/portage/package.keywords
-	"	16	0
-
-> ~/.Xresources
-	"	21	0
-	^	21	6
-	.	21	5
-	+	21	5
-
-> ~/Projects/Haskell/EmacsTest/src/TAGS
-	"	2	9
-	.	12	7
-	+	12	7
-
-> ~/Projects/Haskell/EmacsTest/TAGS
-	"	1	0
-
-> ~/Projects/Haskell/EmacsTest/src/tags
-	"	1	0
-
-> /etc/wpa_supplicant/wpa_supplicant.conf
-	"	20	0
-	^	20	1
-	.	20	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-
-> /etc/conf.d/wpa_supplicant
-	"	1	0
-
-> /etc/conf.d/net
-	"	1	0
-
-> /etc/conf.d/hostname
-	"	2	0

@@ -1,6 +1,5 @@
 /home/madjestic/.emacs.d/setnu
 /home/madjestic/.emacs.d
-/home/madjestic
 /su:root@localhost:/home/madjestic
 /su:root@localhost:/home/madjestic
 /home/madjestic/Projects/Haskell/Entropy/src
@@ -15,6 +14,12 @@
 ~
 /home/madjestic/Projects/Haskell/EmacsTest/src
 /usr/share/binutils-data/i686-pc-linux-gnu/2.22/info
-/home/madjestic
 /home/madjestic/Projects/Haskell/Entropy/src
 /home/madjestic/Projects/Haskell/OpenGL/GLUT
+~/.emacs.d
+/home/madjestic
+/su:root@localhost:/home/madjestic
+/home/madjestic/Projects/CPP/OpenGL/Excercises/hello-gl
+/home/madjestic/Projects/Haskell/OpenGL/hello-gl
+~/Downloads
+/home/madjestic/Downloads/GLUtil-master

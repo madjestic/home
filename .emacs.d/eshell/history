@@ -40,3 +40,17 @@ rm lein
 ls
 ghc -V
 man grep
+cd ~
+su
+emerge --search gtags
+emerge --search global
+ls
+emerge -pv global
+emerge -pv global
+emerge -pv global
+ls
+ls
+unzip GLUtil-master.zip 
+ls
+cd GLUtil-master/
+ls

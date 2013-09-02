@@ -12,3 +12,11 @@ int main()
   return 1;
 }
 
+class Foo
+{
+public:
+  Foo();
+  virtual ~Foo();
+};
+
+

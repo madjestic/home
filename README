@@ -70,3 +70,8 @@ git push
 # application fast start
 # WINDOWS button is the one with the MSWindows logo on it
 WINDOWS-p
+
+### EMACS ###
+## CPP
+# Enable semantic auto-complete (?)
+semantic-complete-self-insert

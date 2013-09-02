@@ -1,529 +1,3 @@
-ls
-vim TAGS 
-cd ~
-vim .emacs.el
-cd .emacs.d/elpa/
-ls
-vim package.el 
-cd ~
-vim README 
-cd ~/.cabal/bin
-ls
-cd ~
-ghc-mod --help
-which ghc-mod
-/usr/bin/ghc-mod
-ghc-mod
-man ghc-mod
-ghc-mod info
-ghc-mod -info
-ghc-mod --info
-cp .emacs.el .emacs.el.current 
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.bak
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-rm .emacs.el
-ls -la
-ls -la | grep -i .*
-ls -la | grep -i .e*
-cp .emacs.el.current .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-alsamixer 
-history | grep -i screen
-cd .emacs.d/
-ls
-ls
-mkdir setnu
-cd ac-
-cd ac-dict/
-ls
-ls
-ls -la
-cd ..
-ls
-cd eshell/
-ls
-cd ..
-cd tutorial/
-ls
-cd ..
-ls
-ls
-vim ac-comphist.dat 
-ls
-rm -R ./setnu
-ls
-cd ..
-vim .emacs.el
-wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
-cd Downloads/
-mkdir EmacsPrelude
-git clone git://github.com/bbatsov/prelude.git
-ls
-cd prelude/
-ls
-vim README.md 
-ls
-cd modules/
-ls
-cd ..
-ls
-cd ~
-cp -R .emacs.d .emacs.d.bak
-ls 
-cd .emacs.d.bak/
-ls
-cd ..
-cp .emacs.el .emacs.el.current 
-cp .emacs.el .emacs.el.orig
-rm -rf .emacs.d
-rm .emacs.el
-wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
-cd .emacs.d
-ls
-git pull
-ls
-vim prelude-modules.el 
-emacs --daemon
-cd ~
-vim .bashrc 
-source .bashrc 
-vim .bashrc 
-vim .bashrc 
-source .bashrc 
-ec
-emacsclient
-emacsclient -t
-vim .bashrc 
-source .bashrc 
-ec
-e
-ec
-emacs --daemon stop
-ls
-ls -la
-rm -R .emacs.d
-rm -rf .emacs.d
-vim .emacs.el
-vim .emacs
-ls -la
-rm .emacs.d.pre-prelude.tar 
-cp .emacs.d.bak .emacs.d
-cp -R .emacs.d.bak .emacs.d
-cp .emacs.el.current .emacs.el
-emacs --daemon start
-emacs --daemon
-cp .emacs.el.orig .emacs.el
-vim .emacs.el
-emacs
-cd .emacs.d
-ls
-ls -la
-cd ..
-ls -la
-rm -rf .eric5
-vim .emacs.el
-cd .emacs.d
-ls
-cd snippets/
-ls
-cd ..
-ls
-ls
-cd ..
-ls
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-ls
-cd .emacs.el
-cd .emacs.d
-ls
-cp misterioso-theme.el misterioso-theme.el.orig
-cd ..
-vim .emacs.el.orig 
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el.orig .emacs.el
-ls
-vim .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.orig 
-cp .emacs.el .emacs.el.bak 
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el.orig 
-vim .emacs.el.orig 
-vim .emacs.el
-cp .emacs.el.orig .emacs.el
-vim .emacs.el
-cp .emacs.el .emacs.el.bak 
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-vim .emacs.el
-cd .emacs.d
-ls
-cd elpa/
-ls
-cd ..
-ls
-mkdir packages
-ls
-rm packages/
-rm packages
-cd packages
-ls
-cd ..
-cd elpa/
-ls
-su
-vim .emacs.el
-su
-cd .emacs.d/
-ls
-cd elpa/
-ls
-cd auto-complete-1.4/
-ls
-vim README.md 
-cd ..
-cd ..
-mkdir ac-dict
-cd ..
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-vim .emacs.el
-cp .emacs.el .emacs.el.current 
-vim .emacs.el
-vim .bashrc 
-emacsclient -c
-top
-sudo reboot
-emacs
-emacs
-emacs
-emacs
-ls
-ls -ka
-ls -la
-cd .emacs.d
-ls
-cd auto-save-list/
-ls
-cd ..
-ls
-cd ..
-ls -la
-cp .emacs.el .emacs.el.bak
-emacs
-rm .emacs.el
-emacs
-emacs
-vim .emacs.el~
-mv .emacs.el~ .emacs.el
-emacs
-rm .emacs.el
-ls
-ls -la
-vim .emacs
-mv .emacs .emacs.el
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-cd Projects/Haskell/
-ls
-cd OpenGL/
-ls
-cd GLUT/
-ls
-cd dist/
-ls
-cd ../src/
-ls
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-emacs Main.hs 
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd Entropy/
-ls
-cd src/
-ls
-emacs Main.hs
-emacs Main.hs
-emacs
-emacs
-emacs Main.hs
-emacs Main.hs
-emacs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs --debug-init
-emacs --debug-init
-emacs --debug-init
-emacs Main.hs
-emacs Main.hs
-emacs
-emacs --debug-init
-emacs --debug-init
-emacs --debug-init
-emacs --debug-init
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs
-emacs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs Main.hs
-emacs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs --debug-init Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-emacs Main.hs
-vim foo
-cd Projects/Haskell/OpenGL/GLUT/src/
-ls
-ec
-e
-chromium
-chromium
-emacsclient -c
-emacs --daemon
-emacsclient -c
-ec
-e
-e README 
-ec README 
-ec README 
-vim .emacs.el
-ec README 
-ec README 
-ec README 
-emacs --daemon stop
-ec
-ec README 
-top
-kill 2520
-ps -aux | grep emacs
-ps -aux | grep -i emacs
-ec
-emacs --daemon
-ec
-ec README 
-ps -aux | grep -i emacs
-emacs --daemon stop
-emacs --daemon stop
-ps -aux | grep -i emacs
-kill 2828
-ps -aux | grep -i emacs
-sudo connect2wifi 
-ps -aux | grep -i emacs
-emacs --daemon
-ec README 
-ec README 
-vim .emacs.el
-ec README 
-vim .emacs.el
-ps -aux | grep -i emacs
-kill 3404
-ps -aux | grep -i emacs
-kill 3403
-emacs --daemon
-ec README 
-ps -aux | grep -i emacs
-kill 4340
-ps -aux | grep -i emacs
-emacs --daemon
-ec README 
-ps -aux | grep -i emacs
-kill 4460
-ec README 
-emacs --daemon
-ec README 
-ec README 
-ec README 
-ps -aux | grep -i emacs
-kill 4476
-emacs --daemon
-ec README 
-ps -aux | grep -i emacs
-kill 4552
-emacs --daemon
-ec README 
-ps -aux | grep -i emacs
-kill 4561
-emacs --daemon
-ec README 
-ec README 
-ec README 
-ec README 
-ec .emacs.el
-cp .emacs.el .emacs.el.bak
-vim .emacs.el
-history | grep emacs
-emacs --daemon
-emacs --daemon
-history | grep emacs
-ps -aux | grep -i emacs
-kill 6605
-emacs --daemon
-ec .emacs.el
-ps -aux | grep -i emacs
-kill 7499
-ec .emacs.el
-emacs .emacs.el
-cp .emacs.el .emacs.el.fix
-cp .emacs.el.bak .emacs.el
-cp .emacs.el.orig .emacs.el
-cp .emacs.el.fix .emacs.el
-hasktags 
-ps -aux | grep -i emacs
-kill 7874
-exit
-exec su - root
-ps -aux | grep -i emacs
-kill 5549
-emacs --daemon
-ec README 
-emacs --daemon restart
-emacs --daemon stop
-ps -aux | grep -i emacs
-kill 5575
-ec README 
-emacs --daemon
-ec README 
-ps -aux | grep -i emacs
-kill 5596
-ec README 
-emacs --daemon
-ec README 
-ec
-e
-emacs
-ps -aux | grep -i emacs
-kill 5622
-emacs
-emacs --daemon
-emacsclient -c
-emacsclient -c
-emacsclient -c
 ps -aux | grep -i emacs
 kill 6594
 emacs --daemon
@@ -1018,3 +492,423 @@ vim haskell.el
 emacs haskell.el
 emacs haskell.el
 exit
+exec su - root
+exec su - root
+exec su - root
+exec su - root
+exec su - root
+exec su - root
+vim README 
+cd .emacs.d
+emacs cpp.el
+emacs cpp.el
+emacs cpp.el
+cd Projects/Haskell/OpenGL/GLUT/
+ls
+emacs --daemon
+ec Main.hs
+emacs Main.hs
+emacs
+emacs --debug-init
+history | grep -i debug
+emacs --debug-init
+emacs
+emacs
+emacs --debug-init
+emacs --debug-init
+emacs
+emacs Main.hs
+emacs Main.hs
+emacs
+emacs
+emacs
+cd ..
+cd ..
+cd ..
+cd CPP/junk/
+ls
+emacs foo.cpp &
+cd ~/Projects/Haskell/OpenGL/GLUT/
+ls
+emacs Main.hs
+emacs Main.hs &
+cd Projects/CPP/
+ls
+cd junk/
+ls
+emacs foo.cpp 
+emacs foo.cpp 
+emacs foo.cpp 
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+emacs foo.cpp &
+cp .emacs.el .emacs.el.bak 
+cd .emacs.d
+vim haskell.el
+vim haskell.el
+vim haskell.el
+vim haskell.el
+cd ..
+vim .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+cd .emacs.d
+ls
+cd Projects/Haskell/OpenGL/hello-gl/
+ls
+emacs example1.hs
+cd Projects/Haskell/OpenGL/GLUT/
+vim Main.h
+vim Main.hs
+ls
+cd ..
+ls
+cd ..
+ls
+cd EmacsTest/
+ls
+cd src/
+ls
+vim Main.hs
+cd irclogs/
+ls
+cd freenode/
+ls
+vim \#haskell
+vim \#haskell.log 
+ec \#haskell.log 
+emacs \#haskell.log 
+vim \#haskell.log 
+alsamixer 
+xit
+exit
+su
+cd .emacs.d
+ls
+emacs cpp.el
+vim ede.el 
+ls
+emacs cedet.el
+emacs cedet.el
+emacs cpp.el
+man make
+man make
+info make
+cd ~
+cp .emacs.el .emacs.el.bak 
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+alsamixer 
+[B
+cd ~/Downloads/
+ls
+ls
+ls | grep -i hello
+unzip hello-gl-master.zip 
+cd hello-gl-master
+ls
+cd ..
+mkdir ~/Projects/CPP/OpenGL/Excercises/hello-gl
+cp hello-gl-master/* ~/Projects/CPP/OpenGL/Excercises/hello-gl/
+cd ~/Projects/CPP/OpenGL/Excercises/hello-gl/
+ls
+vim Makefile.Mingw 
+cd ..
+ls
+cd tutorial03/
+ls
+vim Makefile 
+cd ..
+ls
+cd _01_/
+ls
+vim Makefile 
+cd /usr/include/
+ls
+ls | grep -i GL
+cd GL
+ls
+cd ../lib
+cd ../..
+ls
+cd lib
+ls
+ls | grep -i GL
+cd ~/Projects/Haskell/OpenGL/
+mkdir hello-gl
+cd hello-gl/
+ls
+ls
+mv hello-gl.f.glsl hello-gl.frag
+mv hello-gl.v.glsl hello-gl.vert
+ls
+alsamixer 
+s
+ls
+mc
+ls
+ls
+su
+info cabal 
+man cabal
+cd ~
+cabal install GLUtil
+cabal update
+cabal install GLUtil
+ghc-pkg list
+cd Downloads/
+ls
+vim haskell-indent.el 
+connect2wifi 
+eselect kernel list
+clrscr
+clear
+alsamixer 
+history | grep -i "git"
+su
+history | grep -i "git"
+history | grep -i darcs
+history 
+:q
+su
+man grep
+vim README 
+top
+top
+vim README 
+cd /etc/portage/
+ls
+cd ..
+ls
+cd ~
+ls
+vim README 
+cd .git
+ls
+vim COMMIT_EDITMSG
+cd ~
+ls
+ls
+cd .emacs.
+cd .emacs.d
+ls
+vim haskell.el 
+cd ..
+ls
+vim .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+vim .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+clr
+clear
+cd Projects/Haskell/OpenGL/GLUT/
+ls
+emacs Main.hs
+emacs
+emacs
+emacs
+clear
+cd ~
+vim README 
+ls
+git status
+git add .emacs.d/
+git status
+git commit -a
+git push
+top
+sudo
+su
+glxinfo 
+glxinfo | grep OpenGL
+su
+cd Downloads/
+ls
+ls | grep -i tutor
+tar -xvfz tutorial03.tar.gz 
+tar -xvf tutorial03.tar.gz 
+cd tutorial03
+ls
+emacs tutorial03.cpp 
+cd ..
+cp -R tutorial03/* ~/Projects/CPP/OpenGL/Excercises/tutorial03/
+mkdir ~/Projects/CPP/OpenGL/Excercises/tutorial03
+cp -R tutorial03/* ~/Projects/CPP/OpenGL/Excercises/tutorial03/
+cd ~
+glxinfo 
+glxinfo | grep -i Open
+cd ~/Projects/CPP/OpenGL/Excercises/hello-gl/
+ls
+ls
+vim Makefile.Unix 
+vim Makefile.Unix 
+ls
+cd ..
+ls
+mv _01_ triangle
+ls
+cd triangle/
+ls
+cd ..
+ls
+cd hello-gl/
+ls
+mc
+ls
+mc
+ls
+clear
+ps -aux
+ps -aux | grep -i chapter
+ps -aux | grep -i chap
+ps -aux | grep -i chapter
+top
+ps -aux | grep -i madjestic
+top
+ps -aux | grep -i gl
+ps -aux | grep -i glu
+ps -aux | grep -i g
+ls
+cd Projects/Haskell/OpenGL/hello-gl/
+ls
+ls
+ghc example1.hs
+ls
+./example1 
+ls
+view hello1.tga 
+ls
+ls
+mc
+cd Projects/CPP/OpenGL/Excercises/tutorial03/
+cd .
+cd he
+cd ../hello-gl/
+ls
+view hello1.tga 
+visualinfo 
+ls
+mc
+ls
+ls
+cd .
+cd ..
+ls
+cd tutorial03/
+ls
+cd ..
+cd triangle/
+ls
+cd ..
+ls
+cd hello-gl/
+ls
+ls
+ln -s /usr/include/GL .
+ls
+gtags
+ls
+vim GTAGS 
+mc
+cp .emacs.el .emacs.el.bak 
+emacs .emacs.el
+emacs --deamon
+emacs --daemon
+ls
+cd .emacs.d/
+ls
+emacs clang.el
+mc
+top
+ls
+cd ..
+vim .emacs.el
+su
+ls
+tar xvf linear-1.2.tar.gz 
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+ln -s ~/.cabal/packages/hackage.haskell.org/ .
+ls
+ls -la
+cd hackage.haskell.org/
+ls
+cd GLUtil/0.6.7/
+cd ..
+ls
+cd 0.6.7/
+ls
+cd GLUtil-0.6.7
+ls
+cd ~
+find // | grep -i dev-haskell
+cd //var/chroot/
+ls
+cd home/
+ls
+cd prisoner/
+ls
+ls -la
+vim .emacs.el
+ls
+cd ../..
+cd ..
+ls
+ls -la
+cd chroot/
+ls
+ls -la
+cd home/
+ls
+ls -la
+cd ~
+ls
+cd //var/
+ls
+su
+ls
+exit
+cd .cabal/
+ls
+mc
+ls
+cd packages/
+ls
+cd hackage.haskell.org/
+ls
+cd GLUtil/
+ls
+cd 0.6.7/
+ls
+tar xvf GLUtil-0.6.7.tar.gz 
+ls
+cd ..
+ls
+cd ..
+ls
+cd linear/
+ls
+cd 1.2/
+ls
+mc

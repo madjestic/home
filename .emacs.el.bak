@@ -69,7 +69,9 @@
 (add-to-list 'package-archives
     '("melpa" . 
       "http://melpa.milkbox.net/packages/") t)
+
 (package-initialize)
+(set-default 'truncate-lines t)
 
 (require 'auto-complete)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
@@ -77,3 +79,30 @@
 (ac-config-default)
 
 (powerline-default-theme)
+
+(defconst user-init-dir
+  (cond ((boundp 'user-emacs-directory)
+         user-emacs-directory)
+        ((boundp 'user-init-directory)
+         user-init-directory)
+        (t "~/.emacs.d/")))
+
+
+(defun load-user-file (file)
+  (interactive "f")
+  "Load a file in current user's configuration directory"
+  (load-file (expand-file-name file user-init-dir)))
+
+(defun kill-all-dired-buffers ()
+      "Kill all dired buffers."
+      (interactive)
+      (save-excursion
+        (let ((count 0))
+          (dolist (buffer (buffer-list))
+            (set-buffer buffer)
+            (when (equal major-mode 'dired-mode)
+              (setq count (1+ count))
+              (kill-buffer buffer)))
+          (message "Killed %i dired buffer(s)." count))))
+
+(global-set-key (kbd "C-x C-k") 'kill-all-dired-buffers)
