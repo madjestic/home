@@ -1,8 +1,8 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <GL/glew.h>
 #include <GL/glut.h>
 #include <math.h>
-#include <stdio.h>
 extern "C" {
 #include "util.h"
 }
