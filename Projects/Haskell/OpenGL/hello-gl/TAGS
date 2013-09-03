@@ -2,81 +2,150 @@
 ./foo.hs,11
 main =2,3
 
-./TGA.hs,120
+./TGA.hs,54
+module TGA {-(readTGA)-}2,3
+import Control.Monad4,5
+
+./hello-gl.hs,90
+module Main where0,1
+makeResources =13,14
+display ::15,16
+display =16,17
+main =22,23
+
+./TGA.hs~,50
 module TGA (readTGA)2,3
 import Control.Monad4,5
-readImage ::12,13
-readImage =13,14
-readTGA ::25,26
-readTGA =26,27
 
-./TGA.hs~,388
-<html>4,5
-<meta content="WFAuNnfP69sDOCQgTZgAo5THVCIMQrU4Y9kWR2HuoAc="36,37
-</a>77,78
-<input type="text"90,91
-</form>131,132
-<div class="js-new-dropdown-contents172,173
-<ul class="dropdown-menu">175,176
-</div>198,199
-</ul>309,310
-<p class="clone-options">You433,434
-</p>438,439
-<a href="/acowley/GLUtil/find/master"461,462
-<span id="L2"595,596
-</div><!-- /.container675,676
+./hello-gl.hs.orig,1132
+module Main where0,1
+data Shaders =12,13
+data Shaders = Shaders {12,13
+data Shaders = Shaders {  vertexShader   ::12,13
+                        , fragmentShader ::13,14
+                        , program'       ::14,15
+                        , fadeFactorU    ::15,16
+                        , texturesU      ::16,17
+                        , positionA      ::17,18
+data Resources =19,20
+data Resources = Resources {19,20
+data Resources = Resources {  vertexBuffer  ::19,20
+                            , elementBuffer ::20,21
+                            , textures      ::21,22
+                            , shaders       ::22,23
+                            , fadeFactor    ::23,24
+vertexBufferData ::25,26
+vertexBufferData =26,27
+elementBufferData ::28,29
+elementBufferData =29,30
+makeTexture ::31,32
+makeTexture filename32,33
+initShaders =40,41
+makeResources ::49,50
+makeResources =50,51
+setupTexturing ::57,58
+setupTexturing r58,59
+setupGeometry ::67,68
+setupGeometry r68,69
+draw ::75,76
+draw r'76,77
+basicKMHandler ::87,88
+basicKMHandler (Char88,89
+animate ::91,92
+animate r92,93
+main =99,100
+
+./dump.hs~,121
+module Main where0,1
+makeResources =12,13
+display ::14,15
+display =15,16
+main =21,22
+main ::34,35
+display ::41,42
 
 ./foo.hs~,11
 main =2,3
 
-./example1.hs~,425
-<html>4,5
-<meta content="WFAuNnfP69sDOCQgTZgAo5THVCIMQrU4Y9kWR2HuoAc="36,37
-</a>77,78
-<input type="text"90,91
-</form>131,132
-<div class="js-new-dropdown-contents172,173
-<ul class="dropdown-menu">175,176
-</div>198,199
-</ul>309,310
-<p class="clone-options">You433,434
-</p>438,439
-<a href="/acowley/GLUtil/find/master"461,462
-programming.">Simplified the564,565
-<span id="L2"616,617
-</div><!-- /.container780,781
-
-./example1.hs,968
-data Shaders =13,14
-data Shaders = Shaders {13,14
-data Shaders = Shaders { program        ::13,14
-                       , fadeFactorU    ::14,15
-                       , texturesU      ::15,16
-                       , positionA      ::16,17
+./dump.hs,1132
+module Main where0,1
+data Shaders =12,13
+data Shaders = Shaders {12,13
+data Shaders = Shaders {  vertexShader   ::12,13
+                        , fragmentShader ::13,14
+                        , program'       ::14,15
+                        , fadeFactorU    ::15,16
+                        , texturesU      ::16,17
+                        , positionA      ::17,18
 data Resources =19,20
 data Resources = Resources {19,20
-data Resources = Resources { vertexBuffer  ::19,20
-                           , elementBuffer ::20,21
-                           , textures      ::21,22
-                           , shaders       ::22,23
-                           , fadeFactor    ::23,24
-vertexBufferData ::26,27
-vertexBufferData =27,28
-makeTexture ::30,31
-makeTexture filename31,32
-initShaders ::41,42
-initShaders =42,43
-makeResources ::52,53
-makeResources =53,54
-setupTexturing ::62,63
-setupTexturing r63,64
-setupGeometry ::73,74
-setupGeometry r74,75
-drawInit ::83,84
-drawInit r84,85
-draw ::90,91
-draw r91,92
-animate ::94,95
-animate r95,96
-main ::99,100
-main =100,101
+data Resources = Resources {  vertexBuffer  ::19,20
+                            , elementBuffer ::20,21
+                            , textures      ::21,22
+                            , shaders       ::22,23
+                            , fadeFactor    ::23,24
+vertexBufferData ::25,26
+vertexBufferData =26,27
+elementBufferData ::28,29
+elementBufferData =29,30
+makeTexture ::31,32
+makeTexture filename32,33
+initShaders =40,41
+makeResources ::49,50
+makeResources =50,51
+setupTexturing ::57,58
+setupTexturing r58,59
+setupGeometry ::67,68
+setupGeometry r68,69
+draw ::75,76
+draw r'76,77
+basicKMHandler ::87,88
+basicKMHandler (Char88,89
+animate ::91,92
+animate r92,93
+main =99,100
+
+./hello-gl.hs~,90
+module Main where0,1
+makeResources =13,14
+display ::15,16
+display =16,17
+main =22,23
+
+./hello-gl.hs.bak,1132
+module Main where0,1
+data Shaders =12,13
+data Shaders = Shaders {12,13
+data Shaders = Shaders {  vertexShader   ::12,13
+                        , fragmentShader ::13,14
+                        , program'       ::14,15
+                        , fadeFactorU    ::15,16
+                        , texturesU      ::16,17
+                        , positionA      ::17,18
+data Resources =19,20
+data Resources = Resources {19,20
+data Resources = Resources {  vertexBuffer  ::19,20
+                            , elementBuffer ::20,21
+                            , textures      ::21,22
+                            , shaders       ::22,23
+                            , fadeFactor    ::23,24
+vertexBufferData ::25,26
+vertexBufferData =26,27
+elementBufferData ::28,29
+elementBufferData =29,30
+makeTexture ::31,32
+makeTexture filename32,33
+initShaders =40,41
+makeResources ::49,50
+makeResources =50,51
+setupTexturing ::57,58
+setupTexturing r58,59
+setupGeometry ::67,68
+setupGeometry r68,69
+draw ::75,76
+draw r'76,77
+basicKMHandler ::87,88
+basicKMHandler (Char88,89
+animate ::91,92
+animate r92,93
+main =99,100

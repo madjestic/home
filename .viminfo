@@ -6,9 +6,9 @@
 
 
 # hlsearch on (H) or off (h):
-~h
+~H
 # Last Search Pattern:
-~MSle0~/frin
+~MSle0~/\.c
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -17,12 +17,12 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
 :q
 :wqa
 :!ls
 :.!
 :!cp Makefile Makefile.bak
-:qa
 :qa!
 :w
 :capi
@@ -69,6 +69,10 @@ $
 :diffthis
 
 # Search String History (newest to oldest):
+?/\.c
+?/".c"
+?/.c
+?/glutDisplay
 ?/frin
 ?/fin
 ?/clang
@@ -115,10 +119,6 @@ $
 ?/imlib
 ?/feh
 ?/fmap
-?/leaves
-?/member
-? walkTree'
-?/zip
 
 # Expression History (newest to oldest):
 
@@ -165,18 +165,48 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
-'1  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
-'2  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
-'3  1  0  /var/chroot/home/prisoner/.emacs.el
-'4  14  4  ~/.emacs.el
-'5  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
-'6  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
-'7  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
-'8  127  10  ~/Downloads/haskell-indent.el
-'9  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
+'0  446  32  /usr/include/GL/freeglut_std.h
+'1  15  1  /usr/include/GL/glut.h
+'2  407  0  /usr/include/GL/glew.h
+'3  113  0  /usr/include/form.h
+'4  1  0  /usr/include/GL/freeglut.h
+'5  14  24  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
+'6  60  0  ~/README
+'7  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
+'8  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
+'9  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 
 # Jumplist (newest first):
+-'  446  32  /usr/include/GL/freeglut_std.h
+-'  435  38  /usr/include/GL/freeglut_std.h
+-'  429  46  /usr/include/GL/freeglut_std.h
+-'  422  52  /usr/include/GL/freeglut_std.h
+-'  403  51  /usr/include/GL/freeglut_std.h
+-'  398  43  /usr/include/GL/freeglut_std.h
+-'  389  43  /usr/include/GL/freeglut_std.h
+-'  572  36  /usr/include/GL/freeglut_std.h
+-'  565  58  /usr/include/GL/freeglut_std.h
+-'  558  40  /usr/include/GL/freeglut_std.h
+-'  549  51  /usr/include/GL/freeglut_std.h
+-'  541  45  /usr/include/GL/freeglut_std.h
+-'  535  55  /usr/include/GL/freeglut_std.h
+-'  514  44  /usr/include/GL/freeglut_std.h
+-'  504  32  /usr/include/GL/freeglut_std.h
+-'  496  60  /usr/include/GL/freeglut_std.h
+-'  473  38  /usr/include/GL/freeglut_std.h
+-'  295  1  /usr/include/GL/freeglut_std.h
+-'  1  0  /usr/include/GL/freeglut_std.h
+-'  15  1  /usr/include/GL/glut.h
+-'  1  0  /usr/include/GL/glut.h
+-'  407  0  /usr/include/GL/glew.h
+-'  1  0  /usr/include/GL/glew.h
+-'  113  0  /usr/include/form.h
+-'  1  0  /usr/include/form.h
+-'  1  0  /usr/include/GL/freeglut.h
+-'  14  24  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
+-'  1  0  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
+-'  60  0  ~/README
+-'  72  0  ~/README
 -'  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
@@ -199,7 +229,6 @@ $
 -'  2  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
 -'  1  0  ~/.emacs.d/ede.el
--'  72  0  ~/README
 -'  71  0  ~/README
 -'  64  0  ~/README
 -'  1  0  ~/.emacs.d/haskell.el
@@ -244,40 +273,67 @@ $
 -'  1  0  ~/Projects/Haskell/EmacsTest/src/tags
 -'  1  0  ~/Projects/Haskell/EmacsTest/src/TAGS
 -'  12  7  ~/Projects/Haskell/EmacsTest/src/TAGS
--'  20  0  /etc/wpa_supplicant/wpa_supplicant.conf
--'  29  0  /etc/wpa_supplicant/wpa_supplicant.conf
--'  1  0  /etc/wpa_supplicant/wpa_supplicant.conf
--'  1  0  /etc/conf.d/wpa_supplicant
--'  1  0  /etc/conf.d/net
--'  2  0  /etc/conf.d/hostname
--'  1  0  /etc/conf.d/hostname
--'  1  0  /etc/networks
--'  24  0  /etc/host.conf
--'  1  0  /etc/host.conf
--'  67  1  /etc/init.d/wpa_supplicant
--'  1  0  /etc/init.d/wpa_supplicant
--'  2  0  ~/bin/disconnect
--'  1  0  ~/bin/disconnect
--'  35  26  ~/.emacs.el
--'  38  3  ~/.emacs.el
--'  37  3  ~/.emacs.el
--'  3  0  ~/.emacs.el
--'  1  0  ~/.emacs.
--'  19  0  ~/.emacs.el
--'  13  0  ~/.emacs.el.bak
--'  12  0  ~/.emacs.el.bak
--'  35  1  ~/.emacs.el~
--'  1  0  ~/.emacs.el~
--'  60  5  ~/.emacs.el
--'  7  1  ~/.emacs.el
--'  27  0  ~/.emacs.el
--'  20  1  ~/.emacs.el
--'  1  0  ~/.emacs.el.bak
--'  47  5  ~/.emacs.el
--'  46  31  ~/.emacs.el
--'  52  4  ~/.emacs.el
 
 # History of marks within files (newest to oldest):
+
+> /usr/include/GL/freeglut_std.h
+	"	446	32
+
+> /usr/include/GL/glut.h
+	"	15	1
+
+> /usr/include/GL/glew.h
+	"	407	0
+
+> /usr/include/form.h
+	"	113	0
+
+> /usr/include/GL/freeglut.h
+	"	1	0
+
+> ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
+	"	14	24
+
+> ~/README
+	"	60	0
+	^	71	57
+	.	71	56
+	+	30	1
+	+	16	16
+	+	22	17
+	+	16	20
+	+	16	19
+	+	17	0
+	+	15	17
+	+	24	18
+	+	40	0
+	+	39	20
+	+	40	0
+	+	39	3
+	+	42	9
+	+	62	9
+	+	60	0
+	+	58	10
+	+	42	3
+	+	38	25
+	+	37	14
+	+	32	1
+	+	31	1
+	+	27	1
+	+	26	2
+	+	22	2
+	+	20	2
+	+	15	23
+	+	3	3
+	+	61	19
+	+	62	24
+	+	62	16
+	+	64	10
+	+	63	14
+	+	66	7
+	+	64	12
+	+	72	8
+	+	71	56
 
 > ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 	"	13	4
@@ -427,62 +483,3 @@ $
 	.	2	14
 	+	1	27
 	+	2	14
-
-> ~/Projects/CPP/OpenGL/Excercises/_01_/Makefile
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/tutorial03/Makefile
-	"	127	0
-
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Mingw
-	"	1	0
-
-> ~/.emacs.d/ede.el
-	"	1	0
-
-> ~/README
-	"	72	0
-	^	71	57
-	.	71	56
-	+	30	1
-	+	16	16
-	+	22	17
-	+	16	20
-	+	16	19
-	+	17	0
-	+	15	17
-	+	24	18
-	+	40	0
-	+	39	20
-	+	40	0
-	+	39	3
-	+	42	9
-	+	62	9
-	+	60	0
-	+	58	10
-	+	42	3
-	+	38	25
-	+	37	14
-	+	32	1
-	+	31	1
-	+	27	1
-	+	26	2
-	+	22	2
-	+	20	2
-	+	15	23
-	+	3	3
-	+	61	19
-	+	62	24
-	+	62	16
-	+	64	10
-	+	63	14
-	+	66	7
-	+	64	12
-	+	72	8
-	+	71	56
-
-> ~/.emacs.d/haskell.el
-	"	1	0
-
-> ~/.git/COMMIT_EDITMSG
-	"	1	0

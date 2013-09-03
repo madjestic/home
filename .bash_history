@@ -912,3 +912,66 @@ ls
 cd 1.2/
 ls
 mc
+su
+vim README 
+connect2wifi 
+git commit -a
+git push
+emacs --daemon
+ec &
+ec &
+cd Projects/Haskell/OpenGL/hello-gl/
+ls
+cp hello-gl.hs hello-gl.hs.orig
+ls
+vim hello-gl.hs
+xmobar 
+xmobar &
+su
+ls
+cd Projects/CPP/
+ls
+cd OpenGL/
+ls
+cd Excercises/
+ls
+cd hello-gl/
+ls
+ctags
+etags
+ctags --help
+man ctags
+ls
+etags
+ls
+etags hello-gl.cpp
+ls
+ls
+cd GL
+ls
+cd ..
+ls
+etags hello-gl.cpp
+cd GL
+ls
+
+cd GL
+cd ..
+ls
+ls -la
+su
+cd /usr/include/GL
+ls
+cd ..
+ls
+vim form.h 
+ls
+cd GL
+ls
+vim glew.h
+vim glut.h
+vim freeglut_std.h 
+cd ~
+mc
+cd Projects/
+cd Projects/
