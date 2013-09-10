@@ -11,11 +11,13 @@
  '(ac-show-menu-immediately-on-auto-complete t)
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
+ '(ecb-layout-window-sizes (quote (("leftSpeedbarHistory02" (ecb-speedbar-buffer-name 0.16 . 0.6071428571428571) (ecb-history-buffer-name 0.16 . 0.32142857142857145)))))
+ '(ecb-options-version "2.40")
  '(fringe-mode nil nil (fringe))
  '(global-auto-complete-mode t)
  '(global-hl-line-mode t)
  '(haskell-indent-offset 4)
- '(haskell-mode-hook (quote (turn-on-haskell-indent (lambda nil (ghc-init)) (lambda nil (set-input-method "haskell-unicode")) turn-on-haskell-indent turn-on-haskell-doc-mode)))
+ '(haskell-mode-hook (quote ((lambda nil (ghc-init)) (lambda nil (set-input-method "haskell-unicode")) turn-on-haskell-indent turn-on-haskell-doc-mode)))
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t)
  '(minimap-dedicated-window t)
@@ -26,6 +28,8 @@
  '(powerline-height nil)
  '(powerline-text-scale-factor nil)
  '(scroll-bar-mode nil)
+ '(speedbar-after-create-hook (quote (speedbar-frame-reposition-smartly)))
+ '(speedbar-before-popup-hook nil)
  '(speedbar-default-position (quote left))
  '(speedbar-directory-button-trim-method (quote trim))
  '(speedbar-frame-parameters (quote ((minibuffer) (width . 10) (border-width . 0) (menu-bar-lines . 0) (tool-bar-lines . 0) (unsplittable . t) (left-fringe . 0))))
@@ -46,6 +50,7 @@
  '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 125 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
  '(border ((t nil)))
  '(cursor ((t (:background "#707080"))))
+ '(ecb-default-general-face ((t (:height 0.9))))
  '(fringe ((t (:background "#1d2733"))))
  '(hl-line ((t (:inherit highlight :background "#454857"))))
  '(linum ((t (:inherit (shadow default) :background "#454857" :foreground "#9999aa"))))
@@ -78,7 +83,6 @@
     '("melpa" . 
       "http://melpa.milkbox.net/packages/") t)
 
-(package-initialize)
 (set-default 'truncate-lines t)
 
 (require 'auto-complete)
@@ -100,6 +104,33 @@
   (interactive "f")
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
+
+(defun load-haskell ()
+  "load haskell config files"
+  (interactive)
+  (load-user-file "haskell.el"))
+
+(defun load-cpp ()
+  "load haskell config files"
+  (interactive)
+  (load-user-file "cpp.el"))
+
+(defun load-ecb ()
+  "load haskell config files"
+  (interactive)
+  (load-user-file "ecb.el"))
+
+(defun load-haskell-ide ()
+  "load haskell config files"
+  (interactive)
+  (load-user-file "haskell-ide.el"))
+
+(defun load-cpp-ide ()
+  "load haskell config files"
+  (interactive)
+  (load-user-file "cpp-ide.el"))
+
+(show-paren-mode)
 
 (defun kill-all-dired-buffers ()
       "Kill all dired buffers."

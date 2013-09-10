@@ -8,7 +8,7 @@
 (add-hook 'haskell-mode-hook
   (lambda () (set-input-method "haskell-unicode")))
 
-(global-linum-mode t)
+;;(global-linum-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,9 +24,29 @@
  '(yas/use-menu (quote real-modes))
  '(yas/visit-from-menu nil))
 
-(require 'speedbar)
-(speedbar-add-supported-extension ".hs")
 
 (autoload 'ghc-init "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 (global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
+
+(require 'speedbar)
+(speedbar-add-supported-extension ".hs")
+(speedbar-add-supported-extension ".vert")
+(speedbar-add-supported-extension ".frag")
+(speedbar-add-supported-extension ".tga")
+
+;;(speedbar)
+
+(global-set-key (kbd "C-c l") 'linum-mode)
+
+(haskell-indentation-mode)
+
+(iedit-mode)
+
+(require 'flymake-haskell-multi)
+(add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
+
+(global-set-key (kbd "C-c e") 'hippie-expand)
+
+;;(minimap-create)
+

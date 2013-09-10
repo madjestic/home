@@ -14,6 +14,10 @@
  '(fringe-mode nil nil (fringe))
  '(global-auto-complete-mode t)
  '(global-hl-line-mode t)
+ '(haskell-indent-offset 4)
+ '(haskell-mode-hook (quote (turn-on-haskell-indent (lambda nil (ghc-init)) (lambda nil (set-input-method "haskell-unicode")) turn-on-haskell-indent turn-on-haskell-doc-mode)))
+ '(haskell-stylish-on-save t)
+ '(haskell-tags-on-save t)
  '(minimap-dedicated-window t)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
@@ -28,7 +32,11 @@
  '(speedbar-hide-button-brackets-flag t)
  '(speedbar-use-images nil)
  '(tool-bar-mode nil)
- '(tooltip-frame-parameters (quote ((name . "tooltip") (internal-border-width . 2) (border-width . 1)))))
+ '(tooltip-frame-parameters (quote ((name . "tooltip") (internal-border-width . 2) (border-width . 1))))
+ '(yas/global-mode t nil (yasnippet))
+ '(yas/root-directory (quote ("~/.emacs.d/snippets")) nil (yasnippet))
+ '(yas/use-menu (quote real-modes))
+ '(yas/visit-from-menu nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

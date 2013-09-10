@@ -3,9 +3,9 @@
 #include <GL/glew.h>
 #include <GL/glut.h>
 #include <math.h>
-extern "C" {
-#include "util.h"
-}
+//extern "C" {
+//#include "util.h"
+//}
 
 static int make_resources(void)
 {

@@ -75,3 +75,13 @@ WINDOWS-p
 ## CPP
 # Enable semantic auto-complete (?)
 semantic-complete-self-insert
+# Browses the local document with your browser. On a module import line, the document of the module is browsed. On a function or type, its document is browsed.
+M-C-d 
+# Envoke help on a topic:
+C-h f iedit-mode <RET>
+# Assigning keys
+(global-set-key (kbd "C-c a") 'doodlebug)
+# not sure what it is but may be useful:
+(lookup-key (current-global-map) (kbd "C-c a"))
+# Turn on/off line breaks:
+(toggle-truncate-lines)

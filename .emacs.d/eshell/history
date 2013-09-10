@@ -56,3 +56,29 @@ cd GLUtil-master/
 ls
 ls
 etags dump.hs 
+cp .emacs.el .emacs.el.bak
+man grep
+cd ..
+ls
+cp hello-gl.hs hello-gl.hs.bak
+cp hello-gl.hs hello-gl.hs.orig
+ls
+ls
+etags
+etags *.hs
+ls
+ls
+rm triangle
+ls
+gtags
+etags triangle.cpp 
+ls
+make
+ls
+./triangle 
+ls
+cp -R triangle/* triangle_02/
+cd triangle_02/
+ls
+rm *.hs~
+ls

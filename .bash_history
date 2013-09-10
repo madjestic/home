@@ -975,3 +975,321 @@ cd ~
 mc
 cd Projects/
 cd Projects/
+ls
+alsamixer 
+vim README 
+su
+vim README 
+cd .emacs.d/
+cd ..
+vim .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+emacs .emacs.el
+cd .emacs.d
+ls
+cp haskell.el haskell.el.bak 
+emacs haskell.el
+emacs haskell.el
+emacs haskell.el
+emacs haskell.el
+mc
+emacs &
+cd .emacs.d/
+emacs ecb.el 
+emacs cpp.el
+emacs cpp.el
+emacs cpp.el
+ls
+rm minimap.el 
+ls
+emacs cpp.el
+ps -aux
+ps -aux | grep -i emacs
+kill 10111
+ps -aux | grep -i emacs
+kill 11844
+emacs haskell.el
+cd ..
+emacs .emacs.el
+connect2wifi 
+connect2wifi 
+irssi &
+top
+ps aux 
+ps aux | grep -i irssi
+kill 3271
+ps aux | grep -i irssi
+ps aux | grep -i irssi
+kill 3271
+ps aux | grep -i irssi
+irssi 
+vim README 
+vim README 
+find ./ | grep -i ecb
+ls
+rm -rf jail/
+su
+ls
+cd .emacs.d
+ls
+cd elpa/
+ls
+cd ecb-20130826.1941/
+ls
+emacs ecb-layout-defs.el
+grep -i "leftSpeedbarHistory"
+grep -i "ecb"
+grep -i "a"
+grep -i "a" ./*
+grep -i "leftSpeedbarHistory" ./*
+grep -i "leftSpeedbar" ./*
+ls
+grep -i "left0" ./*
+grep "left" ./*
+grep "leftSpeedbarHistory" ./*
+grep "leftSpeedbar" ./*
+grep "left01" ./*
+grep "left05" ./*
+ls
+grep "left1" ./*
+grep "Speed" ./*
+grep -R "Speed" ./*
+grep -R "Speed" ~/.emacs.d/
+cd ~
+grep -R "Speed" ./*
+grep -R "Speed" *
+grep -iR "emacs" *
+grep -iR "emacs" .*
+grep -iR "Speed" *
+grep -iR "Speed" ./.emacs.d/
+grep -iR "SpeedbarHistory" ./.emacs.d/
+grep -iR "SpeedbarHistory" ./.emacs.*
+connect2wifi 
+ls
+cd .emacs.
+cd .emacs.d/elpa/ecb-20130826.1941/
+ls
+cd ecb2
+ls
+vim test.el 
+ls -la
+cd ..
+ls
+cd ecb-images/
+ls
+cd default/
+ls
+cd ..
+ls
+cd methods/
+ls
+cd ..
+ls
+cd ..
+ls
+vim ecb-speedbar.el
+cd ~
+ls -la ~/*emacs*
+ls -la ~/.*emacs*
+cd .emacs.d
+vim ecb.el
+vim haskell.el
+ls
+emacs haskell.el
+cd //dev/
+ls
+cd ~
+cd jail/
+ls
+ls -la
+cd dev/
+ls
+cd ..
+ls
+cd proc/
+ls
+cd ..
+ls
+rm -rf proc
+ls -la
+cd sys/
+ls
+ls -la
+su
+irssi 
+grep -iR "foo" ./* 
+grep -iR "foo" *
+vim README 
+grep -iR "iptables" *
+grep -ir "iptables" *
+grep -i "iptables" *
+grep -iR "iptables" *
+man grep
+emacs
+grep -i -r "iptables"
+grep -i -r "iptables" ./*
+grep -i -r "iptables" *
+grep -r "iptables" *
+grep -i "iptables" *
+grep -i "leftSpeedbar" *
+grep -r "leftSpeedbar" *
+grep --ignore-case --recursive "leftSpeedbar" *
+ls
+su
+[B
+[21~
+cd .emacs.d
+emacs haskell
+emacs haskell.el
+cd ..
+cd Projects/Haskell/OpenGL/triangle/shaders/
+ls
+ls -la
+chmod a+rw hello-gl.frag
+chmod a+rw hello-gl.vert
+ls -la
+cd ..
+ls
+etags
+etags hello-gl.hs
+vim TAGS 
+etags hello-gl.hs
+vim TAGS 
+ctags hello-gl.hs
+vim TAGS 
+ls
+vim tags 
+ls
+man global
+gtags
+vim TAGS 
+etags hello-gl.hs
+vim TAGS 
+ls
+vim TAGS 
+vim TAGS 
+gtags
+vim TAGS 
+ls
+mkdir tmp
+mv hello-gl-dummy.hs ./tmp/
+ls
+ghci
+ls
+cd ../../Excercises/Iteration/
+ls
+vim TAGS 
+cd ~/.emacs.d
+ls
+cd snippets/
+ls
+cd haskell-mode/
+ls
+ls
+ls -la
+cd ..
+ls
+ls
+cd ..
+ls
+cp haskell.el haskell.el.bak
+emacs haskell.el
+cd ~/Projects/Haskell/Excercises/Iteration/
+ls
+hasktags 
+ls
+hasktags iteration.hs
+vim TAGS 
+cd ~/Downloads/
+ls
+mv 8679b4d4f9c53b196693d9e952394b61360e5ebe.tar.gz openGlTutorial.tar.gz
+tar xvf openGlTutorial.tar.gz 
+cd wikibooks-opengl-modern-tutorials/
+ls
+mc
+cd ~/Projects/CPP/OpenGL/Excercises/triangle03/
+cd ~/Projects/CPP/OpenGL/Excercises/triangle_02/
+ls
+vim Makefile
+make
+vim Makefile
+make
+cd common/
+ls
+vim shader_utils.h
+ls
+rm shader_utils.o
+ls
+vim shader_utils.cpp 
+ls
+cd ..
+ls
+rm Makefile~
+ls
+vim Makefile 
+ls -la
+make
+cd common/
+ls
+ls -la
+cd..
+cd ..
+ls
+vim Makefile 
+cd common/
+ls
+ls -la
+vim shader_utils.
+vim shader_utils.cpp 
+vim shader_utils.h
+ls
+cd ..
+ls
+vim triangle.f.glsl 
+ls
+vim triangle.cpp 
+alsamixer 
+ls
+ls
+cd ~/.emacs.d/
+vim cpp.el
+vim cpp-ide.el 
+vim cpp-ide.el 
+ls
+vim cpp-ide.el 
+vim ~/.emacs.el
+connect2wifi 
+ls
+su
+cd .emacs.d
+ls
+emacs haskell-ide.el
+cd ..
+cd .emacs.d
+emacs ecb.el
+vim REA
+cd ~
+vim README 
+alsamixer 
+vim README 
+emacs ~/.emacs.d/haskell.el
+emacs ~/.emacs.d/haskell.el
+cd Projects/Haskell/OpenGL/triangle/
+ls
+cd ~
+cd .emacs.d/haskell.el
+vim .emacs.d/haskell.el
+mc
+top
+ls
+vim README 

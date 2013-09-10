@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/\.c
+~MSle0~/hs
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -18,12 +18,14 @@ $
 
 # Command Line History (newest to oldest):
 :qa
+:qa!
+:.!:q
+:!vim ~/.emacs.d/cpp-ide.el
 :q
 :wqa
 :!ls
 :.!
 :!cp Makefile Makefile.bak
-:qa!
 :w
 :capi
 :help
@@ -65,10 +67,11 @@ $
 :!vim Trees.hs.bak
 :!cp Trees.hs Trees.hs.bak
 :help x
-::q
-:diffthis
 
 # Search String History (newest to oldest):
+?/hs
+?/common
+? \<lookup\>
 ?/\.c
 ?/".c"
 ?/.c
@@ -116,9 +119,6 @@ $
 ?/end of a file
 ?/end
 ?/bool
-?/imlib
-?/feh
-?/fmap
 
 # Expression History (newest to oldest):
 
@@ -134,49 +134,99 @@ $
 
 # Registers:
 ""0	CHAR	0
-	(package-initialize)
+	(require 'speedbar)
+	(speedbar-add-supported-extension ".hs")
+	(speedbar-add-supported-extension ".vert")
+	(speedbar-add-supported-extension ".frag")
+	(speedbar-add-supported-extension ".tga")
 	
 	
 "1	LINE	0
-	###SYSTEM MAINTAINANCE###
-	3) Update Portage:
+	main 102,4241
 "2	LINE	0
-	System Maintainance###
-"3	CHAR	0
-	##
+	vertexBufferData 29,1054
+"3	LINE	0
+	data Resources 22,727
 "4	LINE	0
-	
+	hello-gl.hs,64
 "5	LINE	0
-	    (yas-global-mode t)
+	
 "6	LINE	0
-	    (require 'yasnippet) ;; not yasnippet-bundle
+	main 102,4241
 "7	LINE	0
-	(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-0.8.0")
+	vertexBufferData 29,1054
 "8	LINE	0
-	  ;; ((scroll-bar-mode nil))
+	data Resources 22,727
 "9	LINE	0
-	  ;;'(scroll-bar-mode nil)
+	hello-gl.hs,64
 "r	CHAR	0
 	5+
 "u	CHAR	0
 	e	€kb	;:rew
 "-	CHAR	0
-	m
+	#
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  446  32  /usr/include/GL/freeglut_std.h
-'1  15  1  /usr/include/GL/glut.h
-'2  407  0  /usr/include/GL/glew.h
-'3  113  0  /usr/include/form.h
-'4  1  0  /usr/include/GL/freeglut.h
-'5  14  24  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
-'6  60  0  ~/README
-'7  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
-'8  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
-'9  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
+'0  87  0  ~/README
+'1  32  0  ~/.emacs.d/haskell.el
+'2  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
+'3  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
+'4  13  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+'5  16  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+'6  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.
+'7  5  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
+'8  199  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+'9  8  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
 
 # Jumplist (newest first):
+-'  87  0  ~/README
+-'  32  0  ~/.emacs.d/haskell.el
+-'  27  0  ~/.emacs.d/haskell.el
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
+-'  13  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+-'  8  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+-'  16  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+-'  199  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.
+-'  5  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
+-'  1  0  ~/Projects/Haskell/Excercises/Iteration/TAGS
+-'  35  0  ~/Projects/Haskell/OpenGL/triangle/TAGS
+-'  18  0  ~/Projects/Haskell/OpenGL/triangle/TAGS
+-'  184  0  ~/Projects/Haskell/OpenGL/triangle/TAGS
+-'  1  0  ~/Projects/Haskell/OpenGL/triangle/TAGS
+-'  5  0  ~/Projects/Haskell/OpenGL/triangle/tags
+-'  1  0  ~/Projects/Haskell/OpenGL/triangle/tags
+-'  76  0  ~/README
+-'  69  0  ~/README
+-'  85  0  ~/README
+-'  1  0  ~/.emacs.d/REA
+-'  1  0  ~/.emacs.d/haskell.el
+-'  3  0  ~/.emacs.d/ecb.el
+-'  1  0  ~/.emacs.d/ecb.el
+-'  529  2  ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
+-'  1  0  ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
+-'  67  3  ~/.emacs.d/elpa/ecb-20130826.1941/ecb2/test.el
+-'  1  0  ~/.emacs.d/elpa/ecb-20130826.1941/ecb2/test.el
+-'  84  0  ~/README
+-'  82  0  ~/README
+-'  15  0  ~/README
+-'  81  0  ~/README
+-'  118  6  ~/.emacs.el
+-'  14  1  ~/.emacs.el
+-'  79  0  ~/README
+-'  33  0  ~/Projects/Haskell/Entropy/prototypes/foo_instance.hs
+-'  1  0  ~/Projects/Haskell/Entropy/prototypes/foo_instance.hs
+-'  1  0  ~/Projects/Haskell/Excercises/foo.hs
+-'  62  0  ~/README
+-'  78  0  ~/README
+-'  72  0  ~/README
+-'  60  0  ~/README
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle/Makefile
 -'  446  32  /usr/include/GL/freeglut_std.h
 -'  435  38  /usr/include/GL/freeglut_std.h
 -'  429  46  /usr/include/GL/freeglut_std.h
@@ -205,15 +255,12 @@ $
 -'  1  0  /usr/include/GL/freeglut.h
 -'  14  24  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
 -'  1  0  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
--'  60  0  ~/README
--'  72  0  ~/README
 -'  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
 -'  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 -'  1  0  /var/chroot/home/prisoner/.emacs.el
--'  14  4  ~/.emacs.el
 -'  1  0  ~/.emacs.el
 -'  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
@@ -230,74 +277,13 @@ $
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
 -'  1  0  ~/.emacs.d/ede.el
 -'  71  0  ~/README
--'  64  0  ~/README
--'  1  0  ~/.emacs.d/haskell.el
--'  35  1  ~/.emacs.d/haskell.el
--'  8  0  ~/.emacs.d/haskell.el
--'  1  0  ~/.git/COMMIT_EDITMSG
--'  66  0  ~/README
--'  6  14  ~/.gitconfig
--'  61  0  ~/README
--'  43  0  ~/README
--'  42  0  ~/README
--'  15  0  ~/.bashrc
--'  1  0  ~/.bashrc
--'  41  0  ~/README
--'  29  0  ~/README
--'  91  0  ~/Projects/Haskell/OpenGL/GLUT/TAGS
--'  1  0  ~/Projects/Haskell/OpenGL/GLUT/TAGS
--'  15  0  ~/README
--'  39  0  ~/README
--'  17  0  ~/README
--'  16  1  ~/README
--'  1  0  ~/README
--'  23  21  ~/README
--'  19  16  ~/README
--'  30  0  ~/README
--'  31  0  ~/README
--'  35  0  /usr/src/linux-3.8.13-gentoo
--'  27  0  ~/README
--'  16  0  /etc/portage/package.keywords
--'  3  0  /etc/portage/package.keywords
--'  4  12  /etc/portage/package.keywords
--'  1  0  /etc/portage/package.keywords
--'  22  0  ~/README
--'  21  0  ~/.Xresources
--'  1  0  ~/.Xresources
--'  34  1  ~/.emacs.el
--'  70  0  ~/.emacs.el
--'  36  1  ~/.emacs.el
--'  2  9  ~/Projects/Haskell/EmacsTest/src/TAGS
--'  3  0  ~/Projects/Haskell/EmacsTest/src/TAGS
--'  1  0  ~/Projects/Haskell/EmacsTest/TAGS
--'  1  0  ~/Projects/Haskell/EmacsTest/src/tags
--'  1  0  ~/Projects/Haskell/EmacsTest/src/TAGS
--'  12  7  ~/Projects/Haskell/EmacsTest/src/TAGS
 
 # History of marks within files (newest to oldest):
 
-> /usr/include/GL/freeglut_std.h
-	"	446	32
-
-> /usr/include/GL/glut.h
-	"	15	1
-
-> /usr/include/GL/glew.h
-	"	407	0
-
-> /usr/include/form.h
-	"	113	0
-
-> /usr/include/GL/freeglut.h
-	"	1	0
-
-> ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
-	"	14	24
-
 > ~/README
-	"	60	0
-	^	71	57
-	.	71	56
+	"	87	0
+	^	87	23
+	.	87	21
 	+	30	1
 	+	16	16
 	+	22	17
@@ -334,28 +320,31 @@ $
 	+	64	12
 	+	72	8
 	+	71	56
+	+	78	105
+	+	78	0
+	+	79	0
+	+	88	0
+	+	79	4
+	+	81	20
+	+	84	0
+	+	82	15
+	+	84	40
+	+	87	21
 
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
-	"	13	4
+> ~/.emacs.d/haskell.el
+	"	32	0
+	^	32	19
+	.	32	0
+	+	32	19
+	+	32	0
 
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
-	"	8	0
-	^	8	1
-	.	8	1
-	+	7	0
-	+	8	1
-
-> /var/chroot/home/prisoner/.emacs.el
+> ~/.emacs.d/cpp-ide.el
 	"	1	0
 
 > ~/.emacs.el
-	"	14	4
-	^	1	18
-	.	1	1
-	+	48	4
+	"	115	0
+	^	118	7
+	.	118	6
 	+	48	5
 	+	48	91
 	+	48	86
@@ -455,31 +444,64 @@ $
 	+	1	18
 	+	1	18
 	+	1	1
+	+	118	6
 
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
-	"	397	0
+> ~/.emacs.d/cpp.el
+	"	29	0
+	.	25	0
+	+	25	42
+	+	30	0
+	+	25	0
 
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
 	"	1	0
 
-> ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
-	"	16	4
-
-> ~/Downloads/haskell-indent.el
-	"	127	10
-
-> ~/Projects/Haskell/EmacsTest/src/Main.hs
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
 	"	1	0
 
-> ~/Projects/Haskell/OpenGL/GLUT/Main.hs
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+	"	13	0
+	^	13	113
+
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
+	"	16	0
+
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.
 	"	1	0
 
-> ~/Projects/Haskell/OpenGL/GLUT/Main.h
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
+	"	5	0
+	^	5	12
+	.	5	12
+	+	5	12
+
+> ~/Projects/Haskell/Excercises/Iteration/TAGS
 	"	1	0
 
-> ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
-	"	15	0
-	^	2	16
-	.	2	14
-	+	1	27
-	+	2	14
+> ~/Projects/Haskell/OpenGL/triangle/TAGS
+	"	35	0
+	.	1	0
+	+	1	0
+
+> ~/Projects/Haskell/OpenGL/triangle/tags
+	"	5	0
+
+> ~/.emacs.d/REA
+	"	1	0
+
+> ~/.emacs.d/ecb.el
+	"	3	0
+	.	4	0
+	+	4	0
+
+> ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
+	"	529	2
+
+> ~/.emacs.d/elpa/ecb-20130826.1941/ecb2/test.el
+	"	67	3
+
+> ~/Projects/Haskell/Entropy/prototypes/foo_instance.hs
+	"	33	0
+
+> ~/Projects/Haskell/Excercises/foo.hs
+	"	1	0

@@ -1,5 +1,4 @@
 /home/madjestic/.emacs.d/setnu
-/home/madjestic/.emacs.d
 /su:root@localhost:/home/madjestic
 /su:root@localhost:/home/madjestic
 /home/madjestic/Projects/Haskell/Entropy/src
@@ -24,3 +23,10 @@
 ~/Downloads
 /home/madjestic/Downloads/GLUtil-master
 /home/madjestic/Projects/Haskell/OpenGL/hello-gl
+~
+/home/madjestic/.emacs.d
+/home/madjestic
+/home/madjestic/Projects/Haskell/OpenGL/triangle
+/home/madjestic/Projects/CPP/OpenGL/Excercises/triangle_02
+~/Projects/Haskell/OpenGL
+/home/madjestic/Projects/Haskell/OpenGL/triangle_02
