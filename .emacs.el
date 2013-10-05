@@ -6,7 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ac-dictionary-directories (quote ("~/.emacs.d/ac-dict" "/home/madjestic/.emacs.d/elpa/auto-complete-1.4/dict")))
- '(ac-expand-on-auto-complete t)
+ '(ac-expand-on-auto-complete t) 
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(cua-enable-cua-keys nil)
@@ -145,3 +145,8 @@
           (message "Killed %i dired buffer(s)." count))))
 
 (global-set-key (kbd "C-x C-k") 'kill-all-dired-buffers)
+
+(global-set-key (kbd "C-c l") 'linum-mode)
+
+(iedit-mode)
+

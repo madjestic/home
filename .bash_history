@@ -1293,3 +1293,98 @@ mc
 top
 ls
 vim README 
+ghc-pkg check
+ghc-pkg list | grep -i lam
+ghc-pkg list | grep -i a
+ghc-pkg list | grep -i lam
+ghc-pkg list | grep -i had
+haskell-updater
+ls -la | grep -i caba;
+ls -la | grep -i cabal
+ls -la
+cabal
+cabal --help
+cabal update
+cabal install cabal-install
+cabal update
+cabal install cabal-install
+cabal update
+cabal -V
+
+cabal update
+cd .cabal/
+ls
+cd bin/
+ls
+./cabal 
+./cabal -V
+cd ..
+cd ..
+ls
+cabal -V
+ghc-pkg list | grep -i lambda
+ghc-pkg check
+su
+su
+ls
+ls -la
+rm -rf .cabal
+ls
+vim \#\*message\*-20130713-190709# 
+rm \#\*message\*-20130713-190709# 
+ls
+ghc-pkg list
+ghc-pkg check
+ghc-pkg remove GLUtil-0.6.7
+ghc-pkg unregister GLUtil-0.6.7
+ghc-pkg check
+ghc-pkg unregister linear-1.2
+ghc-pkg unregister JuicyPixels-3.1
+ghc-pkg unregister twentefp-0.4.1
+ghc-pkg unregister graphics-drawingcombinators-1.4.4.1
+ghc-pkg unregister FTGL-1.333
+ghc-pkg unregister stb-image-0.2.1
+ghc-pkg unregister bitmap-0.0.2
+ghc-pkg unregister AC-Angle-1.0
+ghc-pkg unregister derive-2.5.11
+su
+ghc-pkg check
+ghc-pkg unregister sudoku-solver-0.0.1
+ghc-pkg unregister yi-0.6.7.0
+su
+ghc-pkg check
+ghc-pkg unregister yi-0.6.7.0
+su
+irssi 
+connect2wifi 
+cd bin/
+ls
+vim pingme 
+ls
+vim ip 
+cd ~
+vim README 
+ls
+cd bin/
+ls
+vim ip 
+vim ip 
+vim ip 
+cd ~
+ghci
+su
+ssh root@178.84.90.204
+ssh root@178.84.90.204
+pwdc
+pwd
+su
+su
+cd Downloads/
+ls
+unetbootin 
+irssi 
+mount
+mount | grep -i usb
+mount | grep -i sd
+exit
+exit

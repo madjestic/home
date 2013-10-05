@@ -82,3 +82,18 @@ cd triangle_02/
 ls
 rm *.hs~
 ls
+git commit -a
+git push
+ls
+rm Main.hs
+ls
+exit
+ls
+rm Main.hs\~ 
+ls
+rm TAGS 
+ls
+ls
+rm Main.hs~
+ls
+rm TAGS 

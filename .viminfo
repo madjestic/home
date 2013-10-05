@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/hs
+~MSle0~/grep
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -17,11 +17,11 @@
 $
 
 # Command Line History (newest to oldest):
-:qa
+:q
 :qa!
+:qa
 :.!:q
 :!vim ~/.emacs.d/cpp-ide.el
-:q
 :wqa
 :!ls
 :.!
@@ -69,6 +69,7 @@ $
 :help x
 
 # Search String History (newest to oldest):
+?/grep
 ?/hs
 ?/common
 ? \<lookup\>
@@ -118,7 +119,6 @@ $
 ?/file
 ?/end of a file
 ?/end
-?/bool
 
 # Expression History (newest to oldest):
 
@@ -168,20 +168,39 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  87  0  ~/README
-'1  32  0  ~/.emacs.d/haskell.el
-'2  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
-'3  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
-'4  13  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
-'5  16  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
-'6  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.
-'7  5  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
-'8  199  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
-'9  8  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
+'0  86  0  ~/README
+'1  69  0  ~/README
+'2  34  1  ~/README
+'3  1  0  ~/.xinitrc
+'4  1  0  ~/.Xresources
+'5  1  0  ~/xterm
+'6  8  0  /etc/conf.d/net
+'7  1  0  /etc/init.d/net
+'8  1  0  /etc/portage/package.use
+'9  21  43  /etc/portage/make.conf
 
 # Jumplist (newest first):
--'  87  0  ~/README
+-'  86  0  ~/README
+-'  69  0  ~/README
+-'  34  0  ~/README
+-'  35  0  ~/README
+-'  1  0  ~/.xinitrc
+-'  1  0  ~/.Xresources
+-'  1  0  ~/xterm
+-'  8  0  /etc/conf.d/net
+-'  1  0  /etc/conf.d/net
+-'  1  0  /etc/init.d/net
+-'  1  0  /etc/portage/package.use
+-'  21  43  /etc/portage/make.conf
+-'  1  0  /etc/portage/make.conf
+-'  1  0  ~/bin/ip
+-'  13  0  ~/README
+-'  1  0  ~/bin/pingme
 -'  32  0  ~/.emacs.d/haskell.el
+-'  1  0  /var/lib/layman/make.conf
+-'  87  0  ~/README
+-'  1  0  ~/#*message*-20130713-190709#
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/tags
 -'  27  0  ~/.emacs.d/haskell.el
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
@@ -202,7 +221,6 @@ $
 -'  5  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  1  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  76  0  ~/README
--'  69  0  ~/README
 -'  85  0  ~/README
 -'  1  0  ~/.emacs.d/REA
 -'  1  0  ~/.emacs.d/haskell.el
@@ -259,29 +277,11 @@ $
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
 -'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
 -'  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
--'  1  0  /var/chroot/home/prisoner/.emacs.el
--'  1  0  ~/.emacs.el
--'  397  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/GTAGS
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/hello1.tga
--'  16  4  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
--'  1  0  ~/Projects/Haskell/OpenGL/hello-gl/hello1.tga
--'  127  10  ~/Downloads/haskell-indent.el
--'  1  0  ~/Downloads/haskell-indent.el
--'  1  0  ~/Projects/Haskell/EmacsTest/src/Main.hs
--'  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.hs
--'  1  0  ~/Projects/Haskell/OpenGL/GLUT/Main.h
--'  15  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
--'  2  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile.Unix
--'  1  0  ~/.emacs.d/ede.el
--'  71  0  ~/README
 
 # History of marks within files (newest to oldest):
 
 > ~/README
-	"	87	0
+	"	86	0
 	^	87	23
 	.	87	21
 	+	30	1
@@ -331,12 +331,53 @@ $
 	+	84	40
 	+	87	21
 
+> ~/.xinitrc
+	"	1	0
+
+> ~/.Xresources
+	"	1	0
+
+> ~/xterm
+	"	1	0
+
+> /etc/conf.d/net
+	"	8	0
+
+> /etc/init.d/net
+	"	1	0
+	.	16	0
+	+	16	0
+
+> /etc/portage/package.use
+	"	1	0
+
+> /etc/portage/make.conf
+	"	21	43
+
+> ~/bin/ip
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/bin/pingme
+	"	1	0
+
 > ~/.emacs.d/haskell.el
 	"	32	0
 	^	32	19
 	.	32	0
 	+	32	19
 	+	32	0
+
+> /var/lib/layman/make.conf
+	"	1	0
+
+> ~/#*message*-20130713-190709#
+	"	1	0
+
+> ~/Projects/CPP/OpenGL/Excercises/triangle_02/tags
+	"	1	0
 
 > ~/.emacs.d/cpp-ide.el
 	"	1	0
@@ -462,46 +503,3 @@ $
 > ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
 	"	13	0
 	^	13	113
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.cpp
-	"	16	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/Makefile
-	"	5	0
-	^	5	12
-	.	5	12
-	+	5	12
-
-> ~/Projects/Haskell/Excercises/Iteration/TAGS
-	"	1	0
-
-> ~/Projects/Haskell/OpenGL/triangle/TAGS
-	"	35	0
-	.	1	0
-	+	1	0
-
-> ~/Projects/Haskell/OpenGL/triangle/tags
-	"	5	0
-
-> ~/.emacs.d/REA
-	"	1	0
-
-> ~/.emacs.d/ecb.el
-	"	3	0
-	.	4	0
-	+	4	0
-
-> ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
-	"	529	2
-
-> ~/.emacs.d/elpa/ecb-20130826.1941/ecb2/test.el
-	"	67	3
-
-> ~/Projects/Haskell/Entropy/prototypes/foo_instance.hs
-	"	33	0
-
-> ~/Projects/Haskell/Excercises/foo.hs
-	"	1	0

@@ -37,11 +37,11 @@
 
 ;;(speedbar)
 
-(global-set-key (kbd "C-c l") 'linum-mode)
+;;(global-set-key (kbd "C-c l") 'linum-mode)
 
 (haskell-indentation-mode)
 
-(iedit-mode)
+;;(iedit-mode)
 
 (require 'flymake-haskell-multi)
 (add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
