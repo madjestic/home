@@ -1,0 +1,107 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "shader_utils.h"
+    :file "shader_utils.h"
+    :fsize 696
+    :lastmodtime '(20907 37753 0 0)
+    )
+   (semanticdb-table "shader_utils.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [170 188])
+            ("stdlib.h" include (:system-flag t) nil [189 208])
+            ("GL/glew.h" include (:system-flag t) nil [209 229])
+            ("file_read" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [347 368]))                  
+                :type "char")
+                nil [331 935])
+            ("print_log" function
+               (:arguments 
+                  ( ("object" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1022 1036]))                  
+                :type "void")
+                nil [1007 1586])
+            ("create_shader" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1681 1702])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1703 1715]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [1660 2967])
+            ("create_program" function
+               (:arguments 
+                  ( ("vertexfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2991 3014])
+                    ("fragmentfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3015 3040]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [2969 3625])
+            ("create_gs_program" function
+               (:arguments 
+                  ( ("vertexfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4777 4800])
+                    ("geometryfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4801 4826])
+                    ("fragmentfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4827 4852])
+                    ("input" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4853 4865])
+                    ("output" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4866 4879])
+                    ("vertices" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4880 4895]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [4752 4971])
+            ("get_attrib" function
+               (:arguments 
+                  ( ("program" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4997 5012])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5013 5030]))                  
+                :type ("GLint" type (:type "class") nil nil))
+                nil [4980 5187])
+            ("get_uniform" function
+               (:arguments 
+                  ( ("program" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5207 5222])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5223 5240]))                  
+                :type ("GLint" type (:type "class") nil nil))
+                nil [5189 5390]))          
+    :file "shader_utils.cpp"
+    :pointmax 5391
+    :fsize 5390
+    :lastmodtime '(20907 37753 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!triangle_02!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

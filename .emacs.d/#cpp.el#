@@ -1,0 +1,25 @@
+(semantic-mode 1)
+(global-ede-mode 1)
+(ede-enable-generic-projects)
+(global-semantic-idle-summary-mode 1)
+
+(require 'semantic/ia)
+(require 'semantic/bovine/gcc)
+
+(defun my-semantic-hook ()
+  (imenu-add-to-menubar "TAGS"))
+(add-hook 'semantic-init-hooks 'my-semantic-hook)
+
+;; if you want to enable support for gnu global
+;; (when (cedet-gnu-global-version-check t)
+;;(semanticdb-enable-gnu-global-databases 'c-mode)
+(semanticdb-enable-gnu-global-databases 'c++-mode)
+
+;; enable ctags for some languages:
+;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
+;; (when (cedet-ectag-version-check)
+(semantic-load-enable-primary-exuberent-ctags-support)
+
+(global-ede-mode t)
+
+(load-user-file "cedet.el")

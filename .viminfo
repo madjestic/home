@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/grep
+~MSle0~/KMS
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -19,14 +19,15 @@ $
 # Command Line History (newest to oldest):
 :q
 :qa!
+:w
 :qa
+:!vim /etc/acpi/actions/lm_lid.sh
 :.!:q
 :!vim ~/.emacs.d/cpp-ide.el
 :wqa
 :!ls
 :.!
 :!cp Makefile Makefile.bak
-:w
 :capi
 :help
 :gcc
@@ -66,9 +67,11 @@ $
 :e
 :!vim Trees.hs.bak
 :!cp Trees.hs Trees.hs.bak
-:help x
 
 # Search String History (newest to oldest):
+?/KMS
+?/mode
+?/915
 ?/grep
 ?/hs
 ?/common
@@ -116,9 +119,6 @@ $
 ?/drawTree
 ?/draw
 ? delta
-?/file
-?/end of a file
-?/end
 
 # Expression History (newest to oldest):
 
@@ -133,13 +133,12 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
+""0	LINE	0
 	(require 'speedbar)
 	(speedbar-add-supported-extension ".hs")
 	(speedbar-add-supported-extension ".vert")
 	(speedbar-add-supported-extension ".frag")
 	(speedbar-add-supported-extension ".tga")
-	
 	
 "1	LINE	0
 	main 102,4241
@@ -168,21 +167,50 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  86  0  ~/README
-'1  69  0  ~/README
-'2  34  1  ~/README
-'3  1  0  ~/.xinitrc
-'4  1  0  ~/.Xresources
-'5  1  0  ~/xterm
-'6  8  0  /etc/conf.d/net
-'7  1  0  /etc/init.d/net
-'8  1  0  /etc/portage/package.use
-'9  21  43  /etc/portage/make.conf
+'0  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
+'1  1  0  /etc/acpi/lid.sh
+'2  1  0  /etc/acpi/handler.sh
+'3  59  0  /etc/acpi/default.sh
+'4  1  0  /etc/acpi/default.sh.bak
+'5  26  3  /etc/acpi/default.sh
+'6  1  0  /etc/acpi/events/lm_lid
+'7  33  5  /etc/acpi/default.sh
+'8  1  0  /etc/acpi/events/lid
+'9  1  0  /etc/acpi/events
 
 # Jumplist (newest first):
--'  86  0  ~/README
--'  69  0  ~/README
--'  34  0  ~/README
+-'  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
+-'  1  0  ~/Projects/Haskell/Entropy/src/Trees.hs
+-'  1  0  /etc/acpi/lid.sh
+-'  1  0  /etc/acpi/handler.sh
+-'  59  0  /etc/acpi/default.sh
+-'  1  0  /etc/acpi/default.sh.bak
+-'  26  3  /etc/acpi/default.sh
+-'  33  2  /etc/acpi/default.sh
+-'  1  0  /etc/acpi/events/lm_lid
+-'  1  0  /etc/acpi/default.sh
+-'  1  0  /etc/acpi/events/lid
+-'  1  0  /etc/acpi/events
+-'  1  0  /etc/acpi/actions/lid
+-'  34  0  /etc/laptop-mode/conf.d/lcd-brightness.conf
+-'  1  0  /etc/laptop-mode/conf.d/lcd-brightness.conf
+-'  73  0  /etc/laptop-mode/conf.d/cpufreq.conf
+-'  57  0  /etc/laptop-mode/conf.d/cpufreq.conf
+-'  89  0  /etc/laptop-mode/conf.d/cpufreq.conf
+-'  1  0  /etc/laptop-mode/conf.d/cpufreq.conf
+-'  1  0  ~/bin/connect2wifi
+-'  1  0  ~/bin/tether
+-'  27  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  248  0  /usr/bin/startx
+-'  1  0  /usr/bin/startx
+-'  2257  16  /usr/src/linux-3.10.7-gentoo/.config
+-'  2242  11  /usr/src/linux-3.10.7-gentoo/.config
+-'  3317  8  /usr/src/linux-3.10.7-gentoo/.config
+-'  3328  7  /usr/src/linux-3.10.7-gentoo/.config
+-'  3233  0  /usr/src/linux-3.10.7-gentoo/.config
+-'  1  0  /usr/src/linux-3.10.7-gentoo/.config
+-'  34  1  ~/README
 -'  35  0  ~/README
 -'  1  0  ~/.xinitrc
 -'  1  0  ~/.Xresources
@@ -221,6 +249,7 @@ $
 -'  5  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  1  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  76  0  ~/README
+-'  69  0  ~/README
 -'  85  0  ~/README
 -'  1  0  ~/.emacs.d/REA
 -'  1  0  ~/.emacs.d/haskell.el
@@ -249,36 +278,59 @@ $
 -'  435  38  /usr/include/GL/freeglut_std.h
 -'  429  46  /usr/include/GL/freeglut_std.h
 -'  422  52  /usr/include/GL/freeglut_std.h
--'  403  51  /usr/include/GL/freeglut_std.h
--'  398  43  /usr/include/GL/freeglut_std.h
--'  389  43  /usr/include/GL/freeglut_std.h
--'  572  36  /usr/include/GL/freeglut_std.h
--'  565  58  /usr/include/GL/freeglut_std.h
--'  558  40  /usr/include/GL/freeglut_std.h
--'  549  51  /usr/include/GL/freeglut_std.h
--'  541  45  /usr/include/GL/freeglut_std.h
--'  535  55  /usr/include/GL/freeglut_std.h
--'  514  44  /usr/include/GL/freeglut_std.h
--'  504  32  /usr/include/GL/freeglut_std.h
--'  496  60  /usr/include/GL/freeglut_std.h
--'  473  38  /usr/include/GL/freeglut_std.h
--'  295  1  /usr/include/GL/freeglut_std.h
--'  1  0  /usr/include/GL/freeglut_std.h
--'  15  1  /usr/include/GL/glut.h
--'  1  0  /usr/include/GL/glut.h
--'  407  0  /usr/include/GL/glew.h
--'  1  0  /usr/include/GL/glew.h
--'  113  0  /usr/include/form.h
--'  1  0  /usr/include/form.h
--'  1  0  /usr/include/GL/freeglut.h
--'  14  24  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
--'  1  0  ~/Projects/Haskell/OpenGL/hello-gl/hello-gl.hs
--'  13  4  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.c
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/util.h
--'  8  0  ~/Projects/CPP/OpenGL/Excercises/hello-gl/Makefile
 
 # History of marks within files (newest to oldest):
+
+> ~/Projects/Haskell/Entropy/src/Trees.hs
+	"	17	0
+
+> /etc/acpi/lid.sh
+	"	1	0
+
+> /etc/acpi/handler.sh
+	"	1	0
+
+> /etc/acpi/default.sh
+	"	59	0
+
+> /etc/acpi/default.sh.bak
+	"	1	0
+
+> /etc/acpi/events/lm_lid
+	"	1	0
+
+> /etc/acpi/actions/lm_lid.sh
+	"	5	0
+
+> /etc/acpi/events/lid
+	"	1	0
+
+> /etc/acpi/actions/lid
+	"	1	0
+
+> /etc/laptop-mode/conf.d/lcd-brightness.conf
+	"	34	0
+
+> /etc/laptop-mode/conf.d/cpufreq.conf
+	"	73	0
+
+> ~/bin/connect2wifi
+	"	1	0
+
+> ~/bin/tether
+	"	1	0
+
+> ~/.bashrc
+	"	27	0
+
+> /usr/bin/startx
+	"	248	0
+
+> /usr/src/linux-3.10.7-gentoo/.config
+	"	2257	16
+
+> /etc/portage/make.conf
+	"	21	0
 
 > ~/README
 	"	86	0
@@ -336,170 +388,3 @@ $
 
 > ~/.Xresources
 	"	1	0
-
-> ~/xterm
-	"	1	0
-
-> /etc/conf.d/net
-	"	8	0
-
-> /etc/init.d/net
-	"	1	0
-	.	16	0
-	+	16	0
-
-> /etc/portage/package.use
-	"	1	0
-
-> /etc/portage/make.conf
-	"	21	43
-
-> ~/bin/ip
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-
-> ~/bin/pingme
-	"	1	0
-
-> ~/.emacs.d/haskell.el
-	"	32	0
-	^	32	19
-	.	32	0
-	+	32	19
-	+	32	0
-
-> /var/lib/layman/make.conf
-	"	1	0
-
-> ~/#*message*-20130713-190709#
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/tags
-	"	1	0
-
-> ~/.emacs.d/cpp-ide.el
-	"	1	0
-
-> ~/.emacs.el
-	"	115	0
-	^	118	7
-	.	118	6
-	+	48	5
-	+	48	91
-	+	48	86
-	+	48	0
-	+	48	87
-	+	48	0
-	+	48	88
-	+	48	0
-	+	48	0
-	+	48	25
-	+	48	0
-	+	48	0
-	+	48	23
-	+	48	88
-	+	48	1
-	+	48	32
-	+	48	0
-	+	48	0
-	+	48	3
-	+	48	0
-	+	48	3
-	+	48	4
-	+	48	3
-	+	48	25
-	+	48	0
-	+	48	29
-	+	48	4
-	+	48	4
-	+	48	4
-	+	48	5
-	+	48	5
-	+	48	0
-	+	23	0
-	+	24	0
-	+	48	0
-	+	48	0
-	+	32	0
-	+	30	0
-	+	30	0
-	+	30	0
-	+	32	0
-	+	30	0
-	+	31	0
-	+	48	0
-	+	40	1
-	+	41	1
-	+	42	1
-	+	44	1
-	+	44	1
-	+	45	1
-	+	48	2
-	+	42	0
-	+	44	0
-	+	44	0
-	+	42	1
-	+	44	1
-	+	44	1
-	+	31	0
-	+	31	0
-	+	31	0
-	+	31	25
-	+	31	0
-	+	29	0
-	+	29	0
-	+	30	0
-	+	39	0
-	+	30	0
-	+	42	0
-	+	44	0
-	+	45	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	48	1
-	+	41	33
-	+	48	16
-	+	48	0
-	+	48	0
-	+	48	0
-	+	48	172
-	+	48	0
-	+	48	0
-	+	46	0
-	+	48	0
-	+	48	0
-	+	47	0
-	+	38	0
-	+	16	0
-	+	19	0
-	+	19	0
-	+	3	23
-	+	5	0
-	+	3	24
-	+	1	0
-	+	2	0
-	+	1	18
-	+	1	18
-	+	1	18
-	+	1	1
-	+	118	6
-
-> ~/.emacs.d/cpp.el
-	"	29	0
-	.	25	0
-	+	25	42
-	+	30	0
-	+	25	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.cpp
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/triangle.f.glsl
-	"	1	0
-
-> ~/Projects/CPP/OpenGL/Excercises/triangle_02/common/shader_utils.h
-	"	13	0
-	^	13	113

@@ -1,0 +1,64 @@
+;; Object white_Dummy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "white_Dummy/"
+  :tables (list 
+   (semanticdb-table "hello-gl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("GL/glew.h" include (:system-flag t) nil [40 60])
+            ("GL/glut.h" include (:system-flag t) nil [61 81])
+            ("math.h" include (:system-flag t) nil [82 99])
+            ("make_resources" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [128 133]))                  
+                :type "int")
+                nil [102 151])
+            ("update_fade_factor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [184 189]))                  
+                :type "void")
+                nil [153 193])
+            ("render" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [214 219]))                  
+                :type "void")
+                nil [195 322])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [333 342])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [343 355]))                  
+                :type "int")
+                nil [324 844]))          
+    :file "hello-gl.cpp"
+    :pointmax 877
+    :fsize 844
+    :lastmodtime '(21029 46733 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("GL_INCLUDE" variable (:default-value ("/usr/include/GL")) nil [1 30])
+            ("GL_LIB" variable (:default-value ("/usr/lib")) nil [30 48])
+            ("hello-gl" function (:arguments ("hello-gl.o")) nil [49 126])
+            (".c.o" function nil nil [224 263])
+            ("clean" function nil nil [264 337]))          
+    :file "Makefile"
+    :pointmax 339
+    :fsize 338
+    :lastmodtime '(21029 46833 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!white_Dummy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

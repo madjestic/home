@@ -1,0 +1,40 @@
+;; Object junk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "junk/"
+  :tables (list 
+   (semanticdb-table "foo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [35 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 75])
+            ("main" function (:type "int") nil [77 181])
+            ("Name" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [196 203])
+                    ("Name" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [206 213])
+                    ("Name" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [216 232]))                  
+                :type "class")
+                nil [183 235]))          
+    :file "foo.cpp"
+    :pointmax 236
+    :fsize 234
+    :lastmodtime '(21022 29900 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!junk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

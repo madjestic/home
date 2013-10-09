@@ -1388,3 +1388,9 @@ mount | grep -i usb
 mount | grep -i sd
 exit
 exit
+vim /etc/portage/make.conf
+vim /etc/portage/package.use
+vim /etc/init.d/net
+vim /etc/conf.d/net
+/etc/init.d/net.eth0 start
+su

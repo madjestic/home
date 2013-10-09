@@ -1,0 +1,51 @@
+;; Object _01_/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_01_/"
+  :tables (list 
+   (semanticdb-table "triangle.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [45 63])
+            ("stdlib.h" include (:system-flag t) nil [64 83])
+            ("GL/glew.h" include (:system-flag t) nil [155 175])
+            ("GL/glut.h" include (:system-flag t) nil [234 254])
+            ("program" variable (:type ("GLuint" type (:type "class") nil nil)) nil [293 308])
+            ("attribute_coord2d" variable (:type ("GLint" type (:type "class") nil nil)) nil [309 333])
+            ("init_resources" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [536 541]))                  
+                :type "int")
+                nil [517 2101])
+            ("onDisplay" function (:type "void") nil [2104 3027])
+            ("free_resources" function (:type "void") nil [3030 3083])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3095 3104])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3105 3118]))                  
+                :type "int")
+                nil [3086 3900]))          
+    :file "triangle.cpp"
+    :pointmax 1211
+    :fsize 3900
+    :lastmodtime '(21024 57028 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("LDLIBS" variable (:default-value ("-lglut" "-lGLEW" "-lGL")) nil [1 27]))          
+    :file "Makefile"
+    :pointmax 41
+    :fsize 40
+    :lastmodtime '(21024 17287 0 0)
+    :unmatched-syntax '((symbol 32 . 40) (punctuation 30 . 31) (symbol 27 . 30) (bol 27 . 27))
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!_01_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

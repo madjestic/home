@@ -1,0 +1,49 @@
+;; Object tutorial03/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial03/"
+  :tables (list 
+   (semanticdb-table "tutorial03.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [723 741])
+            ("GL/glew.h" include (:system-flag t) nil [742 762])
+            ("GL/freeglut.h" include (:system-flag t) nil [763 787])
+            ("math_3d.h" include nil nil [788 808])
+            ("VBO" variable (:type ("GLuint" type (:type "class") nil nil)) nil [810 821])
+            ("RenderSceneCB" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [823 1121])
+            ("InitializeGlutCallbacks" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1124 1201])
+            ("CreateVertexBuffer" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1203 1545])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1557 1566])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1567 1579]))                  
+                :type "int")
+                nil [1548 2096]))          
+    :file "tutorial03.cpp"
+    :pointmax 2099
+    :fsize 2098
+    :lastmodtime '(21024 65383 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "math_3d.h"
+    :file "math_3d.h"
+    :fsize 943
+    :lastmodtime '(21024 65383 0 0)
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!tutorial03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

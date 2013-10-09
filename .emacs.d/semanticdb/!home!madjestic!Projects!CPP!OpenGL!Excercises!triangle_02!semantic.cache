@@ -1,0 +1,57 @@
+;; Object triangle_02/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "triangle_02/"
+  :tables (list 
+   (semanticdb-table "triangle.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [169 187])
+            ("stdlib.h" include (:system-flag t) nil [188 207])
+            ("GL/glew.h" include (:system-flag t) nil [279 299])
+            ("GL/glut.h" include (:system-flag t) nil [358 378])
+            ("./common/shader_utils.h" include nil nil [379 413])
+            ("vbo_triangle" variable (:type ("GLuint" type (:type "class") nil nil)) nil [415 435])
+            ("program" variable (:type ("GLuint" type (:type "class") nil nil)) nil [436 451])
+            ("attribute_coord2d" variable (:type ("GLint" type (:type "class") nil nil)) nil [452 476])
+            ("triangle_vertices" variable
+               (:dereference 1
+                :type ("GLfloat" type (:type "class") nil nil))
+                nil [478 554])
+            ("init_resources" function (:type "int") nil [556 1500])
+            ("setupGeometry" function (:type "void") nil [1502 2052])
+            ("draw" function (:type "void") nil [2054 2355])
+            ("free_resources" function (:type "void") nil [2357 2447])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2459 2468])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2469 2482]))                  
+                :type "int")
+                nil [2450 3123]))          
+    :file "triangle.cpp"
+    :pointmax 3102
+    :fsize 3123
+    :lastmodtime '(21043 39904 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("LDLIBS" variable (:default-value ("-lglut" "-lGLEW" "-lGL")) nil [1 27])
+            ("all" function (:arguments ("triangle")) nil [27 41])
+            ("clean" function nil nil [41 68])
+            ("triangle" function (:arguments ("common/shader_utils.o")) nil [68 100]))          
+    :file "Makefile"
+    :pointmax 118
+    :fsize 119
+    :lastmodtime '(21038 3159 0 0)
+    :unmatched-syntax '((symbol 112 . 117) (symbol 108 . 111) (punctuation 106 . 107) (symbol 100 . 106) (bol 100 . 100))
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!triangle_02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

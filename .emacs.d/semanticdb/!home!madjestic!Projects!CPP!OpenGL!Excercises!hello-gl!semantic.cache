@@ -1,0 +1,148 @@
+;; Object hello-gl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hello-gl/"
+  :tables (list 
+   (semanticdb-table "util.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("file_contents" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21 42])
+                    ("length" variable
+                       (:pointer 1
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43 57]))                  
+                :type "void")
+                nil [1 58])
+            ("read_tga" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74 95])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [96 107])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [108 120]))                  
+                :type "void")
+                nil [59 121]))          
+    :file "util.h"
+    :pointmax 123
+    :fsize 122
+    :lastmodtime '(21026 23316 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("GL_INCLUDE" variable (:default-value ("/usr/include/GL")) nil [1 30])
+            ("GL_LIB" variable (:default-value ("/usr/lib")) nil [30 48])
+            ("hello-gl" function (:arguments ("hello-gl.o" "util.o")) nil [49 132])
+            ("hello-gl-dummy" function (:arguments ("hello-gl-dummy.o")) nil [133 227])
+            (".c.o" function nil nil [228 267])
+            ("clean" function nil nil [268 341]))          
+    :file "Makefile"
+    :pointmax 343
+    :fsize 344
+    :lastmodtime '(21028 19720 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hello-gl-dummy.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("GL/glew.h" include (:system-flag t) nil [21 41])
+            ("GL/glut.h" include (:system-flag t) nil [90 112])
+            ("stdio.h" include (:system-flag t) nil [120 138])
+            ("make_resources" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [166 171]))                  
+                :type "int")
+                nil [140 189])
+            ("update_fade_factor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [248 253]))                  
+                :type "void")
+                nil [217 257])
+            ("render" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [278 283]))                  
+                :type "void")
+                nil [259 387])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [420 429])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [430 442]))                  
+                :type "int")
+                nil [411 931]))          
+    :file "hello-gl-dummy.c"
+    :pointmax 933
+    :fsize 932
+    :lastmodtime '(21026 23316 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hello-gl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("GL/glew.h" include (:system-flag t) nil [40 60])
+            ("GL/glut.h" include (:system-flag t) nil [61 81])
+            ("math.h" include (:system-flag t) nil [82 99])
+            ("make_resources" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [166 171]))                  
+                :type "int")
+                nil [140 189])
+            ("update_fade_factor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [222 227]))                  
+                :type "void")
+                nil [191 231])
+            ("render" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [252 257]))                  
+                :type "void")
+                nil [233 360])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [371 380])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [381 393]))                  
+                :type "int")
+                nil [362 882]))          
+    :file "hello-gl.cpp"
+    :pointmax 883
+    :fsize 882
+    :lastmodtime '(21029 46613 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!madjestic!Projects!CPP!OpenGL!Excercises!hello-gl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
