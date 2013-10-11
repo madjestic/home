@@ -1394,3 +1394,203 @@ vim /etc/init.d/net
 vim /etc/conf.d/net
 /etc/init.d/net.eth0 start
 su
+su
+ls
+cd //mnt/usb
+ls
+cd ~
+ls
+cd //mnt/usb/
+ls
+ls
+ls
+cd //
+umount /dev/sdb1 /mnt/usb
+su
+cd ~
+cd Downloads/
+ls
+ls | grep -i stage
+tar xvfj stage3-amd64-20130816.tar.bz2 
+ls
+tar xvfj stage3-amd64-20130816.tar.bz2 
+ls
+ls
+ls | grep -i iso
+su
+cd ~
+vim /etc/laptop-mode/conf.d/cpufreq.conf 
+vim /etc/laptop-mode/conf.d/cpufreq.conf 
+vim /etc/laptop-mode/conf.d/cpufreq.conf 
+vim /etc/laptop-mode/conf.d/cpufreq.conf 
+vim /etc/laptop-mode/conf.d/lcd-brightness.conf 
+vim /etc/acpi/actions/lid
+vim /etc/acpi/events/
+cd /etc/acpi/events/
+ls
+vim lid 
+vim /etc/acpi/default.sh
+ls
+vim lm_lid 
+vim /etc/acpi/default.sh
+cd /etc/acpi/
+ls
+vim handler.sh 
+ls
+ls -la
+vim lid.sh 
+ls
+vim default.sh
+ls -la
+vim default.sh.bak 
+vim default.sh
+ls
+vim handler.sh 
+ls
+vim lid.sh 
+cd /etc/laptop-mode/conf.d/
+ls
+cd /etc/acpi/events/
+ls
+su
+cd ~
+cd Projects/Haskell/Entropy/src/
+ls
+vim Trees.hs 
+ghci
+cd ~
+ls
+vim README 
+su
+ls
+vim .Xresources
+ls -la
+vim xterm 
+xterm
+urxvt
+alsamixer 
+s
+ls -la
+vim .Xresources
+vim .xinitrc
+ls /var/log/
+vim README 
+vim /usr/src/linux/.config
+vim /usr/bin/startx 
+ls
+cd bin/
+ls
+cd ..
+ls
+ls
+cd bin/
+ls
+cd ..
+vim .bashrc 
+ls
+cd bin/
+ls
+vim tether 
+vim connect2wifi 
+alsamixer 
+cd ~
+cd .emacs.d
+ls
+cd ..
+git --help
+git add .emacs.d
+git commit -a
+git push
+git --info
+git --help
+cd .emacs.d
+ls
+vim ecb.el
+cd ..
+ls
+ls -la
+vim .emacs.el
+ls
+cd .emacs.d
+l
+ls
+vim ecb.el
+cd ~
+emacs
+connect2wifi 
+git add /usr/src/linux/.config
+vim README 
+git add /usr/src/linux/.config
+cd /usr/src/linux
+git init
+sudo git init
+git add .config
+sudo git add .config
+sudo git add -f .config
+git status
+vim ~/README 
+vim ~/README 
+git commit -a
+sudo git commit -a
+git config --global user.email "madjestic13@gmail.com"
+git config --global user.name "madjestic"
+sudo git commit -a
+git commit -a
+sudo chmod a+rw /usr/src/linux/.git/*
+git commit -a
+sudo chmod a+rw /usr/src/linux/.git/index.lock
+sudo chmod a+rw /usr/src/linux/.git
+git commit -a
+git commit -a
+git commit -a
+sudo git commit -a
+sudo chmod a+rw /usr/src/linux/.git/*
+git commit -a
+sudo chmod a+rw /usr/src/linux/.git/*/*
+sudo chmod a+rw /usr/src/linux/.git/*/*/*
+sudo chmod a+rw /usr/src/linux/.git/*/*/*/*
+git commit -a
+git push
+git remote add home https://github.com/madjestic/home
+git push home
+git push home
+git pull
+git pull home
+git commit -a
+git push home
+cp /usr/src/linux/.config /home/madjestic/
+cp /usr/src/linux/.config /home/madjestic/
+mkdir /home/madjestic/linux
+cp /usr/src/linux/.config /home/madjestic/linux/
+cd ~
+git add linux/.config 
+git commit -a
+git push
+git push
+cd /etc/init.d/
+ls -la
+vim /etc/portage/make.conf
+lsmod
+lsmod | grep -i intel
+glxgears 
+vim README 
+git add ./Projects
+git commit -a
+git push
+git add ./Projects/Haskell/OpenGL/*
+git commit -a
+git push
+cd Projects/Haskell/OpenGL/
+ls 0la
+ls -la
+cd ~
+git add ./Projects
+git status
+git add Projects/CPP/*
+git status
+git add Projects/CPP/OpenGL/*
+git add Projects/CPP/OpenGL/Excercises/*
+git add Projects/CPP/OpenGL/Excercises/*
+git status
+git commit -a
+irssi 

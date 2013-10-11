@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/KMS
+~MSle0~/git
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -69,6 +69,7 @@ $
 :!cp Trees.hs Trees.hs.bak
 
 # Search String History (newest to oldest):
+?/git
 ?/KMS
 ?/mode
 ?/915
@@ -118,7 +119,6 @@ $
 ?/do
 ?/drawTree
 ?/draw
-? delta
 
 # Expression History (newest to oldest):
 
@@ -167,23 +167,21 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  86  0  ~/README
-'1  5  0  ~/.emacs.d/ecb.el
-'2  56  1  ~/.emacs.el
-'3  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
-'4  1  0  /etc/acpi/lid.sh
-'5  1  0  /etc/acpi/handler.sh
-'6  59  0  /etc/acpi/default.sh
-'7  1  0  /etc/acpi/default.sh.bak
-'8  26  3  /etc/acpi/default.sh
-'9  1  0  /etc/acpi/events/lm_lid
+'0  69  0  ~/README
+'1  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
+'2  1  0  /etc/acpi/lid.sh
+'3  1  0  /etc/acpi/handler.sh
+'4  59  0  /etc/acpi/default.sh
+'5  1  0  /etc/acpi/default.sh.bak
+'6  26  3  /etc/acpi/default.sh
+'7  1  0  /etc/acpi/events/lm_lid
+'8  33  5  /etc/acpi/default.sh
+'9  1  0  /etc/acpi/events/lid
 
 # Jumplist (newest first):
+-'  69  0  ~/README
+-'  81  0  ~/README
 -'  86  0  ~/README
--'  5  0  ~/.emacs.d/ecb.el
--'  56  1  ~/.emacs.el
--'  1  0  ~/.emacs.el
--'  1  0  ~/.emacs.d/ecb.el
 -'  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
 -'  1  0  ~/Projects/Haskell/Entropy/src/Trees.hs
 -'  1  0  /etc/acpi/lid.sh
@@ -254,11 +252,11 @@ $
 -'  5  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  1  0  ~/Projects/Haskell/OpenGL/triangle/tags
 -'  76  0  ~/README
--'  69  0  ~/README
 -'  85  0  ~/README
 -'  1  0  ~/.emacs.d/REA
 -'  1  0  ~/.emacs.d/haskell.el
 -'  3  0  ~/.emacs.d/ecb.el
+-'  1  0  ~/.emacs.d/ecb.el
 -'  529  2  ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
 -'  1  0  ~/.emacs.d/elpa/ecb-20130826.1941/ecb-speedbar.el
 -'  67  3  ~/.emacs.d/elpa/ecb-20130826.1941/ecb2/test.el
@@ -266,7 +264,6 @@ $
 -'  84  0  ~/README
 -'  82  0  ~/README
 -'  15  0  ~/README
--'  81  0  ~/README
 -'  118  6  ~/.emacs.el
 -'  14  1  ~/.emacs.el
 -'  79  0  ~/README
@@ -277,11 +274,13 @@ $
 -'  78  0  ~/README
 -'  72  0  ~/README
 -'  60  0  ~/README
+-'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle/Makefile
+-'  446  32  /usr/include/GL/freeglut_std.h
 
 # History of marks within files (newest to oldest):
 
 > ~/README
-	"	86	0
+	"	69	0
 	^	87	23
 	.	87	21
 	+	30	1
