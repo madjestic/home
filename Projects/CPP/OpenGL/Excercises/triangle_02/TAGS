@@ -1,0 +1,9 @@
+
+triangle.cpp,181
+GLuint vbo_triangle;14,414
+GLuint program;15,435
+GLint attribute_coord2d;16,451
+int init_resources(18,477
+void onDisplay(56,1510
+void free_resources(81,2328
+int main(88,2421

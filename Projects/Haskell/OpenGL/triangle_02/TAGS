@@ -1,0 +1,55 @@
+
+./TGA.hs,120
+module TGA (readTGA)2,3
+import Control.Monad4,5
+readImage ::12,13
+readImage =13,14
+readTGA ::25,26
+readTGA =26,27
+
+./triangle.hs,105
+module Main where3,4
+initResources =10,11
+update r13,14
+display ::16,17
+display =17,18
+main =22,23
+
+./Main.hs,894
+module Main where3,4
+data Shaders =16,17
+data Shaders = Shaders {16,17
+data Shaders = Shaders {  vertexShader   ::16,17
+                        , fragmentShader ::17,18
+                        , program'       ::18,19
+                        , positionA      ::19,20
+data Resources =21,22
+data Resources = Resources {21,22
+data Resources = Resources {  vertexBuffer  ::21,22
+                            , elementBuffer ::22,23
+                            , shaders       ::23,24
+                             , fadeFactor    ::24,25
+vertexBufferData ::31,32
+vertexBufferData =32,33
+elementBufferData ::36,37
+elementBufferData =37,38
+initShaders ::48,49
+initShaders =49,50
+initResources ::57,58
+initResources =58,59
+setupGeometry ::85,86
+setupGeometry r86,87
+draw ::97,98
+draw r'98,99
+basicKMHandler ::108,109
+basicKMHandler (Char109,110
+main ::114,115
+main =115,116
+
+./tmp/hello-gl-dummy.hs,102
+module Main where0,1
+makeResources =7,8
+update r9,10
+display ::12,13
+display =13,14
+main =18,19

@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+attribute_coord2d	triangle.cpp	/^GLint attribute_coord2d;$/;"	v
+free_resources	triangle.cpp	/^void free_resources()$/;"	f
+init_resources	triangle.cpp	/^int init_resources()$/;"	f
+main	triangle.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+onDisplay	triangle.cpp	/^void onDisplay()$/;"	f
+program	triangle.cpp	/^GLuint program;$/;"	v
+vbo_triangle	triangle.cpp	/^GLuint vbo_triangle;$/;"	v

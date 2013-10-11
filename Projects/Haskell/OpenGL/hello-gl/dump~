@@ -1,0 +1,30 @@
+module Main where
+
+import Graphics.Rendering.OpenGL
+import Graphics.UI.GLUT
+import Graphics.GLUtil
+import Foreign.Storable (sizeOf)
+import Control.Concurrent (threadDelay)
+import Control.Applicative
+import TGA
+import System.Exit (exitWith, ExitCode(ExitSuccess))
+import Data.IORef (IORef, newIORef, readIORef, modifyIORef)
+
+makeResources = undefined
+
+display :: IO ()
+display = do
+  clearColor $= Color4 1 1 1 1
+  clear [ColorBuffer]
+  flush  
+--swapBuffers
+
+main = do 
+  (progname,_) <- getArgsAndInitialize
+  initialDisplayMode $= [DoubleBuffered]
+  initialWindowSize $= Size 400 300
+  createWindow "Hello World"
+  --r <- makeResources >>= newIORef
+  displayCallback $= display
+  --idleCallback $= Just (undefined)
+  mainLoop

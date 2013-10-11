@@ -1,0 +1,175 @@
+
+./TGA.hs,120
+module TGA (readTGA)2,3
+import Control.Monad4,5
+readImage ::12,13
+readImage =13,14
+readTGA ::25,26
+readTGA =26,27
+
+./hello-gl.hs,850
+module Main where2,3
+data Shaders =14,15
+data Shaders = Shaders {14,15
+data Shaders = Shaders {  vertexShader   ::14,15
+                        , fragmentShader ::15,16
+                        , program'       ::16,17
+                        , positionA      ::17,18
+data Resources =19,20
+data Resources = Resources {19,20
+data Resources = Resources {  vertexBuffer  ::19,20
+                            , elementBuffer ::20,21
+                            , shaders       ::21,22
+                            , fadeFactor    ::22,23
+vertexBufferData ::24,25
+vertexBufferData =25,26
+elementBufferData ::29,30
+elementBufferData =30,31
+initShaders =32,33
+makeResources ::38,39
+makeResources =39,40
+setupGeometry ::46,47
+setupGeometry r47,48
+draw ::54,55
+draw r'55,56
+basicKMHandler ::64,65
+basicKMHandler (Char65,66
+main =68,69
+
+./hello-gl.hs.orig,1133
+module Main where2,3
+data Shaders =14,15
+data Shaders = Shaders {14,15
+data Shaders = Shaders {  vertexShader   ::14,15
+                        , fragmentShader ::15,16
+                        , program'       ::16,17
+                        , fadeFactorU    ::17,18
+                        , texturesU      ::18,19
+                        , positionA      ::19,20
+data Resources =21,22
+data Resources = Resources {21,22
+data Resources = Resources {  vertexBuffer  ::21,22
+                            , elementBuffer ::22,23
+                            , textures      ::23,24
+                            , shaders       ::24,25
+                            , fadeFactor    ::25,26
+vertexBufferData ::27,28
+vertexBufferData =28,29
+elementBufferData ::30,31
+elementBufferData =31,32
+makeTexture ::33,34
+makeTexture filename34,35
+initShaders =42,43
+makeResources ::51,52
+makeResources =52,53
+setupTexturing ::59,60
+setupTexturing r60,61
+setupGeometry ::69,70
+setupGeometry r70,71
+draw ::77,78
+draw r'78,79
+basicKMHandler ::89,90
+basicKMHandler (Char90,91
+animate ::93,94
+animate r94,95
+main =101,102
+
+./hello-gl.hs~,1133
+module Main where2,3
+data Shaders =14,15
+data Shaders = Shaders {14,15
+data Shaders = Shaders {  vertexShader   ::14,15
+                        , fragmentShader ::15,16
+                        , program'       ::16,17
+                        , fadeFactorU    ::17,18
+                        , texturesU      ::18,19
+                        , positionA      ::19,20
+data Resources =21,22
+data Resources = Resources {21,22
+data Resources = Resources {  vertexBuffer  ::21,22
+                            , elementBuffer ::22,23
+                            , textures      ::23,24
+                            , shaders       ::24,25
+                            , fadeFactor    ::25,26
+vertexBufferData ::27,28
+vertexBufferData =28,29
+elementBufferData ::30,31
+elementBufferData =31,32
+makeTexture ::33,34
+makeTexture filename34,35
+initShaders =42,43
+makeResources ::51,52
+makeResources =52,53
+setupTexturing ::59,60
+setupTexturing r60,61
+setupGeometry ::69,70
+setupGeometry r70,71
+draw ::77,78
+draw r'78,79
+basicKMHandler ::89,90
+basicKMHandler (Char90,91
+animate ::93,94
+animate r94,95
+main =101,102
+
+./triangle.hs,105
+module Main where3,4
+initResources =10,11
+update r13,14
+display ::16,17
+display =17,18
+main =22,23
+
+./hello-gl.hs.bak,1132
+module Main where0,1
+data Shaders =12,13
+data Shaders = Shaders {12,13
+data Shaders = Shaders {  vertexShader   ::12,13
+                        , fragmentShader ::13,14
+                        , program'       ::14,15
+                        , fadeFactorU    ::15,16
+                        , texturesU      ::16,17
+                        , positionA      ::17,18
+data Resources =19,20
+data Resources = Resources {19,20
+data Resources = Resources {  vertexBuffer  ::19,20
+                            , elementBuffer ::20,21
+                            , textures      ::21,22
+                            , shaders       ::22,23
+                            , fadeFactor    ::23,24
+vertexBufferData ::25,26
+vertexBufferData =26,27
+elementBufferData ::28,29
+elementBufferData =29,30
+makeTexture ::31,32
+makeTexture filename32,33
+initShaders =40,41
+makeResources ::49,50
+makeResources =50,51
+setupTexturing ::57,58
+setupTexturing r58,59
+setupGeometry ::67,68
+setupGeometry r68,69
+draw ::75,76
+draw r'76,77
+basicKMHandler ::87,88
+basicKMHandler (Char88,89
+animate ::91,92
+animate r92,93
+main =99,100
+
+./triangle.hs~,103
+module Main where0,1
+initResources =7,8
+update r10,11
+display ::13,14
+display =14,15
+main =19,20
+
+./tmp/hello-gl-dummy.hs,102
+module Main where0,1
+makeResources =7,8
+update r9,10
+display ::12,13
+display =13,14
+main =18,19

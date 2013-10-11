@@ -1,0 +1,8 @@
+
+triangle.cpp,154
+GLuint program;9,292
+GLint attribute_coord2d;10,308
+int init_resources(20,516
+void onDisplay(80,2103
+void free_resources(111,3029
+int main(116,3085
