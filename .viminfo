@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/git
+~MSle0~/templ
 
 # Last Substitute Search Pattern:
 ~MSle0&Int
@@ -18,9 +18,10 @@ $
 
 # Command Line History (newest to oldest):
 :q
-:qa!
-:w
 :qa
+:qa!
+:ws
+:w
 :!vim /etc/acpi/actions/lm_lid.sh
 :.!:q
 :!vim ~/.emacs.d/cpp-ide.el
@@ -66,9 +67,9 @@ $
 :s/delta/zipTreesWith/g
 :e
 :!vim Trees.hs.bak
-:!cp Trees.hs Trees.hs.bak
 
 # Search String History (newest to oldest):
+?/templ
 ?/git
 ?/KMS
 ?/mode
@@ -118,7 +119,6 @@ $
 ?/odforce
 ?/do
 ?/drawTree
-?/draw
 
 # Expression History (newest to oldest):
 
@@ -167,18 +167,26 @@ $
 
 # File marks:
 'M  145  1  ~/Projects/Haskell/Entropy/src/Trees.hs
-'0  69  0  ~/README
-'1  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
-'2  1  0  /etc/acpi/lid.sh
-'3  1  0  /etc/acpi/handler.sh
-'4  59  0  /etc/acpi/default.sh
-'5  1  0  /etc/acpi/default.sh.bak
-'6  26  3  /etc/acpi/default.sh
-'7  1  0  /etc/acpi/events/lm_lid
-'8  33  5  /etc/acpi/default.sh
-'9  1  0  /etc/acpi/events/lid
+'0  30  2  ~/Projects/Haskell/OpenGL/triangle/triangle.hs
+'1  1  1  ~/Projects/Haskell/OpenGL/triangle_02/Main.hs
+'2  20  86  /etc/portage/make.conf
+'3  21  0  ~/.bashrc
+'4  21  0  /etc/portage/make.conf
+'5  1  0  ~/bin/connect2wifi
+'6  69  0  ~/README
+'7  17  0  ~/Projects/Haskell/Entropy/src/Trees.hs
+'8  1  0  /etc/acpi/lid.sh
+'9  1  0  /etc/acpi/handler.sh
 
 # Jumplist (newest first):
+-'  30  2  ~/Projects/Haskell/OpenGL/triangle/triangle.hs
+-'  1  0  ~/Projects/Haskell/OpenGL/triangle/triangle.hs
+-'  1  1  ~/Projects/Haskell/OpenGL/triangle_02/Main.hs
+-'  20  86  /etc/portage/make.conf
+-'  21  0  /etc/portage/make.conf
+-'  21  0  ~/.bashrc
+-'  27  0  ~/.bashrc
+-'  1  0  ~/bin/connect2wifi
 -'  69  0  ~/README
 -'  81  0  ~/README
 -'  86  0  ~/README
@@ -201,9 +209,7 @@ $
 -'  57  0  /etc/laptop-mode/conf.d/cpufreq.conf
 -'  89  0  /etc/laptop-mode/conf.d/cpufreq.conf
 -'  1  0  /etc/laptop-mode/conf.d/cpufreq.conf
--'  1  0  ~/bin/connect2wifi
 -'  1  0  ~/bin/tether
--'  27  0  ~/.bashrc
 -'  1  0  ~/.bashrc
 -'  248  0  /usr/bin/startx
 -'  1  0  /usr/bin/startx
@@ -222,7 +228,6 @@ $
 -'  1  0  /etc/conf.d/net
 -'  1  0  /etc/init.d/net
 -'  1  0  /etc/portage/package.use
--'  21  43  /etc/portage/make.conf
 -'  1  0  /etc/portage/make.conf
 -'  1  0  ~/bin/ip
 -'  13  0  ~/README
@@ -271,13 +276,23 @@ $
 -'  1  0  ~/Projects/Haskell/Entropy/prototypes/foo_instance.hs
 -'  1  0  ~/Projects/Haskell/Excercises/foo.hs
 -'  62  0  ~/README
--'  78  0  ~/README
--'  72  0  ~/README
--'  60  0  ~/README
--'  1  0  ~/Projects/CPP/OpenGL/Excercises/triangle/Makefile
--'  446  32  /usr/include/GL/freeglut_std.h
 
 # History of marks within files (newest to oldest):
+
+> ~/Projects/Haskell/OpenGL/triangle/triangle.hs
+	"	30	2
+
+> ~/Projects/Haskell/OpenGL/triangle_02/Main.hs
+	"	1	1
+
+> /etc/portage/make.conf
+	"	20	86
+
+> ~/.bashrc
+	"	21	0
+
+> ~/bin/connect2wifi
+	"	1	0
 
 > ~/README
 	"	69	0
@@ -369,20 +384,5 @@ $
 > /etc/laptop-mode/conf.d/cpufreq.conf
 	"	73	0
 
-> ~/bin/connect2wifi
-	"	1	0
-
 > ~/bin/tether
 	"	1	0
-
-> ~/.bashrc
-	"	27	0
-
-> /usr/bin/startx
-	"	248	0
-
-> /usr/src/linux-3.10.7-gentoo/.config
-	"	2257	16
-
-> /etc/portage/make.conf
-	"	21	0
